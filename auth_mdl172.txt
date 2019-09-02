@@ -1,0 +1,297 @@
+======================================================================================================================
+Advanced engine needed : Any (tested on Mark V)
+Primary purpose : Singleplayer/Multiplayer
+======================================================================================================================
+Title : Authentic Model Improvement Collection (v1.72)
+Filename : AUTH_MDL172.ZIP
+Release date : March 28, 2018
+Author : NightFright
+
+
+----------------------------------------------------------------------------------------------------------------------
+A B O U T
+----------------------------------------------------------------------------------------------------------------------
+
+Collection of all improved/fixed ID1 models which are currently available. 
+This includes "classic style" models for:
+
+Visually improved PC/NPC models:
+   - Chthon ..................................................... boss.mdl
+   - Enforcer ................................................... enforcer.mdl, h_mega.mdl
+   - Fiend ...................................................... demon.mdl, h_demon.mdl
+   - Knight + Knight Statue (DoE) ............................... knight.mdl, h_knight.mdl
+   - Grunt ...................................................... soldier.mdl, h_guard.mdl
+   - Ogre + Multi-Grenade Ogre (DoE) ............................ ogre.mdl, h_ogre.mdl
+   - Ranger ..................................................... player.mdl
+   - Rottweiler ................................................. dog.mdl, h_dog.mdl
+   - Scrag ...................................................... wizard.mdl
+   - Shambler ................................................... shambler.mdl, h_shams.mdl
+   - Teleporter Sphere .......................................... teleport.mdl
+   - Zombie ..................................................... zombie.mdl, h_zombie.mdl
+
+Improved classic weapons (ID1/HIPNOTIC/ROGUE):
+   - Axe ........................................................ v_axe.mdl
+   - Shotgun .................................................... g_shot.mdl, v_shot.mdl
+   - Super Shotgun .............................................. v_shot2.mdl
+   - Nailgun .................................................... g_nail.mdl, v_nail.mdl
+   - Super Nailgun .............................................. g_nail2.mdl, v_nail2.mdl
+   - Grenade Launcher ........................................... g_rock.mdl, v_rock.mdl
+   - Rocket Launcher ............................................ g_rock2.mdl, v_rock2.mdl
+   - Thunderbolt ................................................ g_light.mdl, v_light.mdl
+   - Proximity Gun  ............................................. g_prox.mdl, v_prox.mdl
+   - Lava Nailgun + Super Nailgun ............................... v_lava.mdl, v_lava2.mdl
+   - Multi Grenade + Rocket Launcher ............................ v_multi.mdl, v_multi2.mdl
+   - Plasma Gun ................................................. v_plasma.mdl
+   - Projectiles ................................................ grenade.mdl, s_spike.mdl, 
+                                                                  spike.mdl
+
+Item/props models added from addons:
+   - Ammo boxes ................................................. b_batt0.bsp, b_batt1.bsp
+                                                                  b_nail0.bsp, b_nail1.bsp
+                                                                  b_rock0.bsp, b_rock1.bsp
+                                                                  b_shell0.bsp, b_shell1.bsp
+   - Armor ...................................................... armor.mdl
+   - Backpack ................................................... backpack.mdl
+   - Flames ..................................................... flame.mdl, flame2.mdl
+   - Gold + Silver Keys ......................................... w_g_key.mdl, w_s_key.mdl
+   - Health boxes ............................................... b_bh10.bsp, b_bh25.bsp, 
+                                                                  b_bh100.bsp
+   - Pentagram................................................... invulner.mdl
+   - Projectiles ................................................ missile.mdl, k_spike.mdl, 
+                                                                  v_spike.mdl, w_spike.mdl         
+   - Quad Damage ................................................ quaddama.mdl
+   - Zombie gibs ................................................ zom_gib.mdl
+              
+Items based on addon models:
+   - Lava nail boxes (DoE) ...................................... b_lava0.bsp, b_lava1.bsp
+   - Multi-rocket boxes (DoE) ................................... b_mrock0.bsp, b_mrock1.bsp
+
+Fixed ID1 models:
+   - Rotfish: Fix for head shrinking bug after death ............ fish.mdl
+   - Runes: Fixed UV mapping .................................... end1.mdl, end2.mdl, 
+                                                                  end3.mdl, end4.mdl
+   - Vore: Idle animation added ................................. shalrath.mdl
+
+Code fixes (progs.dat):
+   - Nail position fixes for Nailgun/Super Nailgun/Lava Nailgun/Super Lava Nailgun
+   - For MP2: Plasmagun firing animation & projectile position fix, R1M7 elevator fix
+
+----------------------------------------------------------------------------------------------------------------------
+
+ID1 bestiary model remakes still missing (possibly coming in future versions):
+   - Death Knight (hknight.mdl, h_hellkn.mdl)
+   - Rotfish (fish.mdl)
+   - Scrag head gibs (h_wizard.mdl)
+   - Shub-Niggurath (oldone.mdl)
+   - Spawn (tarbaby.mdl)
+   - Vore (shalrath.mdl, h_shal.mdl)
+
+
+----------------------------------------------------------------------------------------------------------------------
+I N S T A L L A T I O N
+----------------------------------------------------------------------------------------------------------------------
+
+1) Unzip the contents of this zipfile into your Quake installation dir.
+2) Rename the "z" letter in the three "pakz.pak" files so they have the highest number in your 
+   "id1", "hipnotic" and "rogue" subdirs.
+   [Example: Rename "pakz.pak" to "pak2.pak" if you just have "pak0.pak" and "pak1.pak".]
+3) Load the game and enjoy.
+
+
+----------------------------------------------------------------------------------------------------------------------
+C R E D I T S
+---------------------------------------------------------------------------------------------------------------------- 
+   
+Bloodshot ............................ Fiend
+capnbubs ............................. Player
+                                       Grunt
+                                       Rottweiler
+Chillo ............................... Chthon
+                                       Enforcer
+                                       Ogre
+                                       Quad Damage
+                                       Scrag
+                                       Teleport Sphere
+                                       Zombie
+Dwere ................................ Reworked classic weapons (aka "Guns of Okayishness")
+Louis "ijed" Manning ................. Rotfish fix for ID1 model
+                                       "Rubicon Rumble Pack" ammo/health boxes
+Lunaran .............................. Knight
+NightFright .......................... RRP model realignments
+                                       Backpack skin edits
+                                       Fiend head gibs rescaling
+                                       DoE ammo box skins
+                                       Zombie skin (Chillo) edits
+OriOn ................................ Grenade Launcher pickup
+                                       Prox Mine Launcher pickup
+osjclatchford ........................ Ogre skin (Chillo) edits
+Renier "Skiffy" Banninga ............. Shambler
+Seven ................................ Knight Statue skin (based on Lunaran model)
+                                       Vore with idle animation (based on ID1 model)
+                                       Original fixes for nail positioning and MP2 issues
+Simon "sock" O'Callaghan ............. "RetroJam1"/"Arcane Dimensions" models
+                                       Quake runes with fixed UV mapping
+talisa ............................... Dwere's reworked classic weapons skins for MP1/MP2
+                                       Progs.dat compilation of Seven's SMC fixes
+
+
+----------------------------------------------------------------------------------------------------------------------
+L I N K S
+----------------------------------------------------------------------------------------------------------------------
+
+- Capnbubs model replacements:
+  http://quakeone.com/forums/quake-mod-releases/works-progress/9573-authentic-model-improvement.html        
+
+- Dwere's "Guns of Okayishness":
+  http://www.celephais.net/board/view_thread.php?id=60335&start=1438
+
+- Knight model replacement:
+  http://www.celephais.net/board/view_thread.php?id=61177
+
+
+----------------------------------------------------------------------------------------------------------------------
+I N C L U D E D
+----------------------------------------------------------------------------------------------------------------------
+
+New levels : None
+Sounds : No
+Music : No
+Graphics : Yes
+Demos : No
+Other : No
+Other files required : None
+
+Game : Quake
+Single Player : Yes
+Cooperative 2-4 Player : Yes
+Deathmatch 2-4 Player : Yes
+Other game styles : Yes
+Difficulty Settings : No
+
+Base : Modified
+Build Time : 12+ hours
+Editor(s) used : BSP compiling ......... TyrUtils 0.15.4 (qbsp.exe/light.exe)
+                 Texture editing ....... TremorBroom
+                 Model realignment ..... QuArK 6.6, QME 3.1
+                 Pak editing ........... PakScape
+Known Bugs : (Hopefully) none
+
+
+----------------------------------------------------------------------------------------------------------------------
+C O P Y R I G H T  /  P E R M I S S I O N S
+----------------------------------------------------------------------------------------------------------------------
+
+Authors MAY use the contents of this file as a base for modification or
+reuse. Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications. You may distribute this file in any electronic format (BBS,
+CD, USB flash media etc) as long as you include this file intact. I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+
+----------------------------------------------------------------------------------------------------------------------
+C H A N G E L O G
+----------------------------------------------------------------------------------------------------------------------
+
+Version 1.72 (Mar 28, 2018)
+---------------------------
+> Update: [ID1] [ROG] Fix for missing blood trail flag for Lunaran's knight head (h_knight.mdl)
+
+
+Version 1.71 (Mar 26, 2018)
+---------------------------
+> Update: [ID1] Quad Damage by Chillo
+> Update: [ID1] Grunt head gibs by sock (from "Arcane Dimensions")
+
+
+Version 1.7 (Mar 19, 2018)
+--------------------------
+> Added:  [ID1] Chthon by Chillo
+> Added:  [ID1] Enforcer by Chillo
+> Added:  [ID1] Grunt head gibs by Chillo
+> Added:  [ID1] [ROG] (Multi-Grenade) Ogre by Chillo (head gibs by sock from "Arcane Dimensions")
+> Added:  [ID1] Scrag by Chillo
+> Added:  [ID1] Teleport Sphere by Chillo
+> Added:  [ID1] Vore (original ID1 model) with idle animation by Seven
+> Added:  [ID1] Zombie by Chillo (skin edits by NightFright)
+> Update: [ID1] Bloodshot's Fiend model with original ID1 skin (no glowing eyes) 
+
+
+Version 1.63 (Dec 8, 2016)
+-------------------------
+> Update: [ID1] Proper rescaling/floor alignment for Fiend head gibs
+
+
+Version 1.62 (Dec 7, 2016)
+-------------------------
+> Added:  [ID1] Fiend head gibs by Bloodshot (edited by NightFright)
+
+
+Version 1.61 (Dec 2, 2016)
+-------------------------
+> Added:  [ID1] Fiend by Bloodshot
+> Update: [ID1] Grenade Launcher pickup by OriOn
+> Update: [HIP] Prox Mine Launcher pickup by OriOn
+
+
+Version 1.52 (Oct 11, 2016)
+--------------------------
+> Update: [HIP] [ROG] Reworked classic weapons by Dwere/talisa (based on "Guns of Okayishness" v2.0)
+
+
+Version 1.51 (Oct 11, 2016)
+--------------------------
+> Added: [ID1] Runes with fixed UV mapping by Sock
+
+
+Version 1.5 (Oct 10, 2016)
+--------------------------
+> Added:  [ALL] Progs.dat with nail position fix
+> Added:  [ROG] Additional progs.dat fixes: Plasmagun firing animation & projectile position fix,
+                R1M7 elevator fix
+> Update: [ID1] Upgrade from reworked classic weapons by Dwere v1.0 to v2.0 (from Oct 10, 2016)
+                featuring following changes:
+                   - Miniature muzzle flashes won't show through the barrels when the view
+                     weapon is translucent
+                   - Comparatively insignificant tweaks
+                   - Brought back the nozzles removed from the NG barrel tips (view model)
+                   - Fixed fullbright seams on the SNG view model
+                   - Fixed subtle flickering dark seams on SNG and RL (view models)
+                   - Fixed a less subtle fullbright seam on the LG
+
+
+Version 1.4 (Oct 10, 2016)
+--------------------------
+> Added:  [ID1] Reworked classic weapons by Dwere
+> Added:  [HIP] [ROG] Reworked classic weapons by Dwere (original)/talisa (edit)
+> Update: [ID1] grenade.mdl, s_spike.mdl and spike.mdl replaced with Dwere's models
+
+
+Version 1.3 (Mar 2, 2016)
+-------------------------
+> Added: [ID1] Ammo/health boxes by ijed (from "Rubicon Rumble Pack", with corrected lighting/alignments)
+> Added: [ID1] Items/flames/projectiles/zombie gibs by sock (from "RetroJam1" and "Arcane Dimensions")
+> Added: [ROG] Lava nail/multi-rocket boxes by NightFright (based on nail/rocket ammo models by ijed) 
+
+
+Version 1.21 (Feb 16, 2016)
+---------------------------
+> Fixed: [ID1] pakz.pak now has proper contents
+
+
+Version 1.2 (Feb 13, 2016)
+--------------------------
+> Added: [ID1] Shambler
+
+
+Version 1.1 (May 10, 2015)
+--------------------------
+> Added: [ROG] Knight Statue
+
+
+Version 1.0 (Jan 15, 2015)
+--------------------------
+> Initial release
