@@ -2,9 +2,9 @@
 Advanced engine needed : Any (tested on Mark V)
 Primary purpose : Singleplayer/Multiplayer
 ======================================================================================================================
-Title : Authentic Model Improvement Collection (v1.72)
-Filename : AUTH_MDL172.ZIP
-Release date : March 28, 2018
+Title : Authentic Model Improvement Collection (v1.8 Pre-Release #2)
+Filename : AUTH_MDL18-PR2.ZIP
+Release date : Dec 3, 2019
 Author : NightFright
 
 
@@ -17,16 +17,18 @@ This includes "classic style" models for:
 
 Visually improved PC/NPC models:
    - Chthon ..................................................... boss.mdl
+   - Death Knight ............................................... hknight.mdl
    - Enforcer ................................................... enforcer.mdl, h_mega.mdl
    - Fiend ...................................................... demon.mdl, h_demon.mdl
-   - Knight + Knight Statue (DoE) ............................... knight.mdl, h_knight.mdl
    - Grunt ...................................................... soldier.mdl, h_guard.mdl
+   - Knight + Knight Statue (DoE) ............................... knight.mdl, h_knight.mdl
    - Ogre + Multi-Grenade Ogre (DoE) ............................ ogre.mdl, h_ogre.mdl
    - Ranger ..................................................... player.mdl
    - Rottweiler ................................................. dog.mdl, h_dog.mdl
    - Scrag ...................................................... wizard.mdl
    - Shambler ................................................... shambler.mdl, h_shams.mdl
    - Teleporter Sphere .......................................... teleport.mdl
+   - Vore ....................................................... shalrath.mdl, h_shal.mdl
    - Zombie ..................................................... zombie.mdl, h_zombie.mdl
 
 Improved classic weapons (ID1/HIPNOTIC/ROGUE):
@@ -70,7 +72,6 @@ Fixed ID1 models:
    - Rotfish: Fix for head shrinking bug after death ............ fish.mdl
    - Runes: Fixed UV mapping .................................... end1.mdl, end2.mdl, 
                                                                   end3.mdl, end4.mdl
-   - Vore: Idle animation added ................................. shalrath.mdl
 
 Code fixes (progs.dat):
    - Nail position fixes for Nailgun/Super Nailgun/Lava Nailgun/Super Lava Nailgun
@@ -79,12 +80,11 @@ Code fixes (progs.dat):
 ----------------------------------------------------------------------------------------------------------------------
 
 ID1 bestiary model remakes still missing (possibly coming in future versions):
-   - Death Knight (hknight.mdl, h_hellkn.mdl)
+   - Death Knight head gibs (h_hellkn.mdl)
    - Rotfish (fish.mdl)
    - Scrag head gibs (h_wizard.mdl)
    - Shub-Niggurath (oldone.mdl)
    - Spawn (tarbaby.mdl)
-   - Vore (shalrath.mdl, h_shal.mdl)
 
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -107,16 +107,19 @@ capnbubs ............................. Player
                                        Grunt
                                        Rottweiler
 Chillo ............................... Chthon
+                                       Death Knight
                                        Enforcer
+				       Knight (ID1)
                                        Ogre
                                        Quad Damage
                                        Scrag
                                        Teleport Sphere
+                                       Vore
                                        Zombie
 Dwere ................................ Reworked classic weapons (aka "Guns of Okayishness")
 Louis "ijed" Manning ................. Rotfish fix for ID1 model
                                        "Rubicon Rumble Pack" ammo/health boxes
-Lunaran .............................. Knight
+Lunaran .............................. Knight (ROGUE)
 NightFright .......................... RRP model realignments
                                        Backpack skin edits
                                        Fiend head gibs rescaling
@@ -127,7 +130,6 @@ OriOn ................................ Grenade Launcher pickup
 osjclatchford ........................ Ogre skin (Chillo) edits
 Renier "Skiffy" Banninga ............. Shambler
 Seven ................................ Knight Statue skin (based on Lunaran model)
-                                       Vore with idle animation (based on ID1 model)
                                        Original fixes for nail positioning and MP2 issues
 Simon "sock" O'Callaghan ............. "RetroJam1"/"Arcane Dimensions" models
                                        Quake runes with fixed UV mapping
@@ -195,6 +197,18 @@ content in this file to allow further distribution.
 ----------------------------------------------------------------------------------------------------------------------
 C H A N G E L O G
 ----------------------------------------------------------------------------------------------------------------------
+
+Version 1.8 PR2 (Dec 3, 2019)
+-----------------------------
+> Update: [ID1] Knight + head gibs by Chillo (Rogue version still using Lunaran's model)
+
+
+Version 1.8 PR1 (Sep 2, 2019)
+-----------------------------
+> Added:  [ID1] Death Knight by Chillo
+> Added:  [ID1] Vore by Chillo
+> Update: [ID1] Enforcer + head gibs by Chillo
+
 
 Version 1.72 (Mar 28, 2018)
 ---------------------------
