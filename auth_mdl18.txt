@@ -2,9 +2,9 @@
 Advanced engine needed : Any (tested on Mark V)
 Primary purpose : Singleplayer/Multiplayer
 ======================================================================================================================
-Title : Authentic Model Improvement Collection (v1.8 Pre-Release #2)
-Filename : AUTH_MDL18-PR2.ZIP
-Release date : Dec 3, 2019
+Title : Authentic Model Improvement Collection (v1.8)
+Filename : AUTH_MDL18.ZIP
+Release date : Jan 13, 2019
 Author : NightFright
 
 
@@ -135,6 +135,7 @@ Simon "sock" O'Callaghan ............. "RetroJam1"/"Arcane Dimensions" models
                                        Quake runes with fixed UV mapping
 talisa ............................... Dwere's reworked classic weapons skins for MP1/MP2
                                        Progs.dat compilation of Seven's SMC fixes
+TribalQuake .......................... Edits for Chillo's Vore (h_shal.mdl, shalrath.mdl)
 
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -198,28 +199,21 @@ content in this file to allow further distribution.
 C H A N G E L O G
 ----------------------------------------------------------------------------------------------------------------------
 
-Version 1.8 PR2 (Dec 3, 2019)
------------------------------
-> Update: [ID1] Knight + head gibs by Chillo (Rogue version still using Lunaran's model)
-
-
-Version 1.8 PR1 (Sep 2, 2019)
------------------------------
+Version 1.8 (Jan 13, 2020)
+--------------------------
 > Added:  [ID1] Death Knight by Chillo
-> Added:  [ID1] Vore by Chillo
+> Added:  [ID1] Vore by Chillo (edited by TribalQuake)
 > Update: [ID1] Enforcer + head gibs by Chillo
-
+> Update: [ID1] Knight + head gibs by Chillo (Rogue version still using Lunaran's model)
 
 Version 1.72 (Mar 28, 2018)
 ---------------------------
 > Update: [ID1] [ROG] Fix for missing blood trail flag for Lunaran's knight head (h_knight.mdl)
 
-
 Version 1.71 (Mar 26, 2018)
 ---------------------------
 > Update: [ID1] Quad Damage by Chillo
 > Update: [ID1] Grunt head gibs by sock (from "Arcane Dimensions")
-
 
 Version 1.7 (Mar 19, 2018)
 --------------------------
@@ -233,16 +227,13 @@ Version 1.7 (Mar 19, 2018)
 > Added:  [ID1] Zombie by Chillo (skin edits by NightFright)
 > Update: [ID1] Bloodshot's Fiend model with original ID1 skin (no glowing eyes) 
 
-
 Version 1.63 (Dec 8, 2016)
 -------------------------
 > Update: [ID1] Proper rescaling/floor alignment for Fiend head gibs
 
-
 Version 1.62 (Dec 7, 2016)
 -------------------------
 > Added:  [ID1] Fiend head gibs by Bloodshot (edited by NightFright)
-
 
 Version 1.61 (Dec 2, 2016)
 -------------------------
@@ -250,16 +241,13 @@ Version 1.61 (Dec 2, 2016)
 > Update: [ID1] Grenade Launcher pickup by OriOn
 > Update: [HIP] Prox Mine Launcher pickup by OriOn
 
-
 Version 1.52 (Oct 11, 2016)
 --------------------------
 > Update: [HIP] [ROG] Reworked classic weapons by Dwere/talisa (based on "Guns of Okayishness" v2.0)
 
-
 Version 1.51 (Oct 11, 2016)
 --------------------------
 > Added: [ID1] Runes with fixed UV mapping by Sock
-
 
 Version 1.5 (Oct 10, 2016)
 --------------------------
@@ -276,13 +264,11 @@ Version 1.5 (Oct 10, 2016)
                    - Fixed subtle flickering dark seams on SNG and RL (view models)
                    - Fixed a less subtle fullbright seam on the LG
 
-
 Version 1.4 (Oct 10, 2016)
 --------------------------
 > Added:  [ID1] Reworked classic weapons by Dwere
 > Added:  [HIP] [ROG] Reworked classic weapons by Dwere (original)/talisa (edit)
 > Update: [ID1] grenade.mdl, s_spike.mdl and spike.mdl replaced with Dwere's models
-
 
 Version 1.3 (Mar 2, 2016)
 -------------------------
@@ -290,21 +276,17 @@ Version 1.3 (Mar 2, 2016)
 > Added: [ID1] Items/flames/projectiles/zombie gibs by sock (from "RetroJam1" and "Arcane Dimensions")
 > Added: [ROG] Lava nail/multi-rocket boxes by NightFright (based on nail/rocket ammo models by ijed) 
 
-
 Version 1.21 (Feb 16, 2016)
 ---------------------------
 > Fixed: [ID1] pakz.pak now has proper contents
-
 
 Version 1.2 (Feb 13, 2016)
 --------------------------
 > Added: [ID1] Shambler
 
-
 Version 1.1 (May 10, 2015)
 --------------------------
 > Added: [ROG] Knight Statue
-
 
 Version 1.0 (Jan 15, 2015)
 --------------------------
