@@ -125,8 +125,7 @@ NightFright .......................... RRP model realignments
                                        Fiend head gibs rescaling
                                        DoE ammo box skins
                                        Zombie skin (Chillo) edits
-OriOn ................................ Grenade Launcher pickup
-                                       Prox Mine Launcher pickup
+OriOn ................................ Prox Mine Launcher pickup
 osjclatchford ........................ Death Knight head gibs (sock) skin edits
 				       Enforcer (Chillo) skin edits
 				       Ogre (Chillo) skin edits
@@ -141,7 +140,7 @@ Simon "sock" O'Callaghan ............. "RetroJam1"/"Arcane Dimensions" models
                                        Quake runes with fixed UV mapping
 talisa ............................... Dwere's reworked classic weapons skins for MP1/MP2
                                        Progs.dat compilation of Seven's SMC fixes
-TribalQuake .......................... Edits for Chillo's Vore (h_shal.mdl, shalrath.mdl)
+TribalQuake .......................... Vore (Chillo) edits
 
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -209,7 +208,7 @@ Version 1.9 (Mar 17, 2020)
 --------------------------
 > Added:  [ID1] Death Knight head gibs reskin based on sock's model by osjclatchford
 > Update: [ID1] Enforcer (+ head gibs) reskin based on Chillo's model by osjclatchford
-> Update: [ID1] Ogre (+ head gibs) reskin based on Chillo's model by osjclatchford
+> Update: [ID1/ROG] Ogre (+ head gibs) reskin based on Chillo's model by osjclatchford
 > Update: [ID1] Player head gibs reskin based on sock's h_guard model by osjclatchford
 > Update: [ID1] Grenade Launcher (+ pickup) reskin based on Plague's & sock's models & by osjclatchford
 > Update: [ID1] Rocket Launcher (+ pickup) reskin based on Plague's & sock's models by osjclatchford
