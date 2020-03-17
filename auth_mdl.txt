@@ -2,9 +2,9 @@
 Advanced engine needed : Any (tested on Mark V)
 Primary purpose : Singleplayer/Multiplayer
 ======================================================================================================================
-Title : Authentic Model Improvement Collection (v1.8)
-Filename : AUTH_MDL18.ZIP
-Release date : Jan 13, 2019
+Title : Authentic Model Improvement Collection (v1.9)
+Filename : AUTH_MDL19.ZIP
+Release date : Mar 17, 2020
 Author : NightFright
 
 
@@ -80,7 +80,6 @@ Code fixes (progs.dat):
 ----------------------------------------------------------------------------------------------------------------------
 
 ID1 bestiary model remakes still missing (possibly coming in future versions):
-   - Death Knight head gibs (h_hellkn.mdl)
    - Rotfish (fish.mdl)
    - Scrag head gibs (h_wizard.mdl)
    - Shub-Niggurath (oldone.mdl)
@@ -103,6 +102,7 @@ C R E D I T S
 ---------------------------------------------------------------------------------------------------------------------- 
    
 Bloodshot ............................ Fiend
+				       Grenade
 capnbubs ............................. Player
                                        Grunt
                                        Rottweiler
@@ -127,7 +127,13 @@ NightFright .......................... RRP model realignments
                                        Zombie skin (Chillo) edits
 OriOn ................................ Grenade Launcher pickup
                                        Prox Mine Launcher pickup
-osjclatchford ........................ Ogre skin (Chillo) edits
+osjclatchford ........................ Death Knight head gibs (sock) skin edits
+				       Enforcer (Chillo) skin edits
+				       Ogre (Chillo) skin edits
+				       Player head gibs (sock) skin edits
+				       Grenade Launcher (Plague/Arcane Dimensions) skin edits
+				       Rocket Launcher (Plague/Arcane Dimensions) skin edits
+				       Grenade (Bloodshot) skin edits
 Renier "Skiffy" Banninga ............. Shambler
 Seven ................................ Knight Statue skin (based on Lunaran model)
                                        Original fixes for nail positioning and MP2 issues
@@ -198,6 +204,16 @@ content in this file to allow further distribution.
 ----------------------------------------------------------------------------------------------------------------------
 C H A N G E L O G
 ----------------------------------------------------------------------------------------------------------------------
+
+Version 1.9 (Mar 17, 2020)
+--------------------------
+> Added:  [ID1] Death Knight head gibs reskin based on sock's model by osjclatchford
+> Update: [ID1] Enforcer (+ head gibs) reskin based on Chillo's model by osjclatchford
+> Update: [ID1] Ogre (+ head gibs) reskin based on Chillo's model by osjclatchford
+> Update: [ID1] Player head gibs reskin based on sock's h_guard model by osjclatchford
+> Update: [ID1] Grenade Launcher (+ pickup) reskin based on Plague's & sock's models & by osjclatchford
+> Update: [ID1] Rocket Launcher (+ pickup) reskin based on Plague's & sock's models by osjclatchford
+> Update: [ID1] Grenade reskin based on Bloodshot's model by osjclatchford
 
 Version 1.8 (Jan 13, 2020)
 --------------------------
