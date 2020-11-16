@@ -2,9 +2,9 @@
 Advanced engine needed : Any (tested on Mark V)
 Primary purpose : Singleplayer/Multiplayer
 ======================================================================================================================
-Title : Authentic Model Improvement Collection (v1.9)
-Filename : AUTH_MDL19.ZIP
-Release date : Mar 17, 2020
+Title : Authentic Model Improvement Collection (v1.10)
+Filename : AUTH_MDL110.ZIP
+Release date : Nov 16, 2020
 Author : NightFright
 
 
@@ -74,8 +74,7 @@ Fixed ID1 models:
                                                                   end3.mdl, end4.mdl
 
 Code fixes (progs.dat):
-   - Nail position fixes for Nailgun/Super Nailgun/Lava Nailgun/Super Lava Nailgun
-   - For MP2: Plasmagun firing animation & projectile position fix, R1M7 elevator fix
+   - Projectile position fixes for all weapons (ID1/HIPNOTIC/ROGUE)
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -139,7 +138,6 @@ Seven ................................ Knight Statue skin (based on Lunaran mode
 Simon "sock" O'Callaghan ............. "RetroJam1"/"Arcane Dimensions" models
                                        Quake runes with fixed UV mapping
 talisa ............................... Dwere's reworked classic weapons skins for MP1/MP2
-                                       Progs.dat compilation of Seven's SMC fixes
 TribalQuake .......................... Vore (Chillo) edits
 
 
@@ -203,6 +201,11 @@ content in this file to allow further distribution.
 ----------------------------------------------------------------------------------------------------------------------
 C H A N G E L O G
 ----------------------------------------------------------------------------------------------------------------------
+
+Version 1.10 (Nov 11, 2020)
+---------------------------
+> Update: [ALL] Progs.dat refresh (projectile position fixes for ALL weapons, not just nailguns)
+> Update: [ROG] Ooppee's custom Plasmagun code removed from progs.dat (original gun behavior restored)
 
 Version 1.9 (Mar 17, 2020)
 --------------------------
