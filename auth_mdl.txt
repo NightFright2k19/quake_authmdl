@@ -23,7 +23,7 @@ Visually improved PC/NPC models:
    - Grunt ...................................................... soldier.mdl, h_guard.mdl
    - Knight + Knight Statue (DoE) ............................... knight.mdl, h_knight.mdl
    - Ogre + Multi-Grenade Ogre (DoE) ............................ ogre.mdl, h_ogre.mdl
-   - Ranger ..................................................... player.mdl
+   - Ranger ..................................................... player.mdl, h_player.mdl
    - Rottweiler ................................................. dog.mdl, h_dog.mdl
    - Scrag ...................................................... wizard.mdl
    - Shambler ................................................... shambler.mdl, h_shams.mdl
@@ -36,49 +36,43 @@ Improved classic weapons (ID1/HIPNOTIC/ROGUE):
    - Shotgun .................................................... g_shot.mdl, v_shot.mdl
    - Super Shotgun .............................................. v_shot2.mdl
    - Nailgun .................................................... g_nail.mdl, v_nail.mdl
-   - Super Nailgun .............................................. g_nail2.mdl, v_nail2.mdl
+   - Perforator ................................................. g_nail2.mdl, v_nail2.mdl
    - Grenade Launcher ........................................... g_rock.mdl, v_rock.mdl
    - Rocket Launcher ............................................ g_rock2.mdl, v_rock2.mdl
    - Thunderbolt ................................................ g_light.mdl, v_light.mdl
    - Proximity Gun  ............................................. g_prox.mdl, v_prox.mdl
-   - Lava Nailgun + Super Nailgun ............................... v_lava.mdl, v_lava2.mdl
+   - Lava Nailgun + Lava Perforator ............................. v_lava.mdl, v_lava2.mdl
    - Multi Grenade + Rocket Launcher ............................ v_multi.mdl, v_multi2.mdl
    - Plasma Gun ................................................. v_plasma.mdl
-   - Projectiles ................................................ grenade.mdl, s_spike.mdl, 
-                                                                  spike.mdl
+   - Projectiles ................................................ grenade.mdl, s_spike.mdl, spike.mdl
 
 Item/props models added from addons:
-   - Ammo boxes ................................................. b_batt0.bsp, b_batt1.bsp
-                                                                  b_nail0.bsp, b_nail1.bsp
-                                                                  b_rock0.bsp, b_rock1.bsp
-                                                                  b_shell0.bsp, b_shell1.bsp
+   - Ammo boxes ................................................. b_batt0/1.bsp, b_nail0/1.bsp,
+                                                                  b_rock0/1.bsp, b_shell0/1.bsp
    - Armor ...................................................... armor.mdl
    - Backpack ................................................... backpack.mdl
    - Flames ..................................................... flame.mdl, flame2.mdl
    - Gold + Silver Keys ......................................... w_g_key.mdl, w_s_key.mdl
-   - Health boxes ............................................... b_bh10.bsp, b_bh25.bsp, 
-                                                                  b_bh100.bsp
+   - Health boxes ............................................... b_bh10.bsp, b_bh25.bsp, b_bh100.bsp
    - Pentagram................................................... invulner.mdl
-   - Projectiles ................................................ missile.mdl, k_spike.mdl, 
-                                                                  v_spike.mdl, w_spike.mdl         
+   - Projectiles ................................................ missile.mdl, k/v/w_spike.mdl,         
    - Quad Damage ................................................ quaddama.mdl
    - Zombie gibs ................................................ zom_gib.mdl
               
 Items based on addon models:
-   - Lava nail boxes (DoE) ...................................... b_lava0.bsp, b_lava1.bsp
+   - Lava nail boxes (DoE) ...................................... b_lava0/1.bsp
    - Multi-rocket boxes (DoE) ................................... b_mrock0.bsp, b_mrock1.bsp
 
 Fixed ID1 models:
    - Rotfish: Fix for head shrinking bug after death ............ fish.mdl
-   - Runes: Fixed UV mapping .................................... end1.mdl, end2.mdl, 
-                                                                  end3.mdl, end4.mdl
+   - Runes: Fixed UV mapping .................................... end1-4.mdl
 
 Code fixes (progs.dat):
    - Projectile position fixes for all weapons (ID1/HIP/ROG)
 
 ----------------------------------------------------------------------------------------------------------------------
 
-ID1 bestiary model remakes still missing (possibly coming in future versions):
+ID1 bestiary model NOT remade (yet?):
    - Rotfish (fish.mdl)
    - Scrag head gibs (h_wizard.mdl)
    - Shub-Niggurath (oldone.mdl)
@@ -119,12 +113,12 @@ Dwere ................................ Reworked classic weapons (aka "Guns of Ok
 Johnny Law ........................... FrikBot X++ (based on FrikBotC by FrikaC / FrikBot X by Ryan Smith)
 Louis "ijed" Manning ................. Rotfish fix for ID1 model
                                        "Rubicon Rumble Pack" ammo/health boxes
-Lunaran .............................. Knight (ROGUE)
+Lunaran .............................. Knight (ROG)
 Maddes (et al.) ...................... URQP QuakeC fixes
 NightFright .......................... RRP model realignments
                                        Backpack skin edits
-                                       Fiend head gibs rescaling
                                        DoE ammo box skins
+				       URQP QuakeC code adjustments
                                        Zombie skin (Chillo) edits
 OriOn ................................ Prox Mine Launcher pickup
 osjclatchford ........................ Death Knight head gibs (sock) skin edits
