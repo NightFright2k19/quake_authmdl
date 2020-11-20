@@ -1,10 +1,10 @@
 ======================================================================================================================
-Advanced engine needed : Any (tested on Mark V)
+Advanced engine needed : Any (tested on Mark V and Quakespasm-Spiked)
 Primary purpose : Singleplayer/Multiplayer
 ======================================================================================================================
-Title : Authentic Model Improvement Collection (v1.10)
-Filename : AUTH_MDL110.ZIP
-Release date : Nov 16, 2020
+Title : Authentic Model Improvement Collection (v1.11)
+Filename : AUTH_MDL111.ZIP
+Release date : Nov 20, 2020
 Author : NightFright
 
 
@@ -17,7 +17,7 @@ This includes "classic style" models for:
 
 Visually improved PC/NPC models:
    - Chthon ..................................................... boss.mdl
-   - Death Knight ............................................... hknight.mdl
+   - Death Knight ............................................... hknight.mdl, h_hellkn.mdl
    - Enforcer ................................................... enforcer.mdl, h_mega.mdl
    - Fiend ...................................................... demon.mdl, h_demon.mdl
    - Grunt ...................................................... soldier.mdl, h_guard.mdl
@@ -74,7 +74,7 @@ Fixed ID1 models:
                                                                   end3.mdl, end4.mdl
 
 Code fixes (progs.dat):
-   - Projectile position fixes for all weapons (ID1/HIPNOTIC/ROGUE)
+   - Projectile position fixes for all weapons (ID1/HIP/ROG)
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -100,14 +100,14 @@ I N S T A L L A T I O N
 C R E D I T S
 ---------------------------------------------------------------------------------------------------------------------- 
    
-Bloodshot ............................ Fiend
-				       Grenade
+Bloodshot ............................ Grenade
 capnbubs ............................. Player
                                        Grunt
                                        Rottweiler
 Chillo ............................... Chthon
                                        Death Knight
                                        Enforcer
+                                       Fiend
 				       Knight (ID1)
                                        Ogre
                                        Quad Damage
@@ -116,9 +116,11 @@ Chillo ............................... Chthon
                                        Vore
                                        Zombie
 Dwere ................................ Reworked classic weapons (aka "Guns of Okayishness")
+Johnny Law ........................... FrikBot X++ (based on FrikBotC by FrikaC / FrikBot X by Ryan Smith)
 Louis "ijed" Manning ................. Rotfish fix for ID1 model
                                        "Rubicon Rumble Pack" ammo/health boxes
 Lunaran .............................. Knight (ROGUE)
+Maddes (et al.) ...................... URQP QuakeC fixes
 NightFright .......................... RRP model realignments
                                        Backpack skin edits
                                        Fiend head gibs rescaling
@@ -153,6 +155,9 @@ L I N K S
 
 - Knight model replacement:
   http://www.celephais.net/board/view_thread.php?id=61177
+
+- QuakeC Fixes:
+  https://www.quake-info-pool.net/q1/qcfix.htm
 
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -202,9 +207,16 @@ content in this file to allow further distribution.
 C H A N G E L O G
 ----------------------------------------------------------------------------------------------------------------------
 
+Version 1.11 (Nov 20, 2020)
+---------------------------
+> Update: [ALL] Progs.dat refresh #2 (ID1 based on URQP 1.06a QuakeC fixes; HIP/ROG partially fixed),
+                including FrikBot X++ support for ID1
+> Update: [ID1] Death Knight (+ head gibs) by Chillo
+> Update: [ID1] Fiend by Chillo (replaces Bloodshot's version)
+
 Version 1.10 (Nov 11, 2020)
 ---------------------------
-> Update: [ALL] Progs.dat refresh (projectile position fixes for ALL weapons, not just nailguns)
+> Update: [ALL] Progs.dat refresh #1 (projectile position fixes for ALL weapons, not just nailguns)
 > Update: [ROG] Ooppee's custom Plasmagun code removed from progs.dat (original gun behavior restored)
 
 Version 1.9 (Mar 17, 2020)
