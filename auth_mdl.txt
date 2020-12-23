@@ -2,9 +2,9 @@
 Advanced engine needed : Any (tested on Mark V and Quakespasm-Spiked)
 Primary purpose : Singleplayer/Multiplayer
 ======================================================================================================================
-Title : Authentic Model Improvement Collection (rev. #21)
-Filename : AUTH_MDL-R21.ZIP
-Release date : Dec 7, 2020
+Title : Authentic Model Improvement Collection (rev. #22)
+Filename : AUTH_MDL-R22.ZIP
+Release date : Dec 23, 2020
 Author : NightFright
 
 
@@ -25,7 +25,7 @@ Visually improved (N)PC models:
    - Ogre + Multi-Grenade Ogre (DoE) ............................ ogre.mdl, h_ogre.mdl
    - Ranger ..................................................... player.mdl, h_player.mdl
    - Rottweiler ................................................. dog.mdl, h_dog.mdl
-   - Scrag ...................................................... wizard.mdl
+   - Scrag ...................................................... wizard.mdl, h_wizard.mdl
    - Shambler ................................................... shambler.mdl, h_shams.mdl
    - Teleporter Sphere .......................................... teleport.mdl
    - Vore ....................................................... shalrath.mdl, h_shal.mdl
@@ -71,14 +71,21 @@ Fixed ID1 models:
    - Runes: Fixed UV mapping .................................... end1-4.mdl
 
 Code fixes (progs.dat):
-   - Projectile position fixes for all weapons (ID1/HIP/ROG)
+   - Projectile position fixes for all weapons (when looking up/down)
+   - Fish count fix (fishes are no longer counted 2x)
+   - Fish/Electric eel blocking player after death fix (now become non-solid after 3rd death frame)
+   - Megahealth rot fix (when picking up more than one Megahealth, health no longer "rots" faster)
+   - Door unlock sound fix (you can hear the key sound now)
+   - AI update for Ogre/Shambler/Zombie (prevents monsters from sometimes stopping/not starting to walk)
+   - R1M7 elevator fix (prevents crashes when pushing the elevator button in DoE's R1M7)
+   - And more...
 
 ----------------------------------------------------------------------------------------------------------------------
 
 Models NOT remade (yet?):
 
 ID1:
-   - Enemies: Rotfish (fish.mdl), Scrag head gibs (h_wizard.mdl), Spawn (tarbaby.mdl)
+   - Enemies: Rotfish (fish.mdl), Spawn (tarbaby.mdl)
    - Boss: Shub-Niggurath (oldone.mdl)
    - Items: Biosuit (suit.mdl), Ring of Shadows (invisibl.mdl)
 
@@ -90,10 +97,12 @@ HIP:
 
 ROG:
    - Enemies: Electric Eel (eel2.mdl/eelgib.mdl/eelhead.mdl), Hell Spawn (tarbaby.mdl), 
-              Phantom Swordsman (sword.mdl), Wrath (wrath.mdl/wrthgib1-3.mdl)
+              Minotaur statue (hknight.mdl/h_hellkn.mdl), Phantom Swordsman (sword.mdl), 
+              Wrath (wrath.mdl/wrthgib1-3.mdl), Zombie (zombie.mdl + frames #198-207 in animation "cruc_")
    - Bosses: Dragon (dragon.mdl/drggib01-03.mdl), Guardians (morph_az.mdl/morph_eg.mdl/morph_gr.mdl), 
-             Hephaestus (lavaman.mdl), Mummy (mummy.mdl), Overlord (s_wrath.mdl/s_wrtgb1-3.mdl), 
+             Hephaestus (lavaman.mdl), Mummy (mummy.mdl), Overlord (s_wrath.mdl/s_wrtgb1-3.mdl)
    - Items: Anti-Grav Belt (beltup.mdl), Plasma Cell (plasma.mdl), Power Shield (shield.mdl/p_shield.mdl)
+
 
 ----------------------------------------------------------------------------------------------------------------------
 I N S T A L L A T I O N
@@ -116,7 +125,6 @@ capnbubs ............................. Player, Grunt, Rottweiler
 Chillo ............................... Chthon, Death Knight, Enforcer, Fiend, Ogre, Quad Damage, Scrag, 
                                        Teleport Sphere, Vore, Zombie
 Dwere ................................ Reworked classic weapons (aka "Guns of Okayishness")
-Johnny Law ........................... FrikBot X++ (based on FrikBotC by FrikaC / FrikBot X by Ryan Smith)
 Louis "ijed" Manning ................. Rotfish fix for ID1 model, "Rubicon Rumble Pack" ammo/health boxes
 Lunaran .............................. Knight
 Maddes (et al.) ...................... URQP QuakeC fixes
@@ -124,7 +132,7 @@ NightFright .......................... RRP model realignments, ROG ammo box skin
                                        skin edits for backback (Sock), Zombie (Chillo), Lava Perforator (Dwere/osj)
                                        and lava nail (Chillo)                         
 osjclatchford ........................ Various skin edits:
-				       - Head gibs: Death Knight, Player (Sock)
+				       - Head gibs: Death Knight, Player (Sock), Scrag (Tea Monster/Chillo)
 				       - Enemies: Enforcer, Fiend, Ogre, Vore (Chillo)
 				       - Projectiles: Grenade (Bloodshot)
                                        - Weapons: (Lava) Perforator (Dwere)
@@ -138,6 +146,7 @@ Seven ................................ Knight Statue skin (for Lunaran's model)
 Simon "Sock" O'Callaghan ............. "RetroJam1"/"Arcane Dimensions" models
                                        Quake runes with fixed UV mapping
 talisa ............................... Dwere's reworked classic weapons skins for HIP/ROG
+Tea Monster .......................... Scrag head gibs (based on Chillo's model)
 TribalQuake .......................... Vore (Chillo) edits
 
 
@@ -148,17 +157,17 @@ L I N K S
 - Authentic Model Improvements on Github:
   https://github.com/NightFright2k19/authmdl
 
-- Capnbubs model replacements:
+- Model replacements (Capnbubs):
   http://quakeone.com/forums/quake-mod-releases/works-progress/9573
 
-- Dwere's "Guns of Okayishness":
+- "Guns of Okayishness" (Dwere):
   http://www.celephais.net/board/view_thread.php?id=60335&start=1438
   http://quakeone.com/forum/quake-mod-releases/finished-works/12736
 
-- Knight model replacement:
+- Knight model replacement (Lunaran):
   http://www.celephais.net/board/view_thread.php?id=61177
 
-- QuakeC Fixes:
+- QuakeC Fixes (Maddes):
   https://www.quake-info-pool.net/q1/qcfix.htm
 
 
@@ -184,8 +193,9 @@ Difficulty Settings : No
 Base : Modified
 Build Time : 24+ hours
 Editor(s) used : BSP compiling ......... TyrUtils 0.15.4 (qbsp.exe/light.exe)
-                 Texture editing ....... TremorBroom
+                 Texture editing ....... GIMP, TrenchBroom
                  Model realignment ..... QuArK 6.6, QME 3.1
+                 Model tweaking ........ q1mv
                  Pak editing ........... PakScape
 Known Bugs : (Hopefully) none
 
@@ -208,6 +218,16 @@ content in this file to allow further distribution.
 ----------------------------------------------------------------------------------------------------------------------
 C H A N G E L O G
 ----------------------------------------------------------------------------------------------------------------------
+
+Revision #22 (Dec 23, 2020)
+---------------------------
+> Added: [ID1] Scrag head gibs (h_wizard)
+> Update: Progs.dat refresh 
+          - [ID1] Frikbot support removed
+          - [HIP] Nextthink AI update (misc.qc, zombie.qc)
+          - [ROG] Nextthink AI update (dragon.qc, misc.qc, mummy.qc, tarbaby.qc, zombie.qc)
+> Update: [ID1] Super Shotgun (Dwere) reskin by osjclatchford
+> Update: [ID1] [ROG] (Multi-Grenade) Ogre (Chillo) skin adjustments by osjclatchford
 
 Revision #21 (Dec 7, 2020)
 --------------------------
