@@ -30,7 +30,7 @@ Dissolution of Eternity (ROG)
            Zombie ....................................................... zombie.mdl *
            
 - Bosses: Guardians ..................................................... morph_az.mdl / morph_eg.mdl / morph_gr.mdl **
-          Hephaestus .................................................... lavaman.mdl ***
+          Hephaestus .................................................... lavaman.mdl *
           Mummy ......................................................... mummy.mdl *
           Overlord ...................................................... s_wrath.mdl / s_wrtgb1-3.mdl
           
@@ -43,10 +43,9 @@ Notes:
 *   Should be based on existing remakes
        - Player (HIP): with Mjolnir instead of axe 
        - Player (ROG): with additional CTF skin
+       - Hephaestus (ROG): Miniature version of Chthon
        - Minotaur statue (ROG): Death Knight model with additional statue skin (new skin as second skin)
        - Mummy (ROG): Zombie model with new skin
        - Zombie (ROG): with additional frames #198-207 in animation "cruc_"
        
 **  One model for all three guardians, using different skins (Aztec/Egyptian/Greek)
-
-*** Miniature version of Chthon
