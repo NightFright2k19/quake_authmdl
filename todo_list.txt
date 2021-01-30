@@ -21,8 +21,6 @@ Scourge of Armagon (HIP)
 ==========================================================================================================
 Dissolution of Eternity (ROG)
 ==========================================================================================================
-- Player: w/ CTF skin ................................................... player.mdl *
-
 - Enemies: Wrath ........................................................ wrath.mdl / wrthgib1-3.mdl
            Zombie ....................................................... zombie.mdl *
            
@@ -38,8 +36,7 @@ Notes:
 
 *   Should be based on existing remakes
        - Vore (ID1): remove titties + add idle animation (9 frames, idle1-9)
-       - Player (HIP): with Mjolnir instead of axe 
-       - Player (ROG): with additional CTF skin
+       - Player (HIP): with Mjolnir instead of axe
        - Hephaestus (ROG): Chthon (boss.mdl) with new skin and missing animations "shockb" and "shockc"
        - Zombie (ROG): with additional frames #198-207 in animation "cruc_"
        
