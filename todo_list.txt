@@ -23,8 +23,7 @@ Dissolution of Eternity (ROG)
 ==========================================================================================================
 - Player: w/ CTF skin ................................................... player.mdl *
 
-- Enemies: Minotaur statue .............................................. hknight.mdl / h_hellkn.mdl *
-           Wrath ........................................................ wrath.mdl / wrthgib1-3.mdl
+- Enemies: Wrath ........................................................ wrath.mdl / wrthgib1-3.mdl
            Zombie ....................................................... zombie.mdl *
            
 - Bosses: Guardians ..................................................... morph_az.mdl / morph_eg.mdl / morph_gr.mdl **
@@ -43,7 +42,6 @@ Notes:
        - Player (HIP): with Mjolnir instead of axe 
        - Player (ROG): with additional CTF skin
        - Hephaestus (ROG): Miniature version of Chthon
-       - Minotaur statue (ROG): Death Knight model with additional statue skin (new skin as second skin)
        - Mummy (ROG): Zombie model with new skin
        - Zombie (ROG): with additional frames #198-207 in animation "cruc_"
        
