@@ -40,7 +40,7 @@ Notes:
        - Vore (ID1): remove titties + add idle animation (9 frames, idle1-9)
        - Player (HIP): with Mjolnir instead of axe 
        - Player (ROG): with additional CTF skin
-       - Hephaestus (ROG): Miniature version of Chthon
+       - Hephaestus (ROG): Chthon (boss.mdl) with new skin and missing animations "shockb" and "shockc"
        - Zombie (ROG): with additional frames #198-207 in animation "cruc_"
        
 **  One model for all three guardians, using different skins (Aztec/Egyptian/Greek)
