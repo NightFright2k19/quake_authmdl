@@ -1,12 +1,12 @@
 
 TO-DO LIST: QUAKE AUTHENTIC MODEL PACK
-Last update: Jan 27, 2021
+Last update: Jan 30, 2021
 
 
 ==========================================================================================================
 Original Quake (ID1)
 ==========================================================================================================
-- Vore: remove titties from existing replacement + add idle animation (9 frames, idle1-idle9)
+- Vore ................................................................. shalrath.mdl *
 
 ==========================================================================================================
 Scourge of Armagon (HIP)
@@ -17,8 +17,6 @@ Scourge of Armagon (HIP)
            Gremlin ..................................................... grem.mdl / h_grem.mdl
            
 - Boss: Armagon ........................................................ armabody.mdl / armalegs.mdl
-
-- Items: Empathy Shield ................................................ empathy.mdl
 
 ==========================================================================================================
 Dissolution of Eternity (ROG)
@@ -41,6 +39,7 @@ Dissolution of Eternity (ROG)
 Notes:
 
 *   Should be based on existing remakes
+       - Vore (ID1): remove titties + add idle animation (9 frames, idle1-9)
        - Player (HIP): with Mjolnir instead of axe 
        - Player (ROG): with additional CTF skin
        - Hephaestus (ROG): Miniature version of Chthon
