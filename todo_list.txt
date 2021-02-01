@@ -1,6 +1,6 @@
 
 TO-DO LIST: QUAKE AUTHENTIC MODEL PACK
-Last update: Jan 30, 2021
+Last update: Feb 1, 2021
 
 
 ==========================================================================================================
@@ -35,7 +35,7 @@ Dissolution of Eternity (ROG)
 Notes:
 
 *   Should be based on existing remakes
-       - Vore (ID1): remove titties + add idle animation (9 frames, idle1-9)
+       - Vore (ID1): add idle animation (9 frames, idle1-9)
        - Player (HIP): with Mjolnir instead of axe
        - Hephaestus (ROG): Chthon (boss.mdl) with new skin and missing animations "shockb" and "shockc"
        - Zombie (ROG): with additional frames #198-207 in animation "cruc_"
