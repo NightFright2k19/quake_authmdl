@@ -2,9 +2,9 @@
 Advanced engine needed : Any (tested on Mark V and Quakespasm-Spiked)
 Primary purpose : Singleplayer/Multiplayer
 ======================================================================================================================
-Title : Authentic Model Improvement Collection (rev. #22)
-Filename : AUTH_MDL-R22.ZIP
-Release date : Dec 23, 2020
+Title : Authentic Model Improvement Collection (rev. #23)
+Filename : AUTH_MDL-R23.ZIP
+Release date : Feb 4, 2021
 Author : NightFright
 
 
@@ -12,68 +12,108 @@ Author : NightFright
 A B O U T
 ----------------------------------------------------------------------------------------------------------------------
 
-Collection of all improved/fixed ID1 models which are currently available. 
-This includes "classic style" models for:
+Collection of all improved/fixed models which are currently available:
 
-Visually improved (N)PC models:
+I. Original Quake (ID1)
+
+(N)PCs:
    - Chthon ..................................................... boss.mdl
    - Death Knight ............................................... hknight.mdl, h_hellkn.mdl
    - Enforcer ................................................... enforcer.mdl, h_mega.mdl
    - Fiend ...................................................... demon.mdl, h_demon.mdl
    - Grunt ...................................................... soldier.mdl, h_guard.mdl
-   - Knight + Knight Statue (DoE) ............................... knight.mdl, h_knight.mdl
-   - Ogre + Multi-Grenade Ogre (DoE) ............................ ogre.mdl, h_ogre.mdl
+   - Knight ..................................................... knight.mdl, h_knight.mdl
+   - Ogre ....................................................... ogre.mdl, h_ogre.mdl
    - Ranger ..................................................... player.mdl, h_player.mdl
+   - Rotfish (head shrinking bug after death fixed) ............. fish.mdl
    - Rottweiler ................................................. dog.mdl, h_dog.mdl
    - Scrag ...................................................... wizard.mdl, h_wizard.mdl
    - Shambler ................................................... shambler.mdl, h_shams.mdl
-   - Teleporter Sphere .......................................... teleport.mdl
+   - Shub-Niggurath ............................................. oldone.mdl
    - Vore ....................................................... shalrath.mdl, h_shal.mdl
    - Zombie ..................................................... zombie.mdl, h_zombie.mdl
 
-Improved classic weapons (ID1):
+Weapons:
    - Axe ........................................................ v_axe.mdl
-   - Shotgun .................................................... g_shot.mdl, v_shot.mdl
-   - Super Shotgun .............................................. v_shot2.mdl
+   - Shotgun .................................................... v_shot.mdl
+   - Super Shotgun .............................................. g_shot.mdl, v_shot2.mdl
    - Nailgun .................................................... g_nail.mdl, v_nail.mdl
    - Perforator ................................................. g_nail2.mdl, v_nail2.mdl
    - Grenade Launcher ........................................... g_rock.mdl, v_rock.mdl
    - Rocket Launcher ............................................ g_rock2.mdl, v_rock2.mdl
    - Thunderbolt ................................................ g_light.mdl, v_light.mdl
-   - Projectiles ................................................ grenade.mdl, s_spike.mdl, spike.mdl
 
-Improved classic weapons (HIP/ROG):
-   - Proximity Gun .............................................. g_prox.mdl, v_prox.mdl
-   - Lava Nailgun + Lava Perforator ............................. v_lava.mdl, v_lava2.mdl
-   - Multi Grenade + Rocket Launcher ............................ v_multi.mdl, v_multi2.mdl
-   - Plasma Gun ................................................. v_plasma.mdl
-   - Lava nails ................................................. lspike.mdl
-
-Item/props models added from addons:
+Items:
    - Ammo boxes ................................................. b_batt0/1.bsp, b_nail0/1.bsp,
                                                                   b_rock0/1.bsp, b_shell0/1.bsp
    - Armor ...................................................... armor.mdl
    - Backpack ................................................... backpack.mdl
-   - Flames ..................................................... flame.mdl, flame2.mdl
-   - Gold + Silver Keys ......................................... w_g_key.mdl, w_s_key.mdl
+   - Biosuit .................................................... suit.mdl
    - Health boxes ............................................... b_bh10.bsp, b_bh25.bsp, b_bh100.bsp
-   - Pentagram................................................... invulner.mdl
-   - Projectiles ................................................ missile.mdl, k/v/w_spike.mdl     
+   - Keys ....................................................... b_g_key.mdl, b_s_key.mdl, 
+                                                                  w_g_key.mdl, w_s_key.mdl
+   - Pentagram................................................... invulner.mdl 
    - Quad Damage ................................................ quaddama.mdl
+   - Ring of Shadows ............................................ invisibl.mdl
+   - Runes (UV mapping fixed) ................................... end1-4.mdl
+
+Props/projectiles:
+   - Exploding boxes ............................................ b_explop.bsp, b_exbox2.bsp
+   - Eyes ....................................................... eyes.mdl
+   - Flames ..................................................... flame.mdl, flame2.mdl
+   - Gibs ....................................................... gib1.mdl, gib2.mdl, gib3.mdl
+   - Lava ball .................................................. lavaball.mdl
+   - Projectiles ................................................ grenade.mdl, missile.mdl,
+								  k/s/v/w_spike.mdl, spike.mdl
+   - Teleporter sphere .......................................... teleport.mdl
+   - Torch/Flame ................................................ flame.mdl, flame2.mdl
    - Zombie gibs ................................................ zom_gib.mdl
+
+
+II. Scourge of Armagon (HIP)
+
+Weapons:
+   - Proximity Gun .............................................. g_prox.mdl, v_prox.mdl
+
+Items:
+   - Empathy Shield ............................................. empathy.mdl
+   - Horn of Conjuring .......................................... horn.mdl
+   - Wetsuit .................................................... wetsuit.mdl
+
+Projectiles:
+   - Lava rock .................................................. lavarock.mdl
+   - Proximity bomb ............................................. proxbomb.mdl
+
+
+III. Dissolution of Eternity (ROG)
+
+(N)PCs:
+   - Knight Statue .............................................. knight.mdl, h_knight.mdl
+   - Minotaur Statue ............................................ hknight.mdl, h_hellkn.mdl
+   - Multi-Grenade Ogre ......................................... ogre.mdl, h_ogre.mdl
+   - Mummy ...................................................... mummy.mdl
+   - Ranger (+ CTF skin) ........................................ player.mdl
+
+Weapons:
+   - Lava Nailgun + Perforator .................................. v_lava.mdl, v_lava2.mdl
+   - Multi Grenade + Rocket Launcher ............................ v_multi.mdl, v_multi2.mdl
+   - Plasma Gun ................................................. v_plasma.mdl
+
+Items:
+   - Anti-Grav Belt ............................................. beltup.mdl
+   - Lava nail boxes ............................................ b_lava0/1.bsp
+   - Multi-rocket boxes ......................................... b_mrock0.bsp, b_mrock1.bsp
+
+Projectiles:
+   - Fireball ................................................... fireball.mdl
+   - Lava nails ................................................. lspike.mdl
               
-Items based on addon models:
-   - Lava nail boxes (ROG) ...................................... b_lava0/1.bsp
-   - Multi-rocket boxes (ROG) ................................... b_mrock0.bsp, b_mrock1.bsp
 
-Fixed ID1 models:
-   - Rotfish: Fix for head shrinking bug after death ............ fish.mdl
-   - Runes: Fixed UV mapping .................................... end1-4.mdl
+IV. Code fixes (progs.dat)
 
-Code fixes (progs.dat):
    - Projectile position fixes for all weapons (when looking up/down)
    - Fish count fix (fishes are no longer counted 2x)
-   - Fish/Electric eel blocking player after death fix (now become non-solid after 3rd death frame)
+   - Fish/Electric Eel blocking player after death fix (now become non-solid after 3rd death frame)
    - Megahealth rot fix (when picking up more than one Megahealth, health no longer "rots" faster)
    - Door unlock sound fix (you can hear the key sound now)
    - AI update for Ogre/Shambler/Zombie (prevents monsters from sometimes stopping/not starting to walk)
@@ -82,26 +122,18 @@ Code fixes (progs.dat):
 
 ----------------------------------------------------------------------------------------------------------------------
 
-Models NOT remade (yet?):
+Still planned for future releases:
 
-ID1:
-   - Enemies: Rotfish (fish.mdl), Spawn (tarbaby.mdl)
-   - Boss: Shub-Niggurath (oldone.mdl)
-   - Items: Biosuit (suit.mdl), Ring of Shadows (invisibl.mdl)
-
-HIP:
-   - Enemies: Centroid (scor.mdl), Gremlin (grem.mdl/h_grem.mdl), Spike Mine (spikmine.mdl)
+Scourge of Armagon (HIP):
+   - Player: w/ Mjolnir (playham.mdl)
+   - Enemies: Centroid (scor.mdl), Gremlin (grem.mdl/h_grem.mdl)
    - Boss: Armagon (armabody.mdl/armalegs.mdl)
-   - Weapons: Laser Cannon (g_/v_laserg.mdl), Mjolnir (g_/v_hammer.mdl)
-   - Items: Empathy Shield (empathy.mdl), Horn of Conjuring (horn.mdl), Wetsuit (wetsuit.mdl)
 
-ROG:
-   - Enemies: Electric Eel (eel2.mdl/eelgib.mdl/eelhead.mdl), Hell Spawn (tarbaby.mdl), 
-              Minotaur statue (hknight.mdl/h_hellkn.mdl), Phantom Swordsman (sword.mdl), 
-              Wrath (wrath.mdl/wrthgib1-3.mdl), Zombie (zombie.mdl + frames #198-207 in animation "cruc_")
-   - Bosses: Dragon (dragon.mdl/drggib01-03.mdl), Guardians (morph_az.mdl/morph_eg.mdl/morph_gr.mdl), 
-             Hephaestus (lavaman.mdl), Mummy (mummy.mdl), Overlord (s_wrath.mdl/s_wrtgb1-3.mdl)
-   - Items: Anti-Grav Belt (beltup.mdl), Plasma Cell (plasma.mdl), Power Shield (shield.mdl/p_shield.mdl)
+Dissolution of Eternity (ROG):
+   - Enemies: Wrath (wrath.mdl/wrthgib1-3.mdl), Zombie (zombie.mdl + frames #198-207 in animation "cruc_")
+   - Bosses: Guardians (morph_az.mdl/morph_eg.mdl/morph_gr.mdl), Hephaestus (lavaman.mdl),
+             Overlord (s_wrath.mdl/s_wrtgb1-3.mdl)
+   - Items: Plasma Cell (b_plas0.bsp/b_plas1.bsp)
 
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -120,25 +152,30 @@ C R E D I T S
 ---------------------------------------------------------------------------------------------------------------------- 
 
 Barnaby .............................. Animated shotgun pump   
-Bloodshot ............................ Grenade
+Bloodshot ............................ Exploding boxes, Grenade
 capnbubs ............................. Player, Grunt, Rottweiler
 Chillo ............................... Chthon, Death Knight, Enforcer, Fiend, Ogre, Quad Damage, Scrag, 
-                                       Teleport Sphere, Vore, Zombie
+                                       Teleport Sphere, Torch/Flame, Vore, Zombie
 Dwere ................................ Reworked classic weapons (aka "Guns of Okayishness")
 Louis "ijed" Manning ................. Rotfish fix for ID1 model, "Rubicon Rumble Pack" ammo/health boxes
 Lunaran .............................. Knight
 Maddes (et al.) ...................... URQP QuakeC fixes
 NightFright .......................... RRP model realignments, ROG ammo box skins, URQP QuakeC code adjustments, 
-                                       skin edits for backback (Sock), Zombie (Chillo), Lava Perforator (Dwere/osj)
-                                       and lava nail (Chillo)                         
-osjclatchford ........................ Various skin edits:
+                                       skin edits for backback (Sock), Zombie (Chillo), Lava Perforator (Dwere/osj)                        
+osjclatchford ........................ Eyes, Ring of Shadows, Lava ball
+                                       Various skin edits:
 				       - Head gibs: Death Knight, Player (Sock), Scrag (Tea Monster/Chillo)
-				       - Enemies: Enforcer, Fiend, Ogre, Vore (Chillo)
-				       - Projectiles: Grenade (Bloodshot)
+                                       - Player: CTF skin (capnbubs)
+				       - Enemies: Enforcer, Fiend, Minotaur Statue, Ogre, Vore (Chillo)
+                                       - Bosses: Mummy (Chillo), Shub-Niggurath (Tea Monster)
+                                       - Items: Keycards (Tea Monster)
+				       - Projectiles: Grenade (Bloodshot), Lava nail (Chillo)
+                                       - Props: Torch/Flame (Chillo)
                                        - Weapons: (Lava) Perforator (Dwere)
                                                   Grenade/Rocket Launcher (Plague)
                                                   Proximity Gun (Dwere)
                                                   Multi-Grenade/Multi-Rocket Launcher (Plague)
+Phredreeke ........................... Upscaled skins for Anti-Grav Belt + Empathy Shield
 Plague ............................... Grenade/Rocket Launcher
 Renier "Skiffy" Banninga ............. Shambler
 Seven ................................ Knight Statue skin (for Lunaran's model)
@@ -146,7 +183,9 @@ Seven ................................ Knight Statue skin (for Lunaran's model)
 Simon "Sock" O'Callaghan ............. "RetroJam1"/"Arcane Dimensions" models
                                        Quake runes with fixed UV mapping
 talisa ............................... Dwere's reworked classic weapons skins for HIP/ROG
-Tea Monster .......................... Scrag head gibs (based on Chillo's model)
+Tea Monster .......................... Shub-Niggurath, Scrag head gibs (based on Chillo's model),
+                                       Vore (Chillo model edit), Anti-Grav Belt, Biosuit, 
+                                       Empathy Shield, Horn of Conjuring, Wetsuit, keycards
 TribalQuake .......................... Vore (Chillo) edits
 
 
@@ -155,7 +194,7 @@ L I N K S
 ----------------------------------------------------------------------------------------------------------------------
 
 - Authentic Model Improvements on Github:
-  https://github.com/NightFright2k19/authmdl
+  https://github.com/NightFright2k19/quake_authmdl
 
 - Model replacements (Capnbubs):
   http://quakeone.com/forums/quake-mod-releases/works-progress/9573
@@ -191,7 +230,7 @@ Other game styles : Yes
 Difficulty Settings : No
 
 Base : Modified
-Build Time : 24+ hours
+Build Time : Unknown
 Editor(s) used : BSP compiling ......... TyrUtils 0.15.4 (qbsp.exe/light.exe)
                  Texture editing ....... GIMP, TrenchBroom
                  Model realignment ..... QuArK 6.6, QME 3.1
@@ -218,6 +257,35 @@ content in this file to allow further distribution.
 ----------------------------------------------------------------------------------------------------------------------
 C H A N G E L O G
 ----------------------------------------------------------------------------------------------------------------------
+
+Revision #23 (Feb 4, 2021)
+--------------------------
+> Added: (N)PCs
+         - [ID1] Shub-Niggurath by Tea Monster (skin by osjclatchford)
+         - [ROG] Minotaur Statue by osjclatchford (based on Chillo model)
+         - [ROG] Mummy by osjclatchford (based on Chillo model)
+         - [ROG] Ranger with CTF skin by osjclatchford (based on capnbubs model)
+> Added: Items
+	 - [ID1] Biosuit by Tea Monster
+         - [ID1] Keycards by Tea Monster (skins by osjclatchford)
+         - [ID1] Ring of Shadows by osjclatchford (based on AD model)
+         - [HIP] Empathy Shield by Tea Monster (skin by Phredreeke)
+         - [HIP] Horn of Conjuring by Tea Monster
+         - [HIP] Wetsuit by Tea Monster
+         - [ROG] Anti-Grav Belt by Tea Monster (skin by Phredreeke)
+> Added: Props
+         - [ID1] Eyes by osjclatchford (based on HIP model)
+         - [ID1] Lava ball by osjclatchford (based on AD model)
+         - [ID1] Exploding boxes by Bloodshot (from Quake 1.5)
+	 - [HIP] Lava rock by osjclatchford (based on AD model)
+    	 - [HIP] Proximity bomb by osjclatchford (based on AD model)
+         - [ROG] Fireball by osjclatchford (based on "Malice" model)
+> Update: Props
+	  - [ID1] Gibs by Sock (from AD)
+          - [ID1] Torch/Flame by Chillo (skin edits by osjclatchford)
+> Update: [ID1] Vore breasts removed by Tea Monster/osjclatchford
+	  [ID1] Model size optimizations for Ranger/Grunt head gibs and Vore
+          [ROG] Lava nail by Chillo (skin by osjclatchford)
 
 Revision #22 (Dec 23, 2020)
 ---------------------------
