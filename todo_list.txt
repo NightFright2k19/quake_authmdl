@@ -38,8 +38,8 @@ Dissolution of Eternity (ROG)
 Notes:
 
 *   Should be based on existing remakes
-       - Grenade Launcher (ID1): Missing muzzleflash
-       - Rocket Launcher (ID1): smoothen recoil animation, missing muzzleflash
+       - Grenade Launcher (ID1): missing muzzleflash
+       - Rocket Launcher (ID1): missing muzzleflash
        - Vore (ID1): fix walking cycle (frames 23+24 identical), add idle animation (9 frames, idle1-9)
        - Shub (ID1): tentacle positions in the last 45 frames too far from the first frame
        - Player (HIP): with Mjolnir instead of axe
