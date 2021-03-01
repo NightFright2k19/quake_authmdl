@@ -2,9 +2,9 @@
 Advanced engine needed : Any (tested on Mark V and Quakespasm-Spiked)
 Primary purpose : Singleplayer/Multiplayer
 ======================================================================================================================
-Title : Authentic Model Improvement Collection (rev. #23)
-Filename : AUTH_MDL-R23.ZIP
-Release date : Feb 4, 2021
+Title : Authentic Model Improvement Collection (rev. #24)
+Filename : AUTH_MDL-R24.ZIP
+Release date : Mar 1, 2021
 Author : NightFright
 
 
@@ -52,7 +52,7 @@ Items:
    - Health boxes ............................................... b_bh10.bsp, b_bh25.bsp, b_bh100.bsp
    - Keys ....................................................... b_g_key.mdl, b_s_key.mdl, 
                                                                   w_g_key.mdl, w_s_key.mdl
-   - Pentagram................................................... invulner.mdl 
+   - Pentagram of Protection .................................... invulner.mdl 
    - Quad Damage ................................................ quaddama.mdl
    - Ring of Shadows ............................................ invisibl.mdl
    - Runes (UV mapping fixed) ................................... end1-4.mdl
@@ -158,18 +158,18 @@ Chillo ............................... Chthon, Death Knight, Enforcer, Fiend, Og
                                        Teleport Sphere, Torch/Flame, Vore, Zombie
 Dwere ................................ Reworked classic weapons (aka "Guns of Okayishness")
 Louis "ijed" Manning ................. Rotfish fix for ID1 model, "Rubicon Rumble Pack" ammo/health boxes
-Lunaran .............................. Knight
+Lunaran .............................. Knight, Pentagram, Quad Damage
 Maddes (et al.) ...................... URQP QuakeC fixes
 NightFright .......................... RRP model realignments, ROG ammo box skins, URQP QuakeC code adjustments, 
                                        skin edits for backback (Sock), Zombie (Chillo), Lava Perforator (Dwere/osj)                        
-osjclatchford ........................ Eyes, Ring of Shadows, Lava ball
+osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
                                        Various skin edits:
 				       - Head gibs: Death Knight, Player (Sock), Scrag (Tea Monster/Chillo)
                                        - Player: CTF skin (capnbubs)
 				       - Enemies: Enforcer, Fiend, Minotaur Statue, Ogre, Vore (Chillo)
-                                       - Bosses: Mummy (Chillo), Shub-Niggurath (Tea Monster)
+                                       - Bosses: Chthon (Chillo), Mummy (Chillo), Shub-Niggurath (Tea Monster)
                                        - Items: Keycards (Tea Monster)
-				       - Projectiles: Grenade (Bloodshot), Lava nail (Chillo)
+				       - Projectiles: Grenade (Bloodshot), Lava nail (Dwere)
                                        - Props: Torch/Flame (Chillo)
                                        - Weapons: (Lava) Perforator (Dwere)
                                                   Grenade/Rocket Launcher (Plague)
@@ -258,6 +258,23 @@ content in this file to allow further distribution.
 C H A N G E L O G
 ----------------------------------------------------------------------------------------------------------------------
 
+Revision #24 (Mar 1, 2021)
+--------------------------
+> Update: NPCs
+          - [ID1] Fullbright pixels on Chthon skin removed by osj
+> Update: Weapons
+	  - [ID1] Smoother recoil animation + skin adjustments for Rocket Launcher by osj
+	  - [ROG] Smoother recoil animation + skin adjustments for Multi-Rocket Launcher by osj
+> Update: Items
+          - [ID1] Backpack UV mapping skin fix by Tea Monster
+	  - [ID1] Pentagram of Protection by Lunaran (from "Copper")
+	  - [ID1] Quad Damage by Lunaran (from "Copper")
+          - [ROG] Anti-Grav Belt skin downsized by 50% (to avoid issues in many ports)
+> Update: Props
+          - [ID1] Lava ball by osjclatchford (based on Chillo model)
+          - [HIP] Lava rock by osjclatchford (based on Chillo model)
+    	  - [HIP] Proximity bomb by osjclatchford (based on Chillo model)
+
 Revision #23 (Feb 4, 2021)
 --------------------------
 > Added: (N)PCs
@@ -285,7 +302,7 @@ Revision #23 (Feb 4, 2021)
           - [ID1] Torch/Flame by Chillo (skin edits by osjclatchford)
 > Update: [ID1] Vore breasts removed by Tea Monster/osjclatchford
 	  [ID1] Model size optimizations for Ranger/Grunt head gibs and Vore
-          [ROG] Lava nail by Chillo (skin by osjclatchford)
+          [ROG] Lava nail by Dwere (skin by osjclatchford)
 
 Revision #22 (Dec 23, 2020)
 ---------------------------

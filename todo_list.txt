@@ -32,8 +32,7 @@ Dissolution of Eternity (ROG)
           Hephaestus .................................................... lavaman.mdl *
           Overlord ...................................................... s_wrath.mdl / s_wrtgb1-3.mdl
           
-- Items: Anti-Grav Belt ................................................. beltup.mdl *
-         Plasma Cell .................................................... b_plas0.bsp / b_plas1.bsp
+- Items: Plasma Cell .................................................... b_plas0.bsp / b_plas1.bsp
 
 
 -------------------------------------
@@ -45,7 +44,6 @@ Notes:
        - Vore (ID1): fix walking cycle (frames 23+24 identical), add idle animation (9 frames, idle1-9)
        - Shub (ID1): tentacle positions in the last 45 frames too far from the first frame
        - Player (HIP): with Mjolnir instead of axe
-       - Anti-Grav Belt (ROG): Reduce skin size by 50% (to 352x388)
        - Hephaestus (ROG): Chthon (boss.mdl) with new skin and missing animations "shockb" and "shockc"
        - Zombie (ROG): with additional frames #198-207 in animation "cruc_"
        
