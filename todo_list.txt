@@ -1,13 +1,12 @@
 
 TO-DO LIST: QUAKE AUTHENTIC MODEL PACK
-Last update: Mar 11, 2021
+Last update: Mar 15, 2021
 
 
 ==========================================================================================================
 Original Quake (ID1)
 ==========================================================================================================
 - Chthon ............................................................... boss.mdl *
-- Rocket Launcher ...................................................... v_rock2.mdl *
 - Vore ................................................................. shalrath.mdl *
 - Shub ................................................................. oldone.mdl *
 
@@ -39,7 +38,6 @@ Notes:
 
 *   Should be based on existing remakes
        - Chthon (ID1): increase head size to match original (also for Lavaman)
-       - (Multi) Rocket Launcher (ID1/ROG): missing muzzleflash
        - Vore (ID1): fix walking cycle (frames 23+24 identical), add idle animation (9 frames, idle1-9)
        - Shub (ID1): tentacle positions in the last 45 frames too far from the first frame
        - Player (HIP): with Mjolnir instead of axe
