@@ -2,9 +2,9 @@
 Advanced engine needed : Any (tested on Mark V and Quakespasm-Spiked)
 Primary purpose : Singleplayer/Multiplayer
 ======================================================================================================================
-Title : Authentic Model Improvement Collection (rev. #24)
-Filename : AUTH_MDL-R24.ZIP
-Release date : Mar 1, 2021
+Title : Authentic Model Improvement Collection (rev. #25)
+Filename : AUTH_MDL-R25.ZIP
+Release date : XXX XX, 2021
 Author : NightFright
 
 
@@ -180,6 +180,7 @@ Plague ............................... Grenade/Rocket Launcher
 Renier "Skiffy" Banninga ............. Shambler
 Seven ................................ Knight Statue skin (for Lunaran's model)
                                        Original fixes for nail positioning and MP2 issues
+				       Muzzleflash for Grenade/Rocket Launcher
 Simon "Sock" O'Callaghan ............. "RetroJam1"/"Arcane Dimensions" models
                                        Quake runes with fixed UV mapping
 talisa ............................... Dwere's reworked classic weapons skins for HIP/ROG
@@ -257,6 +258,14 @@ content in this file to allow further distribution.
 ----------------------------------------------------------------------------------------------------------------------
 C H A N G E L O G
 ----------------------------------------------------------------------------------------------------------------------
+
+Revision #25 (XXX XX, 2021)
+---------------------------
+> Update: NPCs
+          - [ID1] Fullbright pixels on Scrag and Zombie headgib removed
+> Update: Weapons
+	  - [ID1] Muzzleflash for Grenade/Rocket Launcher by Seven
+	  - [ROG] Muzzleflash for Multi-Grenade/-Rocket Launcher by Seven
 
 Revision #24 (Mar 1, 2021)
 --------------------------
