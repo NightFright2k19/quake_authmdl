@@ -262,7 +262,9 @@ C H A N G E L O G
 Revision #25 (XXX XX, 2021)
 ---------------------------
 > Update: NPCs
-          - [ID1] Fullbright pixels on Scrag and Zombie headgib removed
+          - [ID1] Scrag (wizard): Fullbright pixels removed
+          - [ID1] Vore (shalrath): Choppy walking animation cycle fixed
+          - [ID1] Zombie headgib (h_zombie): Fullbright pixels removed
 > Update: Weapons
 	  - [ID1] Muzzleflash for Grenade/Rocket Launcher by Seven
 	  - [ROG] Muzzleflash for Multi-Grenade/-Rocket Launcher by Seven

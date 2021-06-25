@@ -1,6 +1,6 @@
 
 TO-DO LIST: QUAKE AUTHENTIC MODEL PACK
-Last update: Mar 15, 2021
+Last update: Jun 25, 2021
 
 
 ==========================================================================================================
@@ -38,7 +38,7 @@ Notes:
 
 *   Should be based on existing remakes
        - Chthon (ID1): increase head size to match original (also for Lavaman)
-       - Vore (ID1): fix walking cycle (frames 23+24 identical), add idle animation (9 frames, idle1-9)
+       - Vore (ID1): fix walking cycle (add frame #34 from rev22 mdl), add idle animation (9 frames, idle1-9)
        - Shub (ID1): tentacle positions in the last 45 frames too far from the first frame
        - Player (HIP): with Mjolnir instead of axe
        - Hephaestus (ROG): Chthon (boss.mdl) with new skin and missing animations "shockb" and "shockc"
