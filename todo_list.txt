@@ -1,12 +1,13 @@
 
 TO-DO LIST: QUAKE AUTHENTIC MODEL PACK
-Last update: Jun 25, 2021
+Last update: Jul 6, 2021
 
 
 ==========================================================================================================
 Original Quake (ID1)
 ==========================================================================================================
 - Chthon ............................................................... boss.mdl *
+- Explosive Boxes ...................................................... b_exbox2.mdl, b_explob.bsp *
 - Vore ................................................................. shalrath.mdl *
 - Shub ................................................................. oldone.mdl *
 
@@ -38,6 +39,7 @@ Notes:
 
 *   Should be based on existing remakes
        - Chthon (ID1): increase head size to match original (also for Lavaman)
+       - Explosive Boxes (ID1): convert renamed MDLs to true BSP files for compatibility
        - Vore (ID1): fix walking cycle (add frame #34 from rev22 mdl), add idle animation (9 frames, idle1-9)
        - Shub (ID1): tentacle positions in the last 45 frames too far from the first frame
        - Player (HIP): with Mjolnir instead of axe
