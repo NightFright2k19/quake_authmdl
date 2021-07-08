@@ -152,7 +152,7 @@ C R E D I T S
 ---------------------------------------------------------------------------------------------------------------------- 
 
 Barnaby .............................. Animated shotgun pump   
-Bloodshot ............................ Exploding boxes, Grenade
+Bloodshot ............................ Grenade
 capnbubs ............................. Player, Grunt, Rottweiler
 Chillo ............................... Chthon, Death Knight, Enforcer, Fiend, Ogre, Quad Damage, Scrag, 
                                        Teleport Sphere, Torch/Flame, Vore, Zombie
@@ -160,8 +160,9 @@ Dwere ................................ Reworked classic weapons (aka "Guns of Ok
 Louis "ijed" Manning ................. Rotfish fix for ID1 model, "Rubicon Rumble Pack" ammo/health boxes
 Lunaran .............................. Knight, Pentagram, Quad Damage
 Maddes (et al.) ...................... URQP QuakeC fixes
-NightFright .......................... RRP model realignments, ROG ammo box skins, URQP QuakeC code adjustments, 
-                                       skin edits for backback (Sock), Zombie (Chillo), Lava Perforator (Dwere/osj)                        
+NightFright .......................... Exploding boxes, RRP model realignments, ROG ammo box skins, 
+                                       URQP QuakeC code adjustments, skin edits for backback (Sock), Zombie (Chillo),
+                                       Lava Perforator (Dwere/osj)                        
 osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
                                        Various skin edits:
 				       - Head gibs: Death Knight, Player (Sock), Scrag (Tea Monster/Chillo)
@@ -268,6 +269,9 @@ Revision #25 (XXX XX, 2021)
 > Update: Weapons
 	  - [ID1] Muzzleflash for Grenade/Rocket Launcher by Seven
 	  - [ROG] Muzzleflash for Multi-Grenade/-Rocket Launcher by Seven
+> Update: Props
+          - [ID1] Replaced Exploding Boxes (renamed MDLs) with true BSPs, based on
+                  RRP brush models (should fix warnings in Copper)
 
 Revision #24 (Mar 1, 2021)
 --------------------------
