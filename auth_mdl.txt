@@ -103,6 +103,7 @@ Items:
    - Anti-Grav Belt ............................................. beltup.mdl
    - Lava nail boxes ............................................ b_lava0/1.bsp
    - Multi-rocket boxes ......................................... b_mrock0.bsp, b_mrock1.bsp
+   - Plasma cells ............................................... b_plas0.bsp, b_plas1.bsp
 
 Projectiles:
    - Fireball ................................................... fireball.mdl
@@ -133,7 +134,6 @@ Dissolution of Eternity (ROG):
    - Enemies: Wrath (wrath.mdl/wrthgib1-3.mdl), Zombie (zombie.mdl + frames #198-207 in animation "cruc_")
    - Bosses: Guardians (morph_az.mdl/morph_eg.mdl/morph_gr.mdl), Hephaestus (lavaman.mdl),
              Overlord (s_wrath.mdl/s_wrtgb1-3.mdl)
-   - Items: Plasma Cell (b_plas0.bsp/b_plas1.bsp)
 
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -160,9 +160,9 @@ Dwere ................................ Reworked classic weapons (aka "Guns of Ok
 Louis "ijed" Manning ................. Rotfish fix for ID1 model, "Rubicon Rumble Pack" ammo/health boxes
 Lunaran .............................. Knight, Pentagram, Quad Damage
 Maddes (et al.) ...................... URQP QuakeC fixes
-NightFright .......................... Exploding boxes, RRP model realignments, ROG ammo box skins, 
-                                       URQP QuakeC code adjustments, skin edits for backback (Sock), Zombie (Chillo),
-                                       Lava Perforator (Dwere/osj)                        
+NightFright .......................... Exploding boxes, RRP model realignments, ROG ammo box skins,
+                                       ROG plasma cells, URQP QuakeC code adjustments, skin edits for
+                                       backback (Sock), Zombie (Chillo), Lava Perforator (Dwere/osj)                        
 osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
                                        Various skin edits:
 				       - Head gibs: Death Knight, Player (Sock), Scrag (Tea Monster/Chillo)
@@ -233,7 +233,7 @@ Difficulty Settings : No
 
 Base : Modified
 Build Time : Unknown
-Editor(s) used : BSP compiling ......... TyrUtils 0.15.4 (qbsp.exe/light.exe)
+Editor(s) used : BSP compiling ......... ericw-tools (qbsp.exe/light.exe)
                  Texture editing ....... GIMP, TrenchBroom
                  Model realignment ..... QuArK 6.6, QME 3.1
                  Model tweaking ........ q1mv
@@ -262,6 +262,8 @@ C H A N G E L O G
 
 Revision #25 (XXX XX, 2021)
 ---------------------------
+> Added: Items
+          - [ROG] Plasma cells (b_plas0/b_plas1) by NightFright
 > Update: NPCs
           - [ID1] Scrag (wizard): Fullbright pixels removed
           - [ID1] Vore (shalrath): Choppy walking animation cycle fixed
