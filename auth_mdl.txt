@@ -160,8 +160,7 @@ Dwere ................................ Reworked classic weapons (aka "Guns of Ok
 Louis "ijed" Manning ................. Rotfish fix for ID1 model, "Rubicon Rumble Pack" ammo/health boxes
 Lunaran .............................. Knight, Pentagram, Quad Damage
 Maddes (et al.) ...................... URQP QuakeC fixes
-NightFright .......................... Exploding boxes, RRP model realignments, ROG ammo box skins,
-                                       ROG plasma cells, URQP QuakeC code adjustments, skin edits for
+NightFright .......................... BSP models (except b_shell0), URQP QuakeC code adjustments, skin edits for
                                        backback (Sock), Zombie (Chillo), Lava Perforator (Dwere/osj)                        
 osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
                                        Various skin edits:
@@ -271,6 +270,9 @@ Revision #25 (XXX XX, 2021)
 > Update: Weapons
 	  - [ID1] Muzzleflash for Grenade/Rocket Launcher by Seven
 	  - [ROG] Muzzleflash for Multi-Grenade/-Rocket Launcher by Seven
+> Update: Items
+          - [ID1] More detailed models for all ammo/health boxes (except for b_shell0) by NightFright
+          - [ROG] More detailed models for all lava nail/multi-rocket ammo boxes by NightFright
 > Update: Props
           - [ID1] Replaced Exploding Boxes (renamed MDLs) with true BSPs, based on
                   RRP brush models (should fix warnings in Copper)
