@@ -160,9 +160,9 @@ Dwere ................................ Reworked classic weapons (aka "Guns of Ok
 Louis "ijed" Manning ................. Rotfish fix for ID1 model, "Rubicon Rumble Pack" ammo/health boxes
 Lunaran .............................. Knight, Pentagram, Quad Damage
 Maddes (et al.) ...................... URQP QuakeC fixes
-NightFright .......................... RRP model realignments, Health box edits, ROG ammo box skins, 
-                                       URQP QuakeC code adjustments, skin edits for backback (Sock), 
-                                       Zombie (Chillo) and Lava Perforator (Dwere/osj)                       
+NightFright .......................... RRP model realignments, ROG plasma cells, ROG ammo box skins, 
+                                       health box edits, URQP QuakeC code adjustments, skin edits for
+                                       backback (Sock), Zombie (Chillo) and Lava Perforator (Dwere/osj)                       
 osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
                                        Various skin edits:
 				       - Head gibs: Death Knight, Player (Sock), Scrag (Tea Monster/Chillo)
