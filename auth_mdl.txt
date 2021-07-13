@@ -114,12 +114,12 @@ IV. Alternate models (rename first before usage)
 
 [ID1]
    - Shotgun without recoil animation ........................... v_shot1.mdl (for: v_shot.mdl)
-   - Small rocket ammo box with large rocket .................... b_rock0-alt.bsp (for: rock0.bsp)
-   - Large rocket ammo box with small rockets ................... b_rock1-alt.bsp (for: rock1.bsp)
+   - Small rocket ammo box with large rocket .................... b_rock0-alt.bsp (for: b_rock0.bsp)
+   - Large rocket ammo box with small rockets ................... b_rock1-alt.bsp (for: b_rock1.bsp)
 
 [ROG]
-   - Small multi-rocket ammo box with large rocket .............. b_mrock0-alt.bsp (for: mrock0.bsp)
-   - Large multi-rocket box with small rockets .................. b_mrock1-alt.bsp (for: mrock1.bsp)   
+   - Small multi-rocket ammo box with large rocket .............. b_mrock0-alt.bsp (for: b_mrock0.bsp)
+   - Large multi-rocket box with small rockets .................. b_mrock1-alt.bsp (for: b_mrock1.bsp)   
 
 
 V. Code fixes (progs.dat)
