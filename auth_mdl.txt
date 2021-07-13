@@ -108,9 +108,21 @@ Items:
 Projectiles:
    - Fireball ................................................... fireball.mdl
    - Lava nails ................................................. lspike.mdl
-              
 
-IV. Code fixes (progs.dat)
+
+IV. Alternate models (rename first before usage)
+
+[ID1]
+   - Shotgun without recoil animation ........................... v_shot1.mdl (for: v_shot.mdl)
+   - Small rocket ammo box with large rocket .................... b_rock0-alt.bsp (for: rock0.bsp)
+   - Large rocket ammo box with small rockets ................... b_rock1-alt.bsp (for: rock1.bsp)
+
+[ROG]
+   - Small multi-rocket ammo box with large rocket .............. b_mrock0-alt.bsp (for: mrock0.bsp)
+   - Large multi-rocket box with small rockets .................. b_mrock1-alt.bsp (for: mrock1.bsp)   
+
+
+V. Code fixes (progs.dat)
 
    - Projectile position fixes for all weapons (when looking up/down)
    - Fish count fix (fishes are no longer counted 2x)
@@ -161,8 +173,9 @@ Louis "ijed" Manning ................. Rotfish fix for ID1 model, "Rubicon Rumbl
 Lunaran .............................. Knight, Pentagram, Quad Damage
 Maddes (et al.) ...................... URQP QuakeC fixes
 NightFright .......................... RRP model realignments, ROG plasma cells, ROG ammo box skins, 
-                                       health box edits, URQP QuakeC code adjustments, skin edits for
-                                       backback (Sock), Zombie (Chillo) and Lava Perforator (Dwere/osj)                       
+                                       health box/(multi-)rocket ammo edits, URQP QuakeC code adjustments,
+                                       skin edits for backback (Sock), Zombie (Chillo) and 
+                                       Lava Perforator (Dwere/osj)                       
 osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
                                        Various skin edits:
 				       - Head gibs: Death Knight, Player (Sock), Scrag (Tea Monster/Chillo)
@@ -263,17 +276,18 @@ C H A N G E L O G
 Revision #25 (XXX XX, 2021)
 ---------------------------
 > Added: Items
-          - [ROG] Plasma cells (b_plas0/b_plas1) by NightFright
+          - [ROG] Plasma cells by NightFright
 > Update: NPCs
-          - [ID1] Scrag (wizard): Fullbright pixels removed
-          - [ID1] Vore (shalrath): Choppy walking animation cycle fixed
-          - [ID1] Zombie headgib (h_zombie): Fullbright pixels removed
+          - [ID1] Scrag: Fullbright pixels removed
+          - [ID1] Vore: Choppy walking animation cycle fixed
+          - [ID1] Zombie headgib: Fullbright pixels removed
 > Update: Weapons
 	  - [ID1] Muzzleflash for Grenade/Rocket Launcher by Seven
 	  - [ROG] Muzzleflash for Multi-Grenade/-Rocket Launcher by Seven
 > Update: Items
-          - [ID1] More details for health boxes by NightFright
-          - [ID1] [ROG] Skin corrections for (multi-)rocket boxes  
+          - [ID1] More details for health boxes + rocket ammo by NightFright
+          - [ID1] [ROG] Skin corrections for (multi-)rocket boxes
+          - [ROG] More details for multi-rocket ammo by NightFright
 > Update: Props
           - [ID1] Replaced Exploding Boxes (renamed MDLs) with true BSPs, based on
                   RRP brush models (should fix warnings in Copper)
