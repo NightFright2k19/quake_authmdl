@@ -286,7 +286,7 @@ Revision #25 (XXX XX, 2021)
 	  - [ROG] Muzzleflash for Multi-Grenade/-Rocket Launcher by Seven
 > Update: Items
           - [ID1] More details for health boxes + rocket ammo by NightFright
-          - [ID1] [ROG] Skin corrections for (multi-)rocket boxes
+          - [ID1] [ROG] Skin corrections for shell/nail/(multi-)rocket ammo boxes
           - [ROG] More details for multi-rocket ammo by NightFright
 > Update: Props
           - [ID1] Replaced Exploding Boxes (renamed MDLs) with true BSPs, based on
