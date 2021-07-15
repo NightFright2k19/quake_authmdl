@@ -37,4 +37,3 @@ Notes:
 Possible improvements for existing ID1 model replacements:
    - Chthon: increase head size to match original (also for Lavaman)
    - Vore: fix walking cycle (add frame #34 from rev22 mdl), add idle animation (9 frames, idle1-9)
-   - Shub: tentacle positions in the last 45 frames too far from the first frame
