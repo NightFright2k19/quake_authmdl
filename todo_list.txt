@@ -1,14 +1,7 @@
 
 TO-DO LIST: QUAKE AUTHENTIC MODEL PACK
-Last update: Jul 10, 2021
+Last update: Jul 15, 2021
 
-
-==========================================================================================================
-Original Quake (ID1)
-==========================================================================================================
-- Chthon ............................................................... boss.mdl *
-- Vore ................................................................. shalrath.mdl *
-- Shub ................................................................. oldone.mdl *
 
 ==========================================================================================================
 Scourge of Armagon (HIP)
@@ -35,11 +28,13 @@ Dissolution of Eternity (ROG)
 Notes:
 
 *   Should be based on existing remakes
-       - Chthon (ID1): increase head size to match original (also for Lavaman)
-       - Vore (ID1): fix walking cycle (add frame #34 from rev22 mdl), add idle animation (9 frames, idle1-9)
-       - Shub (ID1): tentacle positions in the last 45 frames too far from the first frame
        - Player (HIP): with Mjolnir instead of axe
-       - Hephaestus (ROG): Chthon (boss.mdl) with new skin and missing animations "shockb" and "shockc"
+       - Hephaestus (ROG): Chthon (boss.mdl) with new skin and removed animations "shockb" and "shockc"
        - Zombie (ROG): with additional frames #198-207 in animation "cruc_"
        
 **  One model for all three guardians, using different skins (Aztec/Egyptian/Greek)
+
+Possible improvements for existing ID1 model replacements:
+   - Chthon: increase head size to match original (also for Lavaman)
+   - Vore: fix walking cycle (add frame #34 from rev22 mdl), add idle animation (9 frames, idle1-9)
+   - Shub: tentacle positions in the last 45 frames too far from the first frame
