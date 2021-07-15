@@ -280,7 +280,7 @@ Revision #25 (XXX XX, 2021)
 > Update: 
      - NPCs
           [ID1] Scrag: Fullbright pixels removed
-          [ID1] Shub-Niggurath: Tentacle animation fix
+          [ID1] Shub-Niggurath: New breathing animation + tentacle position fix
           [ID1] Vore: Choppy walking animation cycle fixed
           [ID1] Zombie headgib: Fullbright pixels removed
      - Weapons
