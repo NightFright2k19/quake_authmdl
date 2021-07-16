@@ -284,6 +284,7 @@ Revision #25 (Jul 19, 2021)
           [ID1] Vore: Choppy walking animation cycle fixed
           [ID1] Zombie + headgib: Fullbright pixels removed
      - Weapons
+          [ID1] Super Shotgun view model repositioned (x-axis: +0.5, z-axis: +1)
 	  [ID1] Muzzleflash for Grenade/Rocket Launcher by Seven
 	  [ROG] Muzzleflash for Multi-Grenade/-Rocket Launcher by Seven
      - Items
@@ -370,6 +371,10 @@ Revision #21 (Dec 7, 2020)
      - Progs.dat refresh
           [HIP] [ROG] Super Nailgun renamed to Perforator (items.qc)
           [ROG] Electric eels now become non-solid after death much sooner (eel.qc)
+     - NPCs 
+          [ID1] Added missing flag #4 (GIB) for Rottweiler (h_dog), Shambler (h_shams), Zombie (h_zombie)
+	  [ID1] [ROG] Fixed wrong flag #32 (ZOMBGIB) for Ogre head (h_ogre) and removed one fullbright pixel
+          [ROG] Added missing flag #4 (GIB) for Knight/Statue (h_knight)
      - Weapons
           [ID1] Shotgun (v_shot) with reload animation (Barnaby/Dwere)
                 (Prev. shotgun with slightly improved skin still included as v_shot1)
@@ -378,10 +383,6 @@ Revision #21 (Dec 7, 2020)
           [HIP] Proximity Gun based on Dwere's model (remodel/skin by osjclatchford)
           [ROG] Lava Perforator (v_lava2) with modified rear center (Dwere/osj, skin modified by NightFright)
           [ROG] Multi-Grenade/Multi-Rocket Launcher based on Plague's model (skin by osjclatchford)
-     - NPCs 
-          [ID1] Added missing flag #4 (GIB) for Rottweiler (h_dog), Shambler (h_shams), Zombie (h_zombie)
-	  [ID1] [ROG] Fixed wrong flag #32 (ZOMBGIB) for Ogre head (h_ogre) and removed one fullbright pixel
-          [ROG] Added missing flag #4 (GIB) for Knight/Statue (h_knight)
 
 Revision #20 (Nov 30, 2020)
 ---------------------------
