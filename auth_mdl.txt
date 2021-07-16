@@ -4,7 +4,7 @@ Primary purpose : Singleplayer/Multiplayer
 ======================================================================================================================
 Title : Authentic Model Improvement Collection (rev. #25)
 Filename : AUTH_MDL-R25.ZIP
-Release date : XXX XX, 2021
+Release date : July 19, 2021
 Author : NightFright
 
 
@@ -172,7 +172,7 @@ Dwere ................................ Reworked classic weapons (aka "Guns of Ok
 Louis "ijed" Manning ................. Rotfish fix for ID1 model, "Rubicon Rumble Pack" ammo/health boxes
 Lunaran .............................. Knight, Pentagram, Quad Damage
 Maddes (et al.) ...................... URQP QuakeC fixes
-NightFright .......................... ROG plasma cells, RRP health/ammo box edits/realignments,
+NightFright .......................... ROG plasma cells, health/ammo box edits/realignments (ijed),
                                        URQP QuakeC code adjustments, skin edits for backback (Sock), 
                                        Zombie (Chillo) and Lava Perforator (Dwere/osj)                       
 osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
@@ -247,9 +247,9 @@ Base : Modified
 Build Time : Unknown
 Editor(s) used : BSP compiling ......... ericw-tools (qbsp.exe/light.exe)
                  Texture editing ....... GIMP, TrenchBroom
-                 Model realignment ..... QuArK 6.6, QME 3.1
+                 Model realignment ..... QuArK, QME
                  Model tweaking ........ q1mv
-                 Pak editing ........... PakScape
+                 Pak editing ........... PakScape, SLADE
 Known Bugs : (Hopefully) none
 
 
@@ -272,7 +272,7 @@ content in this file to allow further distribution.
 C H A N G E L O G
 ----------------------------------------------------------------------------------------------------------------------
 
-Revision #25 (XXX XX, 2021)
+Revision #25 (Jul 19, 2021)
 ---------------------------
 > Added: 
      - Items
@@ -282,17 +282,17 @@ Revision #25 (XXX XX, 2021)
           [ID1] Scrag: Fullbright pixels removed
           [ID1] Shub-Niggurath: New breathing animation + tentacle position fix
           [ID1] Vore: Choppy walking animation cycle fixed
-          [ID1] Zombie headgib: Fullbright pixels removed
+          [ID1] Zombie + headgib: Fullbright pixels removed
      - Weapons
 	  [ID1] Muzzleflash for Grenade/Rocket Launcher by Seven
 	  [ROG] Muzzleflash for Multi-Grenade/-Rocket Launcher by Seven
      - Items
-          [ID1] More details for health + ammo boxes by NightFright
+          [ID1] More details for ijed's health/ammo boxes by NightFright
           [ID1] [ROG] Skin corrections for shell/nail/(multi-)rocket ammo boxes
           [ROG] More details for lava nail/multi-rocket ammo boxes by NightFright
      - Props
           [ID1] Replaced Exploding Boxes (renamed MDLs) with true BSPs, based on
-                RRP brush models (should fix warnings in Copper)
+                ijed's brush models (should fix warnings e.g. in Copper)
 
 Revision #24 (Mar 1, 2021)
 --------------------------
@@ -368,8 +368,8 @@ Revision #21 (Dec 7, 2020)
           [ROG] Lava nail (lspike) based on Chillo's model (skin by NightFright)
 > Update: 
      - Progs.dat refresh
-          [HIP] [ROG] Super Nailgun renamed to Perforator (already done for ID1 with Rev. #19)
-          [ROG] Electric eels now become non-solid after death much sooner
+          [HIP] [ROG] Super Nailgun renamed to Perforator (items.qc)
+          [ROG] Electric eels now become non-solid after death much sooner (eel.qc)
      - Weapons
           [ID1] Shotgun (v_shot) with reload animation (Barnaby/Dwere)
                 (Prev. shotgun with slightly improved skin still included as v_shot1)
@@ -388,7 +388,7 @@ Revision #20 (Nov 30, 2020)
 > General: Version numbering changed for better overview
 > Update: 
      - Progs.dat refresh
-	  [ROG] Critical R1M7 elevator bug fixed - again
+	  [ROG] R1M7 elevator crash bug fixed again (newplats.qc)
      - NPCs
 	  [ID1] Chthon, Death Knight and Ogre mdls recompressed with QuArK to save 70% file size
           [ID1] Knight (+ head gibs) back to Rev. #15 (Chillo --> Lunaran)
@@ -413,8 +413,8 @@ Revision #18 (Nov 11, 2020)
 ---------------------------
 > Update:
      - Progs.dat refresh 
-          [ALL] Projectile position fixes for ALL weapons, not just nailguns
-	  [ROG] Ooppee's custom Plasmagun code removed from progs.dat (original gun behavior restored)
+          [ALL] Projectile position fixes for ALL weapons, not just nailguns (weapons.qc)
+	  [ROG] Ooppee's custom Plasmagun code removed (weapons.qc)
 
 Revision #17 (Mar 17, 2020)
 ---------------------------
@@ -507,9 +507,9 @@ Revision #7 (Oct 10, 2016)
 --------------------------
 > Added:  
      - Progs.dat
-          [ALL] Progs.dat with nail position fix
-          [ROG] Additional progs.dat fixes: Plasmagun firing animation & projectile position fix,
-                R1M7 elevator fix
+          [ALL] Progs.dat with nail position fix (weapons.qc)
+          [ROG] Plasmagun firing animation & projectile position fix (weapons.qc),
+                R1M7 elevator fix (newplats.qc)
 > Update: 
      - Weapons
           [ID1] Upgrade from reworked classic weapons by Dwere v1.0 to v2.0:
