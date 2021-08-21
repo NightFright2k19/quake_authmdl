@@ -2,9 +2,9 @@
 Advanced engine needed : Any (tested on Mark V and Quakespasm-Spiked)
 Primary purpose : Singleplayer/Multiplayer
 ======================================================================================================================
-Title : Authentic Model Improvement Collection (rev. #25)
-Filename : AUTH_MDL-R25.ZIP
-Release date : July 19, 2021
+Title : Authentic Model Improvement Collection (rev. #26)
+Filename : AUTH_MDL-R26.ZIP
+Release date : ??? ??, 2021
 Author : NightFright
 
 
@@ -165,8 +165,8 @@ C R E D I T S
 
 Barnaby .............................. Animated shotgun pump   
 Bloodshot ............................ Grenade
-capnbubs ............................. Player, Grunt, Rottweiler
-Chillo ............................... Chthon, Death Knight, Enforcer, Fiend, Ogre, Quad Damage, Scrag, 
+capnbubs ............................. Player, Grunt, Rottweiler, Ogre
+Chillo ............................... Chthon, Death Knight, Enforcer, Fiend, Quad Damage, Scrag, 
                                        Teleport Sphere, Torch/Flame, Vore, Zombie
 Dwere ................................ Reworked classic weapons (aka "Guns of Okayishness")
 Louis "ijed" Manning ................. Rotfish fix for ID1 model, "Rubicon Rumble Pack" ammo/health boxes
@@ -177,7 +177,8 @@ NightFright .......................... ROG plasma cells, health/ammo box edits/r
                                        Zombie (Chillo) and Lava Perforator (Dwere/osj)                       
 osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
                                        Various skin edits:
-				       - Head gibs: Death Knight, Player (Sock), Scrag (Tea Monster/Chillo)
+				       - Head gibs: Death Knight, Player (Sock), Scrag (Tea Monster/Chillo),
+                                                    Shambler (skiffy)
                                        - Player: CTF skin (capnbubs)
 				       - Enemies: Enforcer, Fiend, Minotaur Statue, Ogre, Vore (Chillo)
                                        - Bosses: Chthon (Chillo), Mummy (Chillo), Shub-Niggurath (Tea Monster)
@@ -185,11 +186,12 @@ osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
 				       - Projectiles: Grenade (Bloodshot), Lava nail (Dwere)
                                        - Props: Torch/Flame (Chillo)
                                        - Weapons: (Lava) Perforator (Dwere)
-                                                  Grenade/Rocket Launcher (Plague)
+                                                  (Multi) Grenade Launcher (Plague)
+                                                  (Multi) Rocket Launcher (Quake Enhanced)
                                                   Proximity Gun (Dwere)
-                                                  Multi-Grenade/Multi-Rocket Launcher (Plague)
 Phredreeke ........................... Upscaled skins for Anti-Grav Belt + Empathy Shield
-Plague ............................... Grenade/Rocket Launcher
+Plague ............................... Grenade Launcher
+Quake Enhanced ....................... Ogre, Rocket Launcher
 Renier "Skiffy" Banninga ............. Shambler
 Seven ................................ Knight Statue skin (for Lunaran's model)
                                        Original fixes for nail positioning and MP2 issues
@@ -271,6 +273,15 @@ content in this file to allow further distribution.
 ----------------------------------------------------------------------------------------------------------------------
 C H A N G E L O G
 ----------------------------------------------------------------------------------------------------------------------
+
+Revision #26 (??? ??, 2021)
+---------------------------
+> Update:
+     - NPCs
+          [ID1] [ROG] (Multi-Grenade) Ogre: New model based on Quake Enhanced by osj
+          [ID1] Shambler: Improved headgibs skin by osj
+     - Weapons
+          [ID1] [ROG] (Multi-Grenade) Rocket Launcher: New model based on Quake Enhanced by osj
 
 Revision #25 (Jul 19, 2021)
 ---------------------------
