@@ -16,27 +16,22 @@ I. MODELS:
 
 (N)PCs:
    - Chthon ..................................................... boss.mdl
-   - Death Knight ............................................... hknight.mdl, h_hellkn.mdl
+   - Death Knight (ID1) / Minotaur Statue (ROG) ................. hknight.mdl, h_hellkn.mdl
    - Enforcer ................................................... enforcer.mdl, h_mega.mdl
    - Fiend ...................................................... demon.mdl, h_demon.mdl
    - Grunt ...................................................... soldier.mdl, h_guard.mdl
-   - Knight ..................................................... knight.mdl, h_knight.mdl
-   - Ogre ....................................................... ogre.mdl, h_ogre.mdl
-   - Ranger ..................................................... player.mdl, h_player.mdl
+   - Knight (ID1) / Knight Statue (ROG) ......................... knight.mdl, h_knight.mdl
+   - Mummy (ROG) ................................................ mummy.mdl
+   - Ogre (ID1) / Multi-Grenade Ogre (ROG) ...................... ogre.mdl, h_ogre.mdl
+   - Ranger (ID1) / Ranger w/ CTF skin (ROG) .................... player.mdl, h_player.mdl
    - Rotfish .................................................... fish.mdl
    - Rottweiler ................................................. dog.mdl, h_dog.mdl
    - Scrag ...................................................... wizard.mdl, h_wizard.mdl
    - Shambler ................................................... shambler.mdl, h_shams.mdl
    - Shub-Niggurath ............................................. oldone.mdl
-   - Spawn ...................................................... tarbaby.mdl
+   - Spawn (ID1) / Hellspawn (ROG) .............................. tarbaby.mdl
    - Vore ....................................................... shalrath.mdl, h_shal.mdl
    - Zombie ..................................................... zombie.mdl, h_zombie.mdl
-   - Hellspawn (ROG) ............................................ tarbaby.mdl
-   - Knight Statue (ROG) ........................................ knight.mdl, h_knight.mdl
-   - Minotaur Statue (ROG) ...................................... hknight.mdl, h_hellkn.mdl
-   - Multi-Grenade Ogre (ROG) ................................... ogre.mdl, h_ogre.mdl
-   - Mummy (ROG) ................................................ mummy.mdl
-   - Ranger with CTF skin (ROG) ................................. player.mdl
 
 Weapons:
    - Axe ........................................................ v_axe.mdl
@@ -44,48 +39,48 @@ Weapons:
    - Super Shotgun .............................................. g_shot.mdl, v_shot2.mdl
    - Nailgun .................................................... g_nail.mdl, v_nail.mdl
    - Perforator ................................................. g_nail2.mdl, v_nail2.mdl
+   - Lava Nailgun + Perforator (ROG) ............................ v_lava.mdl, v_lava2.mdl
+   - Proximity Gun (HIP) ........................................ g_prox.mdl, v_prox.mdl
    - Grenade Launcher ........................................... g_rock.mdl, v_rock.mdl
    - Rocket Launcher ............................................ g_rock2.mdl, v_rock2.mdl
-   - Thunderbolt ................................................ g_light.mdl, v_light.mdl
-   - Proximity Gun (HIP) ........................................ g_prox.mdl, v_prox.mdl
-   - Lava Nailgun + Perforator (ROG) ............................ v_lava.mdl, v_lava2.mdl
    - Multi Grenade + Rocket Launcher (ROG) ...................... v_multi.mdl, v_multi2.mdl
+   - Thunderbolt ................................................ g_light.mdl, v_light.mdl
    - Plasma Gun (ROG) ........................................... v_plasma.mdl
 
 Items:
    - Ammo boxes ................................................. b_batt0/1.bsp, b_nail0/1.bsp,
                                                                   b_rock0/1.bsp, b_shell0/1.bsp
+   - Anti-Grav Belt (ROG) ....................................... beltup.mdl
    - Armor ...................................................... armor.mdl
    - Backpack ................................................... backpack.mdl
    - Biosuit .................................................... suit.mdl
-   - Health boxes ............................................... b_bh10.bsp, b_bh25.bsp, b_bh100.bsp
-   - Keys ....................................................... b_g_key.mdl, b_s_key.mdl, w_g_key.mdl, w_s_key.mdl
-   - Pentagram of Protection .................................... invulner.mdl 
-   - Quad Damage ................................................ quaddama.mdl
-   - Ring of Shadows ............................................ invisibl.mdl
-   - Runes (UV mapping fixed) ................................... end1-4.mdl
    - Empathy Shield (HIP) ....................................... empathy.mdl
+   - Health boxes ............................................... b_bh10.bsp, b_bh25.bsp, b_bh100.bsp
    - Horn of Conjuring (HIP) .................................... horn.mdl
-   - Wetsuit (HIP) .............................................. wetsuit.mdl
-   - Anti-Grav Belt (ROG) ....................................... beltup.mdl
+   - Keys ....................................................... b_g_key.mdl, b_s_key.mdl, w_g_key.mdl, w_s_key.mdl
    - Lava nail boxes (ROG) ...................................... b_lava0/1.bsp
    - Multi-rocket boxes (ROG) ................................... b_mrock0.bsp, b_mrock1.bsp
+   - Pentagram of Protection .................................... invulner.mdl
    - Plasma cells (ROG) ......................................... b_plas0.bsp, b_plas1.bsp
+   - Quad Damage ................................................ quaddama.mdl
+   - Ring of Shadows ............................................ invisibl.mdl
+   - Runes (fixed UV mapping) ................................... end1-4.mdl
+   - Wetsuit (HIP) .............................................. wetsuit.mdl
 
 Props/projectiles:
    - Exploding boxes ............................................ b_explop.bsp, b_exbox2.bsp
    - Eyes ....................................................... eyes.mdl
+   - Fireball (ROG) ............................................. fireball.mdl
    - Flames ..................................................... flame.mdl, flame2.mdl
    - Gibs ....................................................... gib1.mdl, gib2.mdl, gib3.mdl
    - Lava ball .................................................. lavaball.mdl
+   - Lava nails (ROG) ........................................... lspike.mdl
+   - Lava rock (HIP) ............................................ lavarock.mdl
    - Projectiles ................................................ grenade.mdl, missile.mdl, k/s/v/w_spike.mdl, spike.mdl
+   - Proximity bomb (HIP) ....................................... proxbomb.mdl
    - Teleporter sphere .......................................... teleport.mdl
    - Torch/Flame ................................................ flame.mdl, flame2.mdl
    - Zombie gibs ................................................ zom_gib.mdl
-   - Lava rock (HIP) ............................................ lavarock.mdl
-   - Proximity bomb (HIP) ....................................... proxbomb.mdl
-   - Fireball (ROG) ............................................. fireball.mdl
-   - Lava nails (ROG) ........................................... lspike.mdl
 
 
 II. ALTERNATE MODELS (rename first before usage):
@@ -129,7 +124,7 @@ C R E D I T S
 
 Barnaby .............................. Animated shotgun pump   
 Bloodshot ............................ Grenade
-capnbubs ............................. Player, Grunt, Rottweiler, Ogre
+capnbubs ............................. Player, Grunt, Rottweiler
 Chillo ............................... Death Knight (ROG), Mummy (ROG), Teleport Sphere, Torch/Flame
 Dwere ................................ Reworked classic weapons (aka "Guns of Okayishness")
 Louis "ijed" Manning ................. "Rubicon Rumble Pack" ammo/health boxes
@@ -141,19 +136,19 @@ NightFright .......................... ROG plasma cells, health/ammo box edits/r
                                        URQP QuakeC code adjustments, skin edits for backback (Sock) 
                                        and Lava Perforator (Dwere/osj)                       
 osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
-                                       MD5 model conversions from Quake EX (aka Quake Remastered/Enhanced)
+                                       MD5 model conversions from Quake Kex
 				       Head gibs (Death Knight, Enforcer, Ogre, Vore, Zombie)
                                        Various skin edits:
 				       - Head gibs: Player (Sock), Shambler (skiffy)
                                        - Player: CTF skin (capnbubs)
-				       - Enemies: Minotaur Statue
+				       - Enemies: Minotaur Statue (Chillo)
                                        - Bosses: Mummy (Chillo), Shub-Niggurath (Tea Monster)
                                        - Items: Keycards (Tea Monster)
 				       - Projectiles: Grenade (Bloodshot), Lava nail (Dwere)
                                        - Props: Torch/Flame (Chillo)
                                        - Weapons: (Lava) Perforator (Dwere)
                                                   (Multi) Grenade Launcher (Plague)
-                                                  (Multi) Rocket Launcher (Quake Enhanced)
+                                                  (Multi) Rocket Launcher (Quake Kex)
                                                   Proximity Gun (Dwere)
 Phredreeke ........................... Upscaled skins for Anti-Grav Belt + Empathy Shield
 Plague ............................... Grenade Launcher
@@ -173,7 +168,7 @@ SPECIAL THANKS
 Capnbubs (for starting it all)
 Chillo (for producing that massive amount of model remakes)
 John Romero (for his fast feedback regarding the battery cell ammo)
-Nightdive Studios (for their Quake Enhanced release and all the remade assets that came with it)
+Nightdive Studios (for their Quake Kex release)
 Seven (the kind and patient soul of the QuakeOne forums)
 Tea Monster (for his outstanding contributions)
 
@@ -206,11 +201,11 @@ L I N K S
 C O P Y R I G H T  /  P E R M I S S I O N S
 ----------------------------------------------------------------------------------------------------------------------
 
-Authors MAY use the contents of this file as a base for modification or reuse.
+Authors may use the contents of this file as a base for modification or reuse.
 
-You MAY distribute this file, provided you include this text file, with no
+You may distribute this file, provided you include this text file, with no
 modifications. You may distribute this file in any electronic format (BBS,
-CD, USB flash media etc) as long as you include this file intact.
+CD, USB flash media etc) as long as you include this file unaltered.
 
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -221,17 +216,17 @@ Revision #26 (??? ??, 2021)
 ---------------------------
 > Added:
      - NPCs
-	  [ID1] Spawn (from Quake EX, converted by osj)
-	  [ROG] Hellspawn (based on Spawn from Quake EX, converted by osj)
+	  [ID1] Spawn (from Quake Kex, converted by osj)
+	  [ROG] Hellspawn (based on Spawn from Quake Kex, converted/edited by osj)
 > Update:
      - NPCs
-          [ID1] Models from Quake EX, converted by osj:
+          [ID1] Models from Quake Kex, converted by osj:
                 Chthon, Death Knight, Enforcer, Fiend, Ogre, Rotfish, Scrag, Vore, Zombie
-          [ID1] Headgibs: Death Knight, Enforcer, Fiend, Ogre, Shambler, Vore, Zombie (by osj/NightFright)
-          [ROG] Multi-Grenade Ogre (based on Ogre from Quake EX, converted by osj)               
+          [ID1] Headgibs: Death Knight, Enforcer, Fiend, Ogre, Shambler, Vore, Zombie (by osj)
+          [ROG] Multi-Grenade Ogre + headgibs (based on Ogre from Quake Kex, converted/edited by osj)               
      - Weapons
-          [ID1] Rocket Launcher (from Quake EX, converted Seven and edited by osj)
-          [ROG] Multi-Rocket Launcher (based on RL from Quake EX, converted Seven and edited by osj)
+          [ID1] Rocket Launcher (from Quake Kex, converted by Seven and edited by osj)
+          [ROG] Multi-Rocket Launcher (based on RL from Quake Kex, converted by Seven and edited by osj)
 
 Revision #25 (Jul 19, 2021)
 ---------------------------
