@@ -137,9 +137,9 @@ NightFright .......................... ROG plasma cells, health/ammo box edits/r
                                        and Lava Perforator (Dwere/osj)                       
 osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
                                        MD5 model conversions from Quake Kex
-				       Head gibs (Death Knight, Enforcer, Ogre, Vore, Zombie)
+				       Headgibs (Death Knight, Enforcer, Ogre, Vore, Zombie)
                                        Various skin edits:
-				       - Head gibs: Player (Sock), Shambler (skiffy)
+				       - Headgibs: Player (Sock), Shambler (skiffy)
                                        - Player: CTF skin (capnbubs)
 				       - Enemies: Minotaur Statue (Chillo)
                                        - Bosses: Mummy (Chillo), Shub-Niggurath (Tea Monster)
@@ -148,7 +148,7 @@ osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
                                        - Props: Torch/Flame (Chillo)
                                        - Weapons: (Lava) Perforator (Dwere)
                                                   (Multi) Grenade Launcher (Plague)
-                                                  (Multi) Rocket Launcher (Quake Kex)
+                                                  Multi Rocket Launcher (Quake Kex)
                                                   Proximity Gun (Dwere)
 Phredreeke ........................... Upscaled skins for Anti-Grav Belt + Empathy Shield
 Plague ............................... Grenade Launcher
@@ -159,9 +159,8 @@ Seven ................................ Knight Statue skin (for Lunaran's model)
 Simon "Sock" O'Callaghan ............. "RetroJam1"/"Arcane Dimensions" models
                                        Quake runes with fixed UV mapping
 talisa ............................... Dwere's reworked classic weapons skins for HIP/ROG
-Tea Monster .......................... Shub-Niggurath, Scrag head gibs (based on Chillo's model),
-                                       Anti-Grav Belt, Biosuit, Empathy Shield, Horn of Conjuring,
-                                       Wetsuit, keycards
+Tea Monster .......................... Shub-Niggurath, Anti-Grav Belt, Biosuit, Empathy Shield, 
+                                       Horn of Conjuring, Wetsuit, keycards
 
 SPECIAL THANKS
 --------------
@@ -215,304 +214,240 @@ C H A N G E L O G
 Revision #26 (??? ??, 2021)
 ---------------------------
 > Added:
-     - NPCs
-	  [ID1] Spawn (from Quake Kex, converted by osj)
-	  [ROG] Hellspawn (based on Spawn from Quake Kex, converted/edited by osj)
+     [ID1] Spawn (from Quake Kex, converted by osj)
+     [ROG] Hellspawn (based on Spawn from Quake Kex, converted/edited by osj)
 > Update:
-     - Progs.dat refresh: Cleaned up code to eliminate most compiler warnings
-     - NPCs
-          [ID1] Models from Quake Kex, converted by osj:
-                Chthon, Death Knight, Enforcer, Fiend, Ogre, Rotfish, Scrag, Vore, Zombie
-          [ID1] Headgibs: Death Knight, Enforcer, Fiend, Ogre, Scrag, Shambler, Vore, Zombie (by osj)
-          [ROG] Multi-Grenade Ogre + headgibs (based on Ogre from Quake Kex, converted/edited by osj)               
-     - Weapons
-          [ID1] Rocket Launcher (from Quake Kex, converted by Seven and edited by osj)
-          [ROG] Multi-Rocket Launcher (based on RL from Quake Kex, converted by Seven and edited by osj)
+     [ALL] Progs.dat: Cleaned up code to eliminate most compiler warnings
+     [ID1] Chthon, Death Knight, Enforcer, Fiend, Ogre, Rotfish, Scrag, Vore, Zombie
+           (from Quake Kex, converted by osj)
+     [ID1] Headgibs: Death Knight, Enforcer, Fiend, Ogre, Scrag, Shambler, Vore, Zombie (by osj)
+     [ID1] Rocket Launcher (from Quake Kex, converted by Seven and edited by osj)
+     [ROG] Multi-Grenade Ogre + headgibs (based on Ogre from Quake Kex, converted/edited by osj)               
+     [ROG] Multi-Rocket Launcher (based on RL from Quake Kex, converted by Seven and edited by osj)
 
 Revision #25 (Jul 19, 2021)
 ---------------------------
 > Added: 
-     - Items
-	  [ROG] Plasma cells by NightFright
+     [ROG] Plasma cells by NightFright
 > Update: 
-     - NPCs
-          [ID1] Scrag: Fullbright pixels removed
-          [ID1] Shub-Niggurath: New breathing animation + tentacle position fix
-          [ID1] Vore: Choppy walking animation cycle fixed
-          [ID1] Zombie + headgib: Fullbright pixels removed
-     - Weapons
-          [ID1] Super Shotgun view model repositioned (x-axis: +0.5, z-axis: +1)
-	  [ID1] Muzzleflash for Grenade/Rocket Launcher by Seven
-	  [ROG] Muzzleflash for Multi-Grenade/-Rocket Launcher by Seven
-     - Items
-          [ID1] More details for ijed's health/ammo boxes by NightFright
-          [ID1] [ROG] Skin corrections for shell/nail/(multi-)rocket ammo boxes
-          [ROG] More details for lava nail/multi-rocket ammo boxes by NightFright
-     - Props
-          [ID1] Replaced Exploding Boxes (renamed MDLs) with true BSPs, based on
-                ijed's brush models (should fix warnings e.g. in Copper)
+     [ID1] [ROG] Skin corrections for shell/nail/(multi-)rocket ammo boxes
+     [ID1] Scrag: Fullbright pixels removed
+     [ID1] Shub-Niggurath: New breathing animation + tentacle position fix
+     [ID1] Vore: Choppy walking animation cycle fixed
+     [ID1] Zombie + headgib: Fullbright pixels removed
+     [ID1] Super Shotgun view model repositioned (x-axis: +0.5, z-axis: +1)
+     [ID1] Muzzleflash for Grenade/Rocket Launcher by Seven
+     [ID1] More details for ijed's health/ammo boxes by NightFright
+     [ID1] Replaced Exploding Boxes (renamed MDLs) with true BSPs, based on
+           ijed's brush models (should fix warnings e.g. in Copper)
+     [ROG] More details for lava nail/multi-rocket ammo boxes by NightFright
+     [ROG] Muzzleflash for Multi-Grenade/-Rocket Launcher by Seven
 
 Revision #24 (Mar 1, 2021)
 --------------------------
 > Update: 
-     - NPCs
-          [ID1] Fullbright pixels on Chthon skin removed by osj
-     - Weapons
-	  [ID1] Smoother recoil animation + skin adjustments for Rocket Launcher by osj
-	  [ROG] Smoother recoil animation + skin adjustments for Multi-Rocket Launcher by osj
-     - Items
-          [ID1] Backpack UV mapping skin fix by Tea Monster
-	  [ID1] Pentagram of Protection by Lunaran (from "Copper")
-	  [ID1] Quad Damage by Lunaran (from "Copper")
-          [ROG] Anti-Grav Belt skin downsized by 50% (to avoid issues in many ports)
-     - Props
-          [ID1] Lava ball by osjclatchford (based on Chillo model)
-          [HIP] Lava rock by osjclatchford (based on Chillo model)
-    	  [HIP] Proximity bomb by osjclatchford (based on Chillo model)
+     [ID1] Fullbright pixels on Chthon skin removed by osj
+     [ID1] Smoother recoil animation + skin adjustments for Rocket Launcher by osj
+     [ID1] Backpack UV mapping skin fix by Tea Monster
+     [ID1] Pentagram of Protection by Lunaran (from "Copper")
+     [ID1] Quad Damage by Lunaran (from "Copper")
+     [ID1] Lava ball by osj (based on Chillo model)
+     [HIP] Lava rock by osj (based on Chillo model)
+     [HIP] Proximity bomb by osj (based on Chillo model)
+     [ROG] Smoother recoil animation + skin adjustments for Multi-Rocket Launcher by osj
+     [ROG] Anti-Grav Belt skin downsized by 50% (to avoid issues in many ports)
 
 Revision #23 (Feb 4, 2021)
 --------------------------
 > Added: 
-     - (N)PCs
-          [ID1] Shub-Niggurath by Tea Monster (skin by osjclatchford)
-          [ROG] Minotaur Statue by osjclatchford (based on Chillo model)
-          [ROG] Mummy by osjclatchford (based on Chillo model)
-          [ROG] Ranger with CTF skin by osjclatchford (based on capnbubs model)
-     - Items
-	  [ID1] Biosuit by Tea Monster
-          [ID1] Keycards by Tea Monster (skins by osjclatchford)
-          [ID1] Ring of Shadows by osjclatchford (based on AD model)
-          [HIP] Empathy Shield by Tea Monster (skin by Phredreeke)
-          [HIP] Horn of Conjuring by Tea Monster
-          [HIP] Wetsuit by Tea Monster
-          [ROG] Anti-Grav Belt by Tea Monster (skin by Phredreeke)
-     - Props
-          [ID1] Eyes by osjclatchford (based on HIP model)
-          [ID1] Lava ball by osjclatchford (based on AD model)
-          [ID1] Exploding boxes by Bloodshot (from Quake 1.5)
-	  [HIP] Lava rock by osjclatchford (based on AD model)
-    	  [HIP] Proximity bomb by osjclatchford (based on AD model)
-          [ROG] Fireball by osjclatchford (based on "Malice" model)
+     [ID1] Shub-Niggurath by Tea Monster (skin by osj)
+     [ID1] Biosuit by Tea Monster
+     [ID1] Keycards by Tea Monster (skins by osj)
+     [ID1] Ring of Shadows by osj (based on AD model)
+     [ID1] Eyes by osj (based on HIP model)
+     [ID1] Lava ball by osj (based on AD model)
+     [ID1] Exploding boxes by Bloodshot (from Quake 1.5)
+     [HIP] Empathy Shield by Tea Monster (skin by Phredreeke)
+     [HIP] Horn of Conjuring by Tea Monster
+     [HIP] Wetsuit by Tea Monster
+     [HIP] Lava rock by osj (based on AD model)
+     [HIP] Proximity bomb by osj (based on AD model)
+     [ROG] Minotaur Statue by osj (based on Chillo model)
+     [ROG] Mummy by osj (based on Chillo model)
+     [ROG] Ranger with CTF skin by osj (based on capnbubs model)
+     [ROG] Anti-Grav Belt by Tea Monster (skin by Phredreeke)
+     [ROG] Fireball by osj (based on "Malice" model)
 > Update: 
-     - (N)PCs
-          [ID1] Vore breasts removed by Tea Monster/osjclatchford
-	  [ID1] Model size optimizations for Ranger/Grunt head gibs and Vore
-          [ROG] Lava nail by Dwere (skin by osjclatchford)
-     - Props
-	  [ID1] Gibs by Sock (from AD)
-          [ID1] Torch/Flame by Chillo (skin edits by osjclatchford)
-
+     [ID1] Vore breasts removed by Tea Monster/osj
+     [ID1] Model size optimizations for Ranger/Grunt headgibs and Vore
+     [ID1] Gibs by Sock (from AD)
+     [ID1] Torch/Flame by Chillo (skin edits by osj)
+     [ROG] Lava nail by Dwere (skin by osj)
 
 Revision #22 (Dec 23, 2020)
 ---------------------------
 > Added: 
-     - NPCs
-	  [ID1] Scrag head gibs (h_wizard)
-> Update: 
-     - Progs.dat refresh 
-          [ID1] Frikbot support removed
-          [HIP] Nextthink AI update (misc.qc, zombie.qc)
-          [ROG] Nextthink AI update (dragon.qc, misc.qc, mummy.qc, tarbaby.qc, zombie.qc)
-     - NPCs
-          [ID1] [ROG] (Multi-Grenade) Ogre (Chillo) skin adjustments by osjclatchford
-     - Items 
-          [ID1] Super Shotgun (Dwere) reskin by osjclatchford
+     [ID1] Scrag headgibs (h_wizard)
+> Update:
+     [ID1] [ROG] (Multi-Grenade) Ogre (Chillo) skin adjustments by osj
+     [ID1] Super Shotgun (Dwere) reskin by osj
+     [ID1] Progs.dat: Frikbot support removed
+     [HIP] Progs.dat: Nextthink AI update (misc.qc, zombie.qc)
+     [ROG] Progs.dat: Nextthink AI update (dragon.qc, misc.qc, mummy.qc, tarbaby.qc, zombie.qc)
 
 Revision #21 (Dec 7, 2020)
 --------------------------
 > General: Progs.dat files now external (can be deleted if desired)
-> Added:  
-     - Items 
-          [ROG] Lava nail (lspike) based on Chillo's model (skin by NightFright)
-> Update: 
-     - Progs.dat refresh
-          [HIP] [ROG] Super Nailgun renamed to Perforator (items.qc)
-          [ROG] Electric eels now become non-solid after death much sooner (eel.qc)
-     - NPCs 
-          [ID1] Added missing flag #4 (GIB) for Rottweiler (h_dog), Shambler (h_shams), Zombie (h_zombie)
-	  [ID1] [ROG] Fixed wrong flag #32 (ZOMBGIB) for Ogre head (h_ogre) and removed one fullbright pixel
-          [ROG] Added missing flag #4 (GIB) for Knight/Statue (h_knight)
-     - Weapons
-          [ID1] Shotgun (v_shot) with reload animation (Barnaby/Dwere)
-                (Prev. shotgun with slightly improved skin still included as v_shot1)
-          [ID1] Perforator (v_nail2) with modified rear center (Dwere, skin by osjclatchford)
-          [ID1] Grenade/Rocket Launcher reverted back to Rev. #19 (Plague/osj)
-          [HIP] Proximity Gun based on Dwere's model (remodel/skin by osjclatchford)
-          [ROG] Lava Perforator (v_lava2) with modified rear center (Dwere/osj, skin modified by NightFright)
-          [ROG] Multi-Grenade/Multi-Rocket Launcher based on Plague's model (skin by osjclatchford)
+> Added:   
+     [ROG] Lava nail (lspike) based on Chillo's model (skin by NightFright)
+> Update:
+     [ID1] [ROG] Fixed wrong flag #32 (ZOMBGIB) for Ogre head (h_ogre) and removed one fullbright pixel
+     [ID1] Added missing flag #4 (GIB) for Rottweiler (h_dog), Shambler (h_shams), Zombie (h_zombie)
+     [ID1] Shotgun (v_shot) with reload animation (Barnaby/Dwere)
+           (Prev. shotgun with slightly improved skin still included as v_shot1)
+     [ID1] Perforator (v_nail2) with modified rear center (Dwere, skin by osj)
+     [ID1] Grenade/Rocket Launcher reverted back to Rev. #19 (Plague/osj)
+     [HIP] [ROG] Progs.dat: Super Nailgun renamed to Perforator (items.qc)
+     [HIP] Proximity Gun based on Dwere's model (remodel/skin by osj)
+     [ROG] Added missing flag #4 (GIB) for Knight/Statue (h_knight)
+     [ROG] Lava Perforator (v_lava2) with modified rear center (Dwere/osj, skin modified by NightFright)
+     [ROG] Multi-Grenade/Multi-Rocket Launcher based on Plague's model (skin by osj)
+     [ROG] Progs.dat: Electric eels now become non-solid after death much sooner (eel.qc) 
 
 Revision #20 (Nov 30, 2020)
 ---------------------------
 > General: Version numbering changed for better overview
-> Update: 
-     - Progs.dat refresh
-	  [ROG] R1M7 elevator crash bug fixed again (newplats.qc)
-     - NPCs
-	  [ID1] Chthon, Death Knight and Ogre mdls recompressed with QuArK to save 70% file size
-          [ID1] Knight (+ head gibs) back to Rev. #15 (Chillo --> Lunaran)
-          [ID1] Death Knight (+ head gibs) back to Rev. #18 (Chillo)
-          [ID1] Fiend (Chillo model reskins by osjclatchford)
-          [ID1] Vore (Chillo model reskins by osjclatchford)
-          [ID1] [ROG] Ogre + head gibs (Chillo model reskins by osjclatchford)
-     - Weapons
-          [ID1] Grenade launcher (+ pickup) back to Rev. #16 (Plague/osj --> Dwere)
-          [ID1] Rocket launcher (+ pickup) back to Rev. #16 (Plague/osj --> Dwere)
+> Update:
+     [ID1] [ROG] Ogre + headgibs (Chillo model reskins by osj)
+     [ID1] Chthon, Death Knight and Ogre mdls recompressed with QuArK to save 70% file size
+     [ID1] Knight (+ headgibs) back to Rev. #15 (Chillo --> Lunaran)
+     [ID1] Death Knight (+ headgibs) back to Rev. #18 (Chillo)
+     [ID1] Fiend (Chillo model reskins by osj)
+     [ID1] Vore (Chillo model reskins by osj)
+     [ID1] GL/RL + pickups back to Rev. #16 (Plague/osj --> Dwere)
+     [ROG] Progs.dat: R1M7 elevator crash bug fixed again (newplats.qc)
 
 Revision #19 (Nov 20, 2020)
 ---------------------------
 > Update:
-     - Progs.dat refresh 
-          [ALL] ID1 based on URQP 1.06a QuakeC fixes; HIP/ROG partially fixed, including FrikBot X++ support for ID1
-     - NPCs
-	  [ID1] Death Knight (+ head gibs) by Chillo
-          [ID1] Fiend by Chillo (replaces Bloodshot's version)
+     [ALL] Progs.dat: ID1 based on URQP 1.06a QuakeC fixes; HIP/ROG partially fixed, including FrikBot X++ support for ID1
+     [ID1] Death Knight (+ headgibs) by Chillo
+     [ID1] Fiend by Chillo (replaces Bloodshot's version)
 
 Revision #18 (Nov 11, 2020)
 ---------------------------
 > Update:
-     - Progs.dat refresh 
-          [ALL] Projectile position fixes for ALL weapons, not just nailguns (weapons.qc)
-	  [ROG] Ooppee's custom Plasmagun code removed (weapons.qc)
+     [ALL] Progs.dat: Projectile position fixes for ALL weapons, not just nailguns (weapons.qc)
+     [ROG] Progs.dat: Ooppee's custom Plasmagun code removed (weapons.qc)
 
 Revision #17 (Mar 17, 2020)
 ---------------------------
 > Added:
-     - NPCs 
-          [ID1] Death Knight head gibs, reskin by osjclatchford based on sock's model
-> Update: 
-     - NPCs
-          [ID1] Enforcer (+ head gibs) based on Chillo's model (reskin by osjclatchford)
-          [ID1] [ROG] Ogre (+ head gibs) based on Chillo's model (reskin by osjclatchford)
-          [ID1] Player head gibs based on sock's Grunt head (reskin by osjclatchford)
-          [ID1] Grenade based on Bloodshot's model (reskin by osjclatchford)
-     - Weapons
-          [ID1] Grenade Launcher + pickup (reskins by osjclatchford, based on Plague's models)
-          [ID1] Rocket Launcher + pickup (reskins by osjclatchford, based on Plague's models)
+     [ID1] Death Knight headgibs, reskin by osj based on sock's model
+> Update:
+     [ID1] [ROG] Ogre (+ headgibs) based on Chillo's model (reskin by osj)
+     [ID1] Enforcer (+ headgibs) based on Chillo's model (reskin by osj)
+     [ID1] Player headgibs based on sock's Grunt head (reskin by osj)
+     [ID1] Grenade based on Bloodshot's model (reskin by osj)
+     [ID1] GL/RL + pickups (reskins by osj, based on Plague's models)
 
 Revision #16 (Jan 13, 2020)
 ---------------------------
 > Added:
-     - NPCs
-	  [ID1] Death Knight by Chillo
-	  [ID1] Vore by Chillo (edited by TribalQuake)
+     [ID1] Death Knight by Chillo
+     [ID1] Vore by Chillo (edited by TribalQuake)
 > Update: 
-     - NPCs
-	  [ID1] Enforcer (+ head gibs) by Chillo
-	  [ID1] Knight (+ head gibs) by Chillo (ROG still using Lunaran's model)
+     [ID1] Enforcer (+ headgibs) by Chillo
+     [ID1] Knight (+ headgibs) by Chillo (ROG still using Lunaran's model)
 
 Revision #15 (Mar 28, 2018)
 ---------------------------
 > Update: 
-     - NPCs  
-          [ID1] [ROG] Fix for missing flag #4 (GIB) for Lunaran's knight head (h_knight.mdl)
+     [ID1] [ROG] Fix for missing flag #4 (GIB) for Lunaran's knight head (h_knight.mdl)
 
 Revision #14 (Mar 26, 2018)
 ---------------------------
 > Update: 
-     - NPCs
-          [ID1] Grunt head gibs by sock (from "Arcane Dimensions")
-     - Items
-          [ID1] Quad Damage by Chillo
+     [ID1] Grunt headgibs by sock (from "Arcane Dimensions")
+     [ID1] Quad Damage by Chillo
 
 Revision #13 (Mar 19, 2018)
 ---------------------------
 > Added:  
-     - NPCs  
-          [ID1] [ROG] Several models by Chillo:
-                      Chthon, Enforcer, Grunt head gibs, Scrag, Teleport Sphere, (Multi-Grenade) Ogre
-                      (head gibs by sock from "Arcane Dimensions")
-          [ID1] Vore (original ID1 model) with idle animation by Seven
-          [ID1] Zombie by Chillo (skin edits by NightFright)
+     [ID1] [ROG] Chthon, Enforcer, Grunt headgibs, Scrag, Teleport Sphere, (Multi-Grenade) Ogre by Chillo
+                 (headgibs by sock from "Arcane Dimensions")
+     [ID1] Vanilla Vore with idle animation by Seven
+     [ID1] Zombie by Chillo (skin edits by NightFright)
 > Update: 
-     - NPCs
-          [ID1] Bloodshot's Fiend model with original ID1 skin (no glowing eyes) 
+     [ID1] Bloodshot's Fiend model with original ID1 skin (no glowing eyes) 
 
 Revision #12 (Dec 8, 2016)
 --------------------------
 > Update: 
-     - NPCs
-          [ID1] Proper rescaling/floor alignment for Fiend head gibs
+     [ID1] Proper rescaling/floor alignment for Fiend headgibs
 
 Revision #11 (Dec 7, 2016)
 --------------------------
 > Added:
-     - NPCs
-          [ID1] Fiend head gibs by Bloodshot (edited by NightFright)
+     [ID1] Fiend headgibs by Bloodshot (edited by NightFright)
 
 Revision #10 (Dec 2, 2016)
 --------------------------
 > Added:  
-     - NPCs  
-          [ID1] Fiend by Bloodshot
+     [ID1] Fiend by Bloodshot
 > Update: 
-     - Items
-          [ID1] Grenade Launcher pickup by OriOn
-          [HIP] Prox Mine Launcher pickup by OriOn
+     [ID1] Grenade Launcher pickup by OriOn
+     [HIP] Prox Mine Launcher pickup by OriOn
 
 Revision #9 (Oct 11, 2016)
 --------------------------
 > Update: 
-     - Weapons
-          [HIP] [ROG] Reworked classic weapons by Dwere/talisa (based on "Guns of Okayishness" v2.0)
+     [HIP] [ROG] Reworked classic weapons by Dwere/talisa (based on "Guns of Okayishness" v2.0)
 
 Revision #8 (Oct 11, 2016)
 --------------------------
 > Added: 
-     - Items
-          [ID1] Runes with fixed UV mapping by Sock
+     [ID1] Runes with fixed UV mapping by Sock
 
 Revision #7 (Oct 10, 2016)
 --------------------------
 > Added:  
-     - Progs.dat
-          [ALL] Progs.dat with nail position fix (weapons.qc)
-          [ROG] Plasmagun firing animation & projectile position fix (weapons.qc),
-                R1M7 elevator fix (newplats.qc)
+     [ALL] Progs.dat: Nail firing position fix (weapons.qc)
+     [ROG] Progs.dat: Plasmagun firing animation & projectile position fix (weapons.qc), R1M7 elevator fix (newplats.qc)
 > Update: 
-     - Weapons
-          [ID1] Upgrade from reworked classic weapons by Dwere v1.0 to v2.0:
-                + Miniature muzzle flashes won't show through barrels when view weapon is translucent
-                + Comparatively insignificant tweaks
-                + Brought back the nozzles removed from the NG barrel tips (view model)
-                + Fixed fullbright seams on the SNG view model
-                + Fixed a less subtle fullbright seam on the LG
-                + Fixed subtle flickering dark seams on SNG and RL (view models)
+     [ID1] Dwere's "Guns of Okayishness" updated to v2.0: Muzzleflash fixes, NG nozzle adjustment, seams fixed
 
 Revision #6 (Oct 10, 2016)
 --------------------------
 > Added:  
-     - Weapons
-          [ALL] Reworked classic weapons by Dwere (ID1)/talisa (HIG/ROG)
+     [ALL] Reworked classic weapons by Dwere (ID1)/talisa (HIG/ROG)
 > Update: 
-     - Items
-          [ID1] Some projectiles (grenade.mdl, s_spike.mdl, spike.mdl) replaced with Dwere's models
+     [ID1] Some projectiles (grenade.mdl, s_spike.mdl, spike.mdl) replaced with Dwere's models
 
 Revision #5 (Mar 2, 2016)
 -------------------------
 > Added: 
-     - Items
-          [ID1] Ammo/health boxes by ijed (from "Rubicon Rumble Pack", with corrected lighting/alignments)
-          [ROG] Lava nail/multi-rocket boxes by NightFright (based on nail/rocket ammo models by ijed) 
-> Added: 
-     - Props
-          [ID1] Items/flames/projectiles/zombie gibs by sock (from "RetroJam1" and "Arcane Dimensions")
-
+     [ID1] Ammo/health boxes by ijed (from "Rubicon Rumble Pack", with corrected lighting/alignments)
+     [ID1] Items/flames/projectiles/zombie gibs by sock (from "RetroJam1" and "Arcane Dimensions")
+     [ROG] Lava nail/multi-rocket boxes by NightFright (based on nail/rocket ammo models by ijed) 
+ 
 Revision #4 (Feb 16, 2016)
 --------------------------
-> Fixed missing pakz.pak content (ID1 only)
+> Pure bugfix release since one pakz.pak (ID1) was missing content
 
 Revision #3 (Feb 13, 2016)
 --------------------------
 > Added: 
-     - NPCs
-          [ID1] Shambler (by Skiffy)
+     [ID1] Shambler (by Skiffy)
 
 Revision #2 (May 10, 2015)
 --------------------------
 > Added: 
-     - NPCs
-          [ROG] Knight Statue (based on Lunaran's model, skin by Seven)
+     [ROG] Knight Statue (based on Lunaran's model, skin by Seven)
 
 Revision #1 (Jan 15, 2015)
 --------------------------
-> Initial release
+> Initial release with:
+     [ID1] Grunt, Ranger, Rottweiler (capnbubs)
+     [ID1] Knight (Lunaran)
+     [ID1] Vanilla Rotfish mdl fix (ijed)
