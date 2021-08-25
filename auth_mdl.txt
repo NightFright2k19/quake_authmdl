@@ -219,10 +219,11 @@ Revision #26 (??? ??, 2021)
 	  [ID1] Spawn (from Quake Kex, converted by osj)
 	  [ROG] Hellspawn (based on Spawn from Quake Kex, converted/edited by osj)
 > Update:
+     - Progs.dat refresh: Cleaned up code to eliminate most compiler warnings
      - NPCs
           [ID1] Models from Quake Kex, converted by osj:
                 Chthon, Death Knight, Enforcer, Fiend, Ogre, Rotfish, Scrag, Vore, Zombie
-          [ID1] Headgibs: Death Knight, Enforcer, Fiend, Ogre, Shambler, Vore, Zombie (by osj)
+          [ID1] Headgibs: Death Knight, Enforcer, Fiend, Ogre, Scrag, Shambler, Vore, Zombie (by osj)
           [ROG] Multi-Grenade Ogre + headgibs (based on Ogre from Quake Kex, converted/edited by osj)               
      - Weapons
           [ID1] Rocket Launcher (from Quake Kex, converted by Seven and edited by osj)
