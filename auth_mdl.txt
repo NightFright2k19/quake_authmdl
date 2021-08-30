@@ -217,7 +217,9 @@ Revision #26 (??? ??, 2021)
      [ID1] Spawn (from Quake Kex, converted by osj)
      [ROG] Hellspawn (based on Spawn from Quake Kex, converted/edited by osj)
 > Update:
-     [ALL] Progs.dat: Cleaned up code to eliminate most compiler warnings
+     [ALL] Progs.dat: Support for new DOPA episode ending text (client.qc)
+                      Fix for losing runes under certain conditions (client.qc/world.qc)
+                      Cleaned up code to eliminate most compiler warnings
      [ID1] Chthon, Death Knight, Enforcer, Fiend, Ogre, Rotfish, Scrag, Vore, Zombie
            (from Quake Kex, converted by osj)
      [ID1] Headgibs: Death Knight, Enforcer, Fiend, Ogre, Scrag, Shambler, Vore, Zombie (by osj)
