@@ -219,6 +219,7 @@ Revision #26 (??? ??, 2021)
 > Update:
      [ALL] Progs.dat: Support for new DOPA episode ending text (client.qc)
                       Fix for losing runes under certain conditions (client.qc/world.qc)
+                      Fix for items spawning too early (items.qc)
                       Cleaned up code to eliminate most compiler warnings
      [ID1] Chthon, Death Knight, Enforcer, Fiend, Ogre, Rotfish, Scrag, Vore, Zombie
            (from Quake Kex, converted by osj)
