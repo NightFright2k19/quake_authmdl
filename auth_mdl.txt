@@ -225,6 +225,8 @@ Revision #26 (??? ??, 2021)
            (from Quake Kex, converted by osj)
      [ID1] Headgibs: Death Knight, Enforcer, Fiend, Ogre, Scrag, Shambler, Vore, Zombie (by osj)
      [ID1] Rocket Launcher (from Quake Kex, converted by Seven and edited by osj)
+     [HIP] [ROG] Progs.dat: Sliding/not-jumping on monsters/boxes/players fix
+                            Shooting/jumping when respawning fix 
      [ROG] Multi-Grenade Ogre + headgibs (based on Ogre from Quake Kex, converted/edited by osj)               
      [ROG] Multi-Rocket Launcher (based on RL from Quake Kex, converted by Seven and edited by osj)
 
