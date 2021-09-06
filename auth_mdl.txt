@@ -102,7 +102,6 @@ III. CODE FIXES (progs.dat):
    - Fish/Electric Eel blocking player after death fix (now become non-solid after 3rd death frame)
    - Megahealth rot fix (when picking up more than one Megahealth, health no longer "rots" faster)
    - Door unlock sound fix (you can hear the key sound now)
-   - AI update for Ogre/Shambler/Zombie (prevents monsters from sometimes stopping/not starting to walk)
    - R1M7 elevator fix (prevents crashes when pushing the elevator button in DoE's R1M7)
    - And more...
 
@@ -221,6 +220,7 @@ Revision #26 (??? ??, 2021)
                       Fix for losing runes under certain conditions (client.qc/world.qc)
                       Fix for items spawning too early (items.qc)
                       Cleaned up code to eliminate most compiler warnings
+     [ID1] Progs.dat: Deactivated "sv_aim" reset to 0.93 after loading new level
      [ID1] Chthon, Death Knight, Enforcer, Fiend, Ogre, Rotfish, Scrag, Vore, Zombie
            (from Quake Kex, converted by osj)
      [ID1] Headgibs: Death Knight, Enforcer, Fiend, Ogre, Scrag, Shambler, Vore, Zombie (by osj)
