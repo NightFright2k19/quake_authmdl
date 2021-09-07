@@ -160,6 +160,7 @@ Simon "Sock" O'Callaghan ............. "RetroJam1"/"Arcane Dimensions" models
 talisa ............................... Dwere's reworked classic weapons skins for HIP/ROG
 Tea Monster .......................... Shub-Niggurath, Anti-Grav Belt, Biosuit, Empathy Shield, 
                                        Horn of Conjuring, Wetsuit, keycards
+Tribal ............................... Fiend death frame fix (Quake Kex)
 
 SPECIAL THANKS
 --------------
