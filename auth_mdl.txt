@@ -4,7 +4,7 @@ Primary purpose : Singleplayer
 ======================================================================================================================
 Title: Authentic Models for Quake (AMQ), Rev. #26
 Filename: AUTH_MDL-R26.ZIP
-Release date: ??? ??, 2021
+Release date: Sep 10, 2021
 Author: NightFright
 
 
@@ -211,7 +211,7 @@ CD, USB flash media etc) as long as you include this file unaltered.
 C H A N G E L O G
 ----------------------------------------------------------------------------------------------------------------------
 
-Revision #26 (??? ??, 2021)
+Revision #26 (Sep 10, 2021)
 ---------------------------
 > Added:
      [ID1] Spawn (from Quake Kex, converted by osj)
