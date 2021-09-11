@@ -2,9 +2,9 @@
 Advanced engine needed : Any (tested on Mark V and Quakespasm-Spiked)
 Primary purpose : Singleplayer
 ======================================================================================================================
-Title: Authentic Models for Quake (AMQ), Rev. #26
-Filename: AUTH_MDL-R26.ZIP
-Release date: Sep 10, 2021
+Title: Authentic Models for Quake (AMQ), Rev. #27
+Filename: AUTH_MDL-R27.ZIP
+Release date: XXX XX, XXXX
 Author: NightFright
 
 
@@ -211,12 +211,18 @@ CD, USB flash media etc) as long as you include this file unaltered.
 C H A N G E L O G
 ----------------------------------------------------------------------------------------------------------------------
 
+Revision #27 (XXX XX, XXXX)
+---------------------------
+> Updated:
+     [ALL] Progs.dat: Nextthink fixes partially restored (items.qc, misc.qc, monsters.qc)
+                      Compiler warnings removed (knight.qc, oldone.qc)
+
 Revision #26 (Sep 10, 2021)
 ---------------------------
 > Added:
      [ID1] Spawn (from Quake Kex, converted by osj)
      [ROG] Hellspawn (based on Spawn from Quake Kex, converted/edited by osj)
-> Update:
+> Updated:
      [ALL] Progs.dat: Support for new DOPA episode ending text (client.qc)
                       Fix for losing runes under certain conditions (client.qc/world.qc)
                       Fix for items spawning too early (items.qc)
@@ -236,7 +242,7 @@ Revision #25 (Jul 19, 2021)
 ---------------------------
 > Added: 
      [ROG] Plasma cells by NightFright
-> Update: 
+> Updated: 
      [ID1] [ROG] Skin corrections for shell/nail/(multi-)rocket ammo boxes
      [ID1] Scrag: Fullbright pixels removed
      [ID1] Shub-Niggurath: New breathing animation + tentacle position fix
@@ -252,7 +258,7 @@ Revision #25 (Jul 19, 2021)
 
 Revision #24 (Mar 1, 2021)
 --------------------------
-> Update: 
+> Updated: 
      [ID1] Fullbright pixels on Chthon skin removed by osj
      [ID1] Smoother recoil animation + skin adjustments for Rocket Launcher by osj
      [ID1] Backpack UV mapping skin fix by Tea Monster
@@ -284,7 +290,7 @@ Revision #23 (Feb 4, 2021)
      [ROG] Ranger with CTF skin by osj (based on capnbubs model)
      [ROG] Anti-Grav Belt by Tea Monster (skin by Phredreeke)
      [ROG] Fireball by osj (based on "Malice" model)
-> Update: 
+> Updated: 
      [ID1] Vore breasts removed by Tea Monster/osj
      [ID1] Model size optimizations for Ranger/Grunt headgibs and Vore
      [ID1] Gibs by Sock (from AD)
@@ -295,7 +301,7 @@ Revision #22 (Dec 23, 2020)
 ---------------------------
 > Added: 
      [ID1] Scrag headgibs (h_wizard)
-> Update:
+> Updated:
      [ID1] [ROG] (Multi-Grenade) Ogre (Chillo) skin adjustments by osj
      [ID1] Super Shotgun (Dwere) reskin by osj
      [ID1] Progs.dat: Frikbot support removed
@@ -307,7 +313,7 @@ Revision #21 (Dec 7, 2020)
 > General: Progs.dat files now external (can be deleted if desired)
 > Added:   
      [ROG] Lava nail (lspike) based on Chillo's model (skin by NightFright)
-> Update:
+> Updated:
      [ID1] [ROG] Fixed wrong flag #32 (ZOMBGIB) for Ogre head (h_ogre) and removed one fullbright pixel
      [ID1] Added missing flag #4 (GIB) for Rottweiler (h_dog), Shambler (h_shams), Zombie (h_zombie)
      [ID1] Shotgun (v_shot) with reload animation (Barnaby/Dwere)
@@ -324,7 +330,7 @@ Revision #21 (Dec 7, 2020)
 Revision #20 (Nov 30, 2020)
 ---------------------------
 > General: Version numbering changed for better overview
-> Update:
+> Updated:
      [ID1] [ROG] Ogre + headgibs (Chillo model reskins by osj)
      [ID1] Chthon, Death Knight and Ogre mdls recompressed with QuArK to save 70% file size
      [ID1] Knight (+ headgibs) back to Rev. #15 (Chillo --> Lunaran)
@@ -336,14 +342,14 @@ Revision #20 (Nov 30, 2020)
 
 Revision #19 (Nov 20, 2020)
 ---------------------------
-> Update:
+> Updated:
      [ALL] Progs.dat: ID1 based on URQP 1.06a QuakeC fixes; HIP/ROG partially fixed, including FrikBot X++ support for ID1
      [ID1] Death Knight (+ headgibs) by Chillo
      [ID1] Fiend by Chillo (replaces Bloodshot's version)
 
 Revision #18 (Nov 11, 2020)
 ---------------------------
-> Update:
+> Updated:
      [ALL] Progs.dat: Projectile position fixes for ALL weapons, not just nailguns (weapons.qc)
      [ROG] Progs.dat: Ooppee's custom Plasmagun code removed (weapons.qc)
 
@@ -351,7 +357,7 @@ Revision #17 (Mar 17, 2020)
 ---------------------------
 > Added:
      [ID1] Death Knight headgibs, reskin by osj based on sock's model
-> Update:
+> Updated:
      [ID1] [ROG] Ogre (+ headgibs) based on Chillo's model (reskin by osj)
      [ID1] Enforcer (+ headgibs) based on Chillo's model (reskin by osj)
      [ID1] Player headgibs based on sock's Grunt head (reskin by osj)
@@ -363,18 +369,18 @@ Revision #16 (Jan 13, 2020)
 > Added:
      [ID1] Death Knight by Chillo
      [ID1] Vore by Chillo (edited by TribalQuake)
-> Update: 
+> Updated: 
      [ID1] Enforcer (+ headgibs) by Chillo
      [ID1] Knight (+ headgibs) by Chillo (ROG still using Lunaran's model)
 
 Revision #15 (Mar 28, 2018)
 ---------------------------
-> Update: 
+> Updated: 
      [ID1] [ROG] Fix for missing flag #4 (GIB) for Lunaran's knight head (h_knight.mdl)
 
 Revision #14 (Mar 26, 2018)
 ---------------------------
-> Update: 
+> Updated: 
      [ID1] Grunt headgibs by sock (from "Arcane Dimensions")
      [ID1] Quad Damage by Chillo
 
@@ -385,12 +391,12 @@ Revision #13 (Mar 19, 2018)
                  (headgibs by sock from "Arcane Dimensions")
      [ID1] Vanilla Vore with idle animation by Seven
      [ID1] Zombie by Chillo (skin edits by NightFright)
-> Update: 
+> Updated: 
      [ID1] Bloodshot's Fiend model with original ID1 skin (no glowing eyes) 
 
 Revision #12 (Dec 8, 2016)
 --------------------------
-> Update: 
+> Updated: 
      [ID1] Proper rescaling/floor alignment for Fiend headgibs
 
 Revision #11 (Dec 7, 2016)
@@ -402,13 +408,13 @@ Revision #10 (Dec 2, 2016)
 --------------------------
 > Added:  
      [ID1] Fiend by Bloodshot
-> Update: 
+> Updated: 
      [ID1] Grenade Launcher pickup by OriOn
      [HIP] Prox Mine Launcher pickup by OriOn
 
 Revision #9 (Oct 11, 2016)
 --------------------------
-> Update: 
+> Updated: 
      [HIP] [ROG] Reworked classic weapons by Dwere/talisa (based on "Guns of Okayishness" v2.0)
 
 Revision #8 (Oct 11, 2016)
@@ -421,14 +427,14 @@ Revision #7 (Oct 10, 2016)
 > Added:  
      [ALL] Progs.dat: Nail firing position fix (weapons.qc)
      [ROG] Progs.dat: Plasmagun firing animation & projectile position fix (weapons.qc), R1M7 elevator fix (newplats.qc)
-> Update: 
+> Updated: 
      [ID1] Dwere's "Guns of Okayishness" updated to v2.0: Muzzleflash fixes, NG nozzle adjustment, seams fixed
 
 Revision #6 (Oct 10, 2016)
 --------------------------
 > Added:  
      [ALL] Reworked classic weapons by Dwere (ID1)/talisa (HIG/ROG)
-> Update: 
+> Updated: 
      [ID1] Some projectiles (grenade.mdl, s_spike.mdl, spike.mdl) replaced with Dwere's models
 
 Revision #5 (Mar 2, 2016)
