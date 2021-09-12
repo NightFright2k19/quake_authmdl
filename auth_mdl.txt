@@ -215,6 +215,7 @@ Revision #27 (XXX XX, XXXX)
 ---------------------------
 > Updated:
      [ALL] Progs.dat: Nextthink fixes partially restored (items.qc, misc.qc, monsters.qc)
+                      Cheats sound fix (world.qc)
                       Compiler warnings removed (knight.qc, oldone.qc)
 
 Revision #26 (Sep 10, 2021)
