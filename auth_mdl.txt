@@ -110,11 +110,22 @@ III. CODE FIXES (progs.dat):
 I N S T A L L A T I O N
 ----------------------------------------------------------------------------------------------------------------------
 
+VANILLA + CUSTOM PORTS (MARK V, QUAKESPASM ETC):
 1) Unzip the contents of this zipfile into your Quake installation dir.
 2) Rename the "z" letter in the three "pakz.pak" files so they have the highest number in your 
    "id1", "hipnotic" and "rogue" subdirs.
    [Example: Rename "pakz.pak" to "pak2.pak" if you just have "pak0.pak" and "pak1.pak".]
-3) Load the game and enjoy.
+3) Launch the game and enjoy.
+
+QUAKE ENHANCED (NIGHTDIVE PORT):
+1) Unzip the contents of this zipfile into your Steam installation dir of Quake Enhanced.
+   Default dir: C:\Program Files (x86)\Steam\steamapps\common\Quake\rerelease 
+2) Rename the "z" letter in the three "pakz.pak" files so they have the highest number in your 
+   "id1", "hipnotic" and "rogue" subdirs. In this case, it would always be "pak1.pak".
+3) IMPORTANT: Be sure to *NOT* copy over any external progs.dat files to avoid problems!
+4) Launch the game through Steam. 
+5) Make sure "Enhanced Models" are turned OFF in the menu (under "Options" > "Display"). 
+   [Ammo/health items and explosive boxes will be replaced regardless of any selected option.]
 
 
 ----------------------------------------------------------------------------------------------------------------------
