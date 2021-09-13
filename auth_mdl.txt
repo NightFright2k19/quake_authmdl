@@ -127,7 +127,7 @@ capnbubs ............................. Player, Grunt, Rottweiler
 Chillo ............................... Death Knight (ROG), Mummy (ROG), Teleport Sphere, Torch/Flame
 Dwere ................................ Reworked classic weapons (aka "Guns of Okayishness")
 Louis "ijed" Manning ................. "Rubicon Rumble Pack" ammo/health boxes
-Lunaran .............................. Knight, Pentagram, Quad Damage
+Lunaran .............................. Knight, Pentagram, Quad Damage, QuakeC fixes (Copper)
 Machine Games/Nightdive Studios ...... Chthon, Death Knight, Enforcer, Fiend, Ogre, Rocket Launcher,
                                        Scrag, Vore, Zombie
 Maddes (et al.) ...................... URQP QuakeC fixes
@@ -215,6 +215,7 @@ Revision #27 (XXX XX, XXXX)
 ---------------------------
 > Updated:
      [ALL] Progs.dat: Nextthink fixes partially restored (items.qc, misc.qc, monsters.qc)
+                      Swimming up with "jump" key now as fast as with "up" key (client.qc)
                       Cheats sound fix (world.qc)
                       Compiler warnings removed (knight.qc, oldone.qc)
 
