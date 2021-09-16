@@ -226,9 +226,15 @@ Revision #27 (XXX XX, XXXX)
 ---------------------------
 > Updated:
      [ALL] Progs.dat: Nextthink fixes partially restored (items.qc, misc.qc, monsters.qc)
-                      Swimming up with "jump" key now as fast as with "up" key (client.qc)
+                      Swimming up with +jump now as fast as +forward and looking up (client.qc)
+                      Demon already non-solid after death frame #3 (demon.qc)
                       Cheats sound fix (world.qc)
                       Compiler warnings removed (knight.qc, oldone.qc)
+     [HIP] [ROG] Progs.dat: Improved weapon switching (items.qc)
+                            Smooth plat movement - improves riding carts in e.g. HIP3M1/R1M4 (plats.qc)
+                            Walkframe leak fix (player.qc)
+                            T_RadiusDamage workaround (combat.qc, misc.qc)
+                            Better performance in powerups handling (defs.qc, client.qc, items.qc)
 
 Revision #26 (Sep 10, 2021)
 ---------------------------
