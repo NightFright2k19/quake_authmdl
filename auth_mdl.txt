@@ -162,6 +162,7 @@ osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
                                                   Proximity Gun (Dwere)
 Phredreeke ........................... Upscaled skins for Anti-Grav Belt + Empathy Shield
 Plague ............................... Grenade Launcher
+Preach ............................... QuakeC code cleanup (ID1)
 Renier "Skiffy" Banninga ............. Shambler
 Seven ................................ Knight Statue skin (for Lunaran's model)
                                        Original fixes for nail positioning and MP2 issues
@@ -230,6 +231,7 @@ Revision #27 (XXX XX, XXXX)
                       Demon already non-solid after death frame #3 (demon.qc)
                       Cheats sound fix (world.qc)
                       Compiler warnings removed (knight.qc, oldone.qc)
+     [ID1] Progs.dat: Entire file rewritten from scratch, with essential fixes included only (about 40KB less compiled code)
      [HIP] [ROG] Progs.dat: Improved weapon switching (items.qc)
                             Smooth plat movement - improves riding carts in e.g. HIP3M1/R1M4 (plats.qc)
                             Walkframe leak fix (player.qc)
