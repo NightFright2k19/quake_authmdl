@@ -237,6 +237,7 @@ Revision #27 (XXX XX, XXXX)
                             Walkframe leak fix (player.qc)
                             T_RadiusDamage workaround (combat.qc, misc.qc)
                             Better performance in powerups handling (defs.qc, client.qc, items.qc)
+     [ROG] Mummy: Fullbright pixels on skin removed
 
 Revision #26 (Sep 10, 2021)
 ---------------------------
@@ -245,7 +246,7 @@ Revision #26 (Sep 10, 2021)
      [ROG] Hellspawn (based on Spawn from Quake Kex, converted/edited by osj)
 > Updated:
      [ALL] Progs.dat: Support for new DOPA episode ending text (client.qc)
-                      Fix for losing runes under certain conditions (client.qc/world.qc)
+                      Fix for losing runes under certain conditions (client.qc, world.qc)
                       Fix for items spawning too early (items.qc)
                       Cleaned up code to eliminate most compiler warnings
      [ID1] Progs.dat: Deactivated "sv_aim" reset to 0.93 after loading new level
@@ -253,9 +254,9 @@ Revision #26 (Sep 10, 2021)
            (from Quake Kex, converted by osj)
      [ID1] Headgibs: Death Knight, Enforcer, Fiend, Ogre, Scrag, Shambler, Vore, Zombie (by osj)
      [ID1] Rocket Launcher (from Quake Kex, converted by Seven and edited by osj)
-     [HIP] [ROG] Progs.dat: Quad cheat sound fix
-                            Shooting/jumping when respawning fix 
- 			    Sliding/not-jumping on monsters/boxes/players fix
+     [HIP] [ROG] Progs.dat: Quad cheat sound fix (world.qc)
+                            Shooting/jumping when respawning fix (client.qc, defs.qc)
+ 			    Sliding/not-jumping on monsters/boxes/players fix (boss.qc, client.qc demon.qc, dog.qc, misc.qc, monsters.qc, oldone.qc, tarbaby.qc)
      [ROG] Multi-Grenade Ogre + headgibs (based on Ogre from Quake Kex, converted/edited by osj)               
      [ROG] Multi-Rocket Launcher (based on RL from Quake Kex, converted by Seven and edited by osj)
 
