@@ -228,7 +228,7 @@ Revision #27 (XXX XX, XXXX)
 > Updated:
      [ALL] Progs.dat: Nextthink fixes partially restored (items.qc, misc.qc, monsters.qc)
                       Swimming up with +jump now as fast as +forward and looking up (client.qc)
-                      Proper Ogre aiming (ogre.qc, ogre_aim.qc)
+                      Proper Ogre aiming (ogre.qc, ogre_aim.qc, hipgrem.qc)
                       Demon already non-solid after death frame #3 (demon.qc)
                       Cheats sound fix (world.qc)
                       Compiler warnings removed (knight.qc, oldone.qc)
