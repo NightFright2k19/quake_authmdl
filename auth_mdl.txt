@@ -235,6 +235,7 @@ Revision #27 (XXX XX, XXXX)
      [HIP] [ROG] Progs.dat: Improved weapon switching (items.qc)
                             Smooth plat movement - improves riding carts in e.g. HIP3M1/R1M4 (plats.qc)
                             Walkframe leak fix (player.qc)
+                            Movetarget correction in monster start functions (monsters.qc)
                             T_RadiusDamage workaround (combat.qc, misc.qc)
                             Better performance in powerups handling (defs.qc, client.qc, items.qc)
      [ROG] Mummy: Fullbright pixels on skin removed
