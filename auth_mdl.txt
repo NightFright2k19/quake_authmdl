@@ -162,7 +162,7 @@ osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
                                                   Proximity Gun (Dwere)
 Phredreeke ........................... Upscaled skins for Anti-Grav Belt + Empathy Shield
 Plague ............................... Grenade Launcher
-Preach ............................... QuakeC code cleanup (ID1), proper Ogre aiming code
+Preach ............................... QuakeC code cleanup (ID1)
 Renier "Skiffy" Banninga ............. Shambler
 Seven ................................ Knight Statue skin (for Lunaran's model)
                                        Original fixes for nail positioning and MP2 issues
@@ -228,7 +228,6 @@ Revision #27 (XXX XX, XXXX)
 > Updated:
      [ALL] Progs.dat: Nextthink fixes partially restored (items.qc, misc.qc, monsters.qc)
                       Swimming up with +jump now as fast as +forward and looking up (client.qc)
-                      Proper Ogre aiming (ogre.qc, ogre_aim.qc, hipgrem.qc)
                       Demon already non-solid after death frame #3 (demon.qc)
                       Cheats sound fix (world.qc)
                       Compiler warnings removed (knight.qc, oldone.qc)
