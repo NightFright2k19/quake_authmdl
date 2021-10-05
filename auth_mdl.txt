@@ -256,6 +256,7 @@ Revision #27 (XXX XX, XXXX)
                             Double/inverted telefrag fix / recognizing time on spawning tdeath (triggers.qc)
                             Grenades bounce off skies fix / enhancing grenade touch function (weapons.qc)
                             Skill variable not set correctly on worldspawn (world.qc)
+                            Deathmatch modes 3-5 added (client.qc, combat.qc, defs.qc, hipitems.qc, items.qc, lava_wpn.qc, mult_wpn.qc, weapons.qc, world.qc)
      [ROG] Mummy: Fullbright pixels on skin removed
 
 Revision #26 (Sep 10, 2021)
