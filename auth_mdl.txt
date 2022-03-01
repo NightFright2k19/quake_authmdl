@@ -142,6 +142,7 @@ Bloodshot ............................ Grenade
 capnbubs ............................. Player, Grunt, Rottweiler
 Chillo ............................... Death Knight (ROG), Mummy (ROG), Teleport Sphere, Torch/Flame
 Dwere ................................ Reworked classic weapons (aka "Guns of Okayishness")
+Hexaae ............................... Progs.dat adjustments (weapon projectile alignments)
 Louis "ijed" Manning ................. "Rubicon Rumble Pack" ammo/health boxes
 Lunaran .............................. Knight, Pentagram, Quad Damage, QuakeC fixes (Copper)
 Machine Games/Nightdive Studios ...... Chthon, Death Knight, Enforcer, Fiend, Ogre, Rocket Launcher,
@@ -235,7 +236,8 @@ Revision #27 (XXX XX, XXXX)
 > Updated:
      [ALL] All progs.dat files are now inside of separate paks (pakzz.pak) to enable usage in ports
            which do not support external progs.dat files
-     [ALL] Progs.dat: Nextthink fixes partially restored (items.qc, misc.qc, monsters.qc)
+     [ALL] Progs.dat: Adjustments for weapon projectile alignments (weapons.qc, lava_wpn.qc, mult_wpn.qc)
+                      Nextthink fixes partially restored (items.qc, misc.qc, monsters.qc)
                       Swimming up with +jump now as fast as +forward and looking up (client.qc)
 		      Dog/Fiend/Spawn leaps onto player head can kill instantly fix (defs.qc, demon.qc, dog.qc, tarbaby.qc)
                       Demon already non-solid after death frame #3 (demon.qc)
