@@ -116,10 +116,11 @@ VANILLA + CUSTOM PORTS (MARK V, QUAKESPASM ETC):
 2) Rename the "z" letter in the three "pakz.pak" files so they have the highest number in your 
    "id1", "hipnotic" and "rogue" subdirs.
    [Example: Rename "pakz.pak" to "pak2.pak" if you just have "pak0.pak" and "pak1.pak".]
-3) If you also want the progs.dat fixes:
-   Rename the "zz" letters in the three "pakzz.pak" files so they have the highest number in your 
-   "id1", "hipnotic" and "rogue" subdirs.
-   [Example: Rename "pakzz.pak" to "pak3.pak" if you have "pak0.pak", "pak1.pak" and "pak2.pak".]
+3) If you also want the progs.dat fixes (OPTIONAL):
+   a) Copy the subdirs from the "codefixes" folder to your Quake directory.
+   b) Rename the "zz" letters in the three "pakzz.pak" files so they have the highest number in your 
+      "id1", "hipnotic" and "rogue" subdirs.
+      [Example: Rename "pakzz.pak" to "pak3.pak" if you have "pak0.pak", "pak1.pak" and "pak2.pak".]
 4) Launch the game and enjoy.
 
 QUAKE ENHANCED (NIGHTDIVE PORT):
@@ -231,6 +232,8 @@ C H A N G E L O G
 
 Revision #27 (XXX XX, XXXX)
 ---------------------------
+> General: Code fixes are now in separate subdir ("codefixes"). This was done so users have to deliberately
+           choose to use those files since they are optional and might cause conflicts with mods.
 > Added:
      [HIP] Mjolnir skin seam fix in GL modes (still uses original model)
 > Updated:
