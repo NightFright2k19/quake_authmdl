@@ -235,7 +235,7 @@ Revision #27 (XXX XX, XXXX)
 > General: Code fixes are now in separate subdir ("codefixes"). This was done so users have to deliberately
            choose to use those files since they are optional and might cause conflicts with mods.
 > Added:
-     [HIP] Mjolnir skin seam fix in GL modes (still uses original model)
+     [HIP] Mjolnir: Skin seam on handle fixed in GL modes (still uses original model)
 > Updated:
      [ALL] All progs.dat files are now inside of separate paks (pakzz.pak) to enable usage in ports
            which do not support external progs.dat files
@@ -253,7 +253,6 @@ Revision #27 (XXX XX, XXXX)
                       Cheats sound fix (world.qc)
                       Compiler warnings removed (knight.qc, oldone.qc)
      [ID1] Progs.dat: Entire file rewritten from scratch, with essential fixes included only (about 40KB less compiled code)
-     [ID1] Fullbright pixels on player head removed (now based on capnbubs' player model; angle changed)
      [HIP] Progs.dat: Prevent player from keeping previous velocity when respawning (client.qc)
 		      hurt_touch fix to allow every player in entity to get hurt every second (triggers.qc)
      [HIP] [ROG] Progs.dat: Ghost eyes and hovering bodies fix / fixing client disconnect (client.qc)
@@ -273,6 +272,8 @@ Revision #27 (XXX XX, XXXX)
                             Grenades bounce off skies fix / enhancing grenade touch function (weapons.qc)
                             Skill variable not set correctly on worldspawn (world.qc)
                             Deathmatch modes 3-5 added (client.qc, combat.qc, defs.qc, hipitems.qc, items.qc, lava_wpn.qc, mult_wpn.qc, weapons.qc, world.qc)
+     [ID1] Player: Fullbright pixels on headgib removed (now based on capnbubs' player model; angle changed)
+     [ID1] Grunt: Headgib rescaled to 0.72x size to fit full model measures
      [ROG] Mummy: Fullbright pixels on skin removed
 
 Revision #26 (Sep 10, 2021)
