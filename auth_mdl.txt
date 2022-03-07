@@ -273,7 +273,7 @@ Revision #27 (XXX XX, XXXX)
                             Skill variable not set correctly on worldspawn (world.qc)
                             Deathmatch modes 3-5 added (client.qc, combat.qc, defs.qc, hipitems.qc, items.qc, lava_wpn.qc, mult_wpn.qc, weapons.qc, world.qc)
      [ID1] Player: Fullbright pixels on headgib removed (now based on capnbubs' player model; angle changed)
-     [ID1] Grunt: Headgib rescaled to 0.72x size to fit full model measures
+     [ID1] Dog/Enforcer/Grunt: Headgibs size reduced to fit full model measures
      [ROG] Mummy: Fullbright pixels on skin removed
 
 Revision #26 (Sep 10, 2021)
