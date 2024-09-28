@@ -37,50 +37,50 @@ Weapons:
    - Axe ........................................................ v_axe.mdl
    - Shotgun .................................................... v_shot.mdl
    - Super Shotgun .............................................. g_shot.mdl, v_shot2.mdl
-   - Nailgun .................................................... g_nail.mdl, v_nail.mdl
-   - Perforator ................................................. g_nail2.mdl, v_nail2.mdl
-   - Lava Nailgun + Perforator (ROG) ............................ v_lava.mdl, v_lava2.mdl
-   - Proximity Gun (HIP) ........................................ g_prox.mdl, v_prox.mdl
-   - Grenade Launcher ........................................... g_rock.mdl, v_rock.mdl
-   - Rocket Launcher ............................................ g_rock2.mdl, v_rock2.mdl
-   - Multi Grenade + Rocket Launcher (ROG) ...................... v_multi.mdl, v_multi2.mdl
-   - Thunderbolt ................................................ g_light.mdl, v_light.mdl
+   - Nailgun .................................................... (g/v)_nail.mdl
+   - Perforator ................................................. (g/v)_nail2.mdl
+   - Lava Nailgun + Perforator (ROG) ............................ v_lava(2).mdl
+   - Proximity Gun (HIP) ........................................ (g/v)_prox.mdl
+   - Grenade Launcher ........................................... (g/v)_rock.mdl
+   - Rocket Launcher ............................................ (g/v)_rock2.mdl
+   - Multi Grenade + Rocket Launcher (ROG) ...................... v_multi(2).mdl
+   - Thunderbolt ................................................ (g/v)_light.mdl
    - Mjolnir (HIP) .............................................. v_hammer.mdl
    - Plasma Gun (ROG) ........................................... v_plasma.mdl
 
 Items:
-   - Ammo boxes ................................................. b_batt0/1.bsp, b_nail0/1.bsp,
-                                                                  b_rock0/1.bsp, b_shell0/1.bsp
+   - Ammo boxes ................................................. b_batt(0/1).bsp, b_nail(0/1).bsp,
+                                                                  b_rock(0/1).bsp, b_shell(0/1).bsp
    - Anti-Grav Belt (ROG) ....................................... beltup.mdl
    - Armor ...................................................... armor.mdl
    - Backpack ................................................... backpack.mdl
    - Biosuit .................................................... suit.mdl
    - Empathy Shield (HIP) ....................................... empathy.mdl
-   - Health boxes ............................................... b_bh10.bsp, b_bh25.bsp, b_bh100.bsp
+   - Health boxes ............................................... b_bh(10/25/100).bsp
    - Horn of Conjuring (HIP) .................................... horn.mdl
-   - Keys ....................................................... b_g_key.mdl, b_s_key.mdl, w_g_key.mdl, w_s_key.mdl
-   - Lava nail boxes (ROG) ...................................... b_lava0/1.bsp
-   - Multi-rocket boxes (ROG) ................................... b_mrock0.bsp, b_mrock1.bsp
+   - Keys ....................................................... (b/m/w)_(g/s)_key.mdl
+   - Lava nail boxes (ROG) ...................................... b_lava(0/1).bsp
+   - Multi-rocket boxes (ROG) ................................... b_mrock(0/1).bsp
    - Pentagram of Protection .................................... invulner.mdl
-   - Plasma cells (ROG) ......................................... b_plas0.bsp, b_plas1.bsp
+   - Plasma cells (ROG) ......................................... b_plas(0/1).bsp
    - Quad Damage ................................................ quaddama.mdl
    - Ring of Shadows ............................................ invisibl.mdl
-   - Runes (fixed UV mapping) ................................... end1-4.mdl
+   - Runes (fixed UV mapping) ................................... end(1/2/3/4).mdl
    - Wetsuit (HIP) .............................................. wetsuit.mdl
 
 Props/projectiles:
    - Exploding boxes ............................................ b_explop.bsp, b_exbox2.bsp
    - Eyes ....................................................... eyes.mdl
    - Fireball (ROG) ............................................. fireball.mdl
-   - Flames ..................................................... flame.mdl, flame2.mdl
-   - Gibs ....................................................... gib1.mdl, gib2.mdl, gib3.mdl
+   - Flames ..................................................... flame(2).mdl
+   - Gibs ....................................................... gib(1/2/3).mdl
    - Lava ball .................................................. lavaball.mdl
    - Lava nails (ROG) ........................................... lspike.mdl
    - Lava rock (HIP) ............................................ lavarock.mdl
-   - Projectiles ................................................ grenade.mdl, missile.mdl, k/s/v/w_spike.mdl, spike.mdl
+   - Projectiles ................................................ grenade.mdl, missile.mdl, (k/s/v/w_)spike.mdl
    - Proximity bomb (HIP) ....................................... proxbomb.mdl
    - Teleporter sphere .......................................... teleport.mdl
-   - Torch/Flame ................................................ flame.mdl, flame2.mdl
+   - Torch/Flame ................................................ flame(2).mdl
    - Zombie gibs ................................................ zom_gib.mdl
 
 
@@ -142,6 +142,7 @@ Barnaby .............................. Animated shotgun pump
 Bloodshot ............................ Grenade
 capnbubs ............................. Player, Grunt, Rottweiler
 Chillo ............................... Death Knight (ROG), Mummy (ROG), Teleport Sphere, Torch/Flame
+dumptruck_ds ......................... Runic keys (from pd_r_key.mdl in Progs_dump v3)
 Dwere ................................ Reworked classic weapons (aka "Guns of Okayishness")
 Hexaae ............................... Progs.dat adjustments (weapon projectile alignments)
 Louis "ijed" Manning ................. "Rubicon Rumble Pack" ammo/health boxes
@@ -235,6 +236,7 @@ Revision #27 (XXX XX, XXXX)
 > General: Code fixes are now in separate subdir ("codefixes"). This was done so users have to deliberately
            choose to use those files since they are optional and might cause conflicts with mods.
 > Added:
+     [ID1] Runic keys: Texture fixes (taken from Progs_dump v3)
      [HIP] Mjolnir: Skin seam on handle fixed in GL modes (still uses original model)
 > Updated:
      [ALL] All progs.dat files are now inside of separate paks (pakzz.pak) to enable usage in ports
