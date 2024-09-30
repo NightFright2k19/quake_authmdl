@@ -87,24 +87,16 @@ Props/projectiles:
 II. ALTERNATE MODELS (rename first before usage):
 
 [ID1]
-   - Shotgun without recoil animation ........................... v_shot1.mdl (for: v_shot.mdl)
-   - Small rocket ammo box with large rocket .................... b_rock0-alt.bsp (for: b_rock0.bsp)
-   - Large rocket ammo box with small rockets ................... b_rock1-alt.bsp (for: b_rock1.bsp)
+   - Shotgun with recoil animation .............................. v_shot_alt.mdl (for: v_shot.mdl)
+   - Small rocket ammo box with large rocket .................... b_rock0_alt.bsp (for: b_rock0.bsp)
+   - Large rocket ammo box with small rockets ................... b_rock1_alt.bsp (for: b_rock1.bsp)
+
+[HIP]
+   - Proximity Gun with GL-like skin ............................ v_prox_alt.mdl (for: v_prox.mdl)
 
 [ROG]
-   - Small multi-rocket ammo box with large rocket .............. b_mrock0-alt.bsp (for: b_mrock0.bsp)
-   - Large multi-rocket box with small rockets .................. b_mrock1-alt.bsp (for: b_mrock1.bsp)   
-
-
-III. CODE FIXES (progs.dat):
-
-   - Projectile position fixes for all weapons (when looking up/down)
-   - Fish count fix (fishes are no longer counted 2x)
-   - Fish/Electric Eel blocking player after death fix (now become non-solid after 3rd death frame)
-   - Megahealth rot fix (when picking up more than one Megahealth, health no longer "rots" faster)
-   - Door unlock sound fix (you can hear the key sound now)
-   - R1M7 elevator fix (prevents crashes when pushing the elevator button in DoE's R1M7)
-   - And more...
+   - Small multi-rocket ammo box with large rocket .............. b_mrock0_alt.bsp (for: b_mrock0.bsp)
+   - Large multi-rocket box with small rockets .................. b_mrock1_alt.bsp (for: b_mrock1.bsp)   
 
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -116,21 +108,15 @@ VANILLA + CUSTOM PORTS (MARK V, QUAKESPASM ETC):
 2) Rename the "z" letter in the three "pakz.pak" files so they have the highest number in your 
    "id1", "hipnotic" and "rogue" subdirs.
    [Example: Rename "pakz.pak" to "pak2.pak" if you just have "pak0.pak" and "pak1.pak".]
-3) If you also want the progs.dat fixes (OPTIONAL):
-   a) Copy the subdirs from the "codefixes" folder to your Quake directory.
-   b) Rename the "zz" letters in the three "pakzz.pak" files so they have the highest number in your 
-      "id1", "hipnotic" and "rogue" subdirs.
-      [Example: Rename "pakzz.pak" to "pak3.pak" if you have "pak0.pak", "pak1.pak" and "pak2.pak".]
-4) Launch the game and enjoy.
+3) Launch the game and enjoy.
 
 QUAKE ENHANCED (NIGHTDIVE PORT):
 1) Unzip the contents of this zipfile into your Steam installation dir of Quake Enhanced.
    Default dir: C:\Program Files (x86)\Steam\steamapps\common\Quake\rerelease 
 2) Rename the "z" letter in the three "pakz.pak" files so they have the highest number in your 
    "id1", "hipnotic" and "rogue" subdirs. In this case, it would always be "pak1.pak".
-3) IMPORTANT: Do *NOT* copy over any external progs.dat files (pakzz.pak) to avoid problems!
-4) Launch the game through Steam. 
-5) Make sure "Enhanced Models" are turned OFF in the menu (under "Options" > "Display"). 
+3) Launch the game through Steam. 
+4) Make sure "Enhanced Models" are turned OFF in the menu (under "Options" > "Display"). 
    [Ammo/health items and explosive boxes will be replaced regardless of any selected option.]
 
 
@@ -138,23 +124,21 @@ QUAKE ENHANCED (NIGHTDIVE PORT):
 C R E D I T S
 ---------------------------------------------------------------------------------------------------------------------- 
 
-Barnaby .............................. Animated shotgun pump   
+Barnaby .............................. Animated shotgun pump (original model)
 Bloodshot ............................ Grenade
 capnbubs ............................. Player, Grunt, Rottweiler
 Chillo ............................... Death Knight (ROG), Mummy (ROG), Teleport Sphere, Torch/Flame
 dumptruck_ds ......................... Runic keys (from pd_r_key.mdl in Progs_dump v3)
 Dwere ................................ Reworked classic weapons (aka "Guns of Okayishness")
-Hexaae ............................... Progs.dat adjustments (weapon projectile alignments)
 Louis "ijed" Manning ................. "Rubicon Rumble Pack" ammo/health boxes
-Lunaran .............................. Knight, Pentagram, Quad Damage, QuakeC fixes (Copper)
+Lunaran .............................. Knight, Pentagram, Quad Damage
 Machine Games/Nightdive Studios ...... Chthon, Death Knight, Enforcer, Fiend, Ogre, Rocket Launcher,
                                        Scrag, Vore, Zombie
-Maddes (et al.) ...................... URQP QuakeC fixes
 NightFright .......................... ROG plasma cells, health/ammo box edits/realignments (ijed),
-                                       URQP QuakeC code adjustments, skin edits for backback (Sock),
-                                       Lava Perforator (Dwere/osj) and Mjolnir               
+                                       skin edits for backback (Sock), Lava Perforator (Dwere/osj)
+                                       and Mjolnir               
 osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
-                                       MD5 model conversions from Quake Kex
+                                       MD5 model conversions from QuakeEX
 				       Headgibs (Death Knight, Enforcer, Ogre, Vore, Zombie)
                                        Various skin edits:
 				       - Headgibs: Player (Sock), Shambler (skiffy)
@@ -166,11 +150,10 @@ osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
                                        - Props: Torch/Flame (Chillo)
                                        - Weapons: (Lava) Perforator (Dwere)
                                                   (Multi) Grenade Launcher (Plague)
-                                                  Multi Rocket Launcher (Quake Kex)
+                                                  Multi Rocket Launcher (QuakeEX)
                                                   Proximity Gun (Dwere)
 Phredreeke ........................... Upscaled skins for Anti-Grav Belt + Empathy Shield
 Plague ............................... Grenade Launcher
-Preach ............................... QuakeC code cleanup (ID1)
 Renier "Skiffy" Banninga ............. Shambler
 Seven ................................ Knight Statue skin (for Lunaran's model)
                                        Original fixes for nail positioning and MP2 issues
@@ -180,14 +163,14 @@ Simon "Sock" O'Callaghan ............. "RetroJam1"/"Arcane Dimensions" models
 talisa ............................... Dwere's reworked classic weapons skins for HIP/ROG
 Tea Monster .......................... Shub-Niggurath, Anti-Grav Belt, Biosuit, Empathy Shield, 
                                        Horn of Conjuring, Wetsuit, keycards
-Tribal ............................... Fiend death frame fix (Quake Kex)
+Tribal ............................... Fiend death frame fix (QuakeEX)
 
 SPECIAL THANKS
 --------------
 Capnbubs (for starting it all)
 Chillo (for producing that massive amount of model remakes)
 John Romero (for his fast feedback regarding the battery cell ammo)
-Nightdive Studios (for their Quake Kex release)
+Nightdive Studios (for their QuakeEX release)
 Seven (the kind and patient soul of the QuakeOne forums)
 Tea Monster (for his outstanding contributions)
 
@@ -212,9 +195,6 @@ L I N K S
 - Knight model replacement (Lunaran):
   http://www.celephais.net/board/view_thread.php?id=61177
 
-- QuakeC Fixes (Maddes):
-  https://www.quake-info-pool.net/q1/qcfix.htm
-
 
 ----------------------------------------------------------------------------------------------------------------------
 C O P Y R I G H T  /  P E R M I S S I O N S
@@ -233,56 +213,24 @@ C H A N G E L O G
 
 Revision #27 (XXX XX, XXXX)
 ---------------------------
-> General: Code fixes are now in separate subdir ("codefixes"). This was done so users have to deliberately
-           choose to use those files since they are optional and might cause conflicts with mods.
+> General: Code fixes removed since they are a different project and have nothing to do with the actual models
 > Added:
      [ID1] Runic keys: Texture fixes (taken from Progs_dump v3)
      [HIP] Mjolnir: Skin seam on handle fixed in GL modes (still uses original model)
 > Updated:
-     [ALL] All progs.dat files are now inside of separate paks (pakzz.pak) to enable usage in ports
-           which do not support external progs.dat files
-     [ALL] Progs.dat: Adjustments for weapon projectile alignments (weapons.qc, lava_wpn.qc, mult_wpn.qc)
-                      Nextthink fixes partially restored (items.qc, misc.qc, monsters.qc)
-                      Swimming up with +jump now as fast as +forward and looking up (client.qc)
-		      Dog/Fiend/Spawn leaps onto player head can kill instantly fix (defs.qc, demon.qc, dog.qc, tarbaby.qc)
-                      Demon already non-solid after death frame #3 (demon.qc)
-		      Fix for Shamblers being non-solid to projectiles after using their lightning attack (shambler.qc)
-		      Spikeball movetype fix (plats.qc, subs.qc)
-		      Transparent water/slime detection for monsters (ai.qc, defs.qc, world.qc)
-		      Swinging axe w/o hitting anything won't wake up monsters (weapons.qc)
-                      God cheat preserves armor and prevents underwater gagging (combat.qc)
-                      NOCLIP mode also includes NOTARGET (ai.qc)
-                      Cheats sound fix (world.qc)
-                      Compiler warnings removed (knight.qc, oldone.qc)
-     [ID1] Progs.dat: Entire file rewritten from scratch, with essential fixes included only (about 40KB less compiled code)
-     [HIP] Progs.dat: Prevent player from keeping previous velocity when respawning (client.qc)
-		      hurt_touch fix to allow every player in entity to get hurt every second (triggers.qc)
-     [HIP] [ROG] Progs.dat: Ghost eyes and hovering bodies fix / fixing client disconnect (client.qc)
-                            Incorrect frag sentence (frag/frags) when a player disconnects fix (client.qc)
-                            Samelevel fix / recognizing "samelevel" only in DM (client.qc)
-                            Player drops backpack on suicide / using "Killed()" function on suicide (client.qc)
-                            Noexit without dying / recognizing "noexit" 3/4 (client.qc)
-                            CanDamage fix / checking half-sized bounding box (client.qc)
-                            Doors no Quad power fix / recognizing doors) (combat.qc)
-                            T_RadiusDamage workaround (combat.qc, misc.qc)
-                            Better performance in powerups handling (defs.qc, client.qc, items.qc)
-                            Improved weapon switching (items.qc)
-                            Movetarget correction in monster start functions (monsters.qc)
-                            Smooth plat movement - improves riding carts in e.g. HIP3M1/R1M4 (plats.qc)
-                            Walkframe leak fix (player.qc)
-                            Double/inverted telefrag fix / recognizing time on spawning tdeath (triggers.qc)
-                            Grenades bounce off skies fix / enhancing grenade touch function (weapons.qc)
-                            Skill variable not set correctly on worldspawn (world.qc)
-                            Deathmatch modes 3-5 added (client.qc, combat.qc, defs.qc, hipitems.qc, items.qc, lava_wpn.qc, mult_wpn.qc, weapons.qc, world.qc)
+     [ID1] Shotgun: Now based on QuakeEX model (animated barrel available, named v_shot_alt.mdl)
+     [ID1] Grenade Launcher: Now based on QuakeEX model
      [ID1] Player: Fullbright pixels on headgib removed (now based on capnbubs' player model; angle changed)
      [ID1] Dog/Enforcer/Grunt: Headgibs size reduced to fit full model measures
+     [HIP] Prox Gun: Now based on QuakeEX model (alternate skin version available, named v_prox_alt.mdl)
+     [ROG] Multi-Grenade Launcher: Now based on QuakeEX model
      [ROG] Mummy: Fullbright pixels on skin removed
 
 Revision #26 (Sep 10, 2021)
 ---------------------------
 > Added:
-     [ID1] Spawn (from Quake Kex, converted by osj)
-     [ROG] Hellspawn (based on Spawn from Quake Kex, converted/edited by osj)
+     [ID1] Spawn (from QuakeEX, converted by osj)
+     [ROG] Hellspawn (based on Spawn from QuakeEX, converted/edited by osj)
 > Updated:
      [ALL] Progs.dat: Support for new DOPA episode ending text (client.qc)
                       Fix for losing runes under certain conditions (client.qc, world.qc)
@@ -290,14 +238,14 @@ Revision #26 (Sep 10, 2021)
                       Cleaned up code to eliminate most compiler warnings
      [ID1] Progs.dat: Deactivated "sv_aim" reset to 0.93 after loading new level
      [ID1] Chthon, Death Knight, Enforcer, Fiend, Ogre, Rotfish, Scrag, Vore, Zombie
-           (from Quake Kex, converted by osj)
+           (from QuakeEX, converted by osj)
      [ID1] Headgibs: Death Knight, Enforcer, Fiend, Ogre, Scrag, Shambler, Vore, Zombie (by osj)
-     [ID1] Rocket Launcher (from Quake Kex, converted by Seven and edited by osj)
+     [ID1] Rocket Launcher (from QuakeEX, converted by Seven and edited by osj)
      [HIP] [ROG] Progs.dat: Quad cheat sound fix (world.qc)
                             Shooting/jumping when respawning fix (client.qc, defs.qc)
  			    Sliding/not-jumping on monsters/boxes/players fix (boss.qc, client.qc demon.qc, dog.qc, misc.qc, monsters.qc, oldone.qc, tarbaby.qc)
-     [ROG] Multi-Grenade Ogre + headgibs (based on Ogre from Quake Kex, converted/edited by osj)               
-     [ROG] Multi-Rocket Launcher (based on RL from Quake Kex, converted by Seven and edited by osj)
+     [ROG] Multi-Grenade Ogre + headgibs (based on Ogre from QuakeEX, converted/edited by osj)               
+     [ROG] Multi-Rocket Launcher (based on RL from QuakeEX, converted by Seven and edited by osj)
 
 Revision #25 (Jul 19, 2021)
 ---------------------------
