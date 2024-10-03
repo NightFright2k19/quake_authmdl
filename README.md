@@ -55,11 +55,13 @@ can provide.
 - Tea Monster: Shub-Niggurath, Anti-Grav Belt, Biosuit, Empathy Shield, Horn of Conjuring, Wetsuit, keycards
 - Tribal: Fiend death frame fix (QuakeEX)
 
-# SPECIAL THANKS
+# Special Thanks
 - Capnbubs (for starting it all)
 - Chillo (for producing that massive amount of model remakes)
 - John Romero (for his fast feedback regarding the battery cell ammo)
 - Nightdive Studios (for their QuakeEX release)
 - Seven (the kind and patient soul of the QuakeOne forums)
 - Tea Monster (for his outstanding contributions)
+
+AND...
 - osjclatchford (for being *THE* driving force of the project)
