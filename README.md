@@ -5,32 +5,28 @@ taken from the Quake Remaster, converted from MD5 to MDL. However, many entries 
 content from the mission packs) remain exclusive and enhance visuals beyond of what the Nightdive port
 can provide.
 
-# What's included:
+# I. WHAT'S INCLUDED
 
 # (N)PCs:
-- Chthon - Death Knight (ID1) / Minotaur Statue (ROG) - Enforcer
-- Fiend - Grunt - Knight (ID1) / Knight Statue (ROG) - Mummy (ROG)
-- Ogre (ID1) / Multi-Grenade Ogre (ROG) - Ranger (ID1) / Ranger w/ CTF skin (ROG)
-- Rotfish - Rottweiler - Scrag - Shambler - Shub-Niggurath
-- Spawn (ID1) / Hellspawn (ROG) - Vore - Zombie
+- Original game: Chthon, Death Knight, Enforcer, Fiend, Grunt, Knight, Ogre, Ranger, Rotfish, Rottweiler, Scrag, Shambler, Shub-Niggurath, Spawn, Vore, Zombie
+- Dissolution of Eternity (MP2): Hellspawn, Knight Statue, Minotaur Statue, Multi-Grenade Ogre, Mummy, Ranger w/ CTF skin
 
 # Weapons:
-- Axe - Shotgun- Super Shotgun - Nailgun - Perforator
-- Lava Nailgun + Perforator (ROG) - Proximity Gun (HIP)
-- Grenade Launcher - Rocket Launcher - Multi Grenade + Rocket Launcher (ROG)
-- Thunderbolt - Mjolnir (HIP) - Plasma Gun (ROG)
+- Original game: Axe, Shotgun, Super Shotgun, Nailgun, Perforator, Grenade Launcher, Rocket Launcher, Thunderbolt
+- Scourge of Armagon (MP1): Proximity Gun, Mjolnir
+- Dissolution of Eternity (MP2): Lava Nailgun, Lava Perforator, Multi-Grenade Launcher, Multi-Rocket Launcher, Plasma Gun
 
 # Items:
-- Ammo boxes - Anti-Grav Belt (ROG) - Armor - Backpack - Biosuit - Empathy Shield (HIP)
-- Health boxes - Horn of Conjuring (HIP) - Keys - Lava nail boxes (ROG) - Multi-rocket boxes (ROG)
-- Pentagram of Protection - Plasma cells (ROG) - Quad Damage - Ring of Shadows 
-- Runes (fixed UV mapping) - Wetsuit (HIP)
+- Original game: Ammo boxes, Armor, Backpack, Biosuit, Health boxes, Keys, Pentagram of Protection, Quad Damage, Ring of Shadows, Runes (fixed UV mapping)
+- Scourge of Armagon (MP1): Empathy Shield, Horn of Conjuring, Wetsuit
+- Dissolution of Eternity (MP2): Anti-Grav Belt, Lava nail boxes, Multi-rocket boxes, Plasma cells
 
 # Props/projectiles:
-- Exploding boxes - Eyes - Fireball (ROG) - Flames - Gibs - Lava ball - Lava nails (ROG)
-- Lava rock (HIP) - Projectiles - Proximity bomb (HIP) - Teleporter sphere - Torch/Flame - Zombie gibs
+- Original game: Exploding boxes, Eyes, Flames, Gibs, Lava ball, Projectiles, Teleporter sphere, Torch/Flame, Zombie gibs
+- Scourge of Armagon (MP1): Lava rock, Proximity bomb
+- Dissolution of Eternity (MP2): Fireball, Lava nails
 
-# Screenshots:
+# II. SCREENSHOTS
 ![screen01](https://github.com/user-attachments/assets/60e79cae-9daf-487a-921a-40dc06fc41af)
 ![screen02](https://github.com/user-attachments/assets/3c6bba26-61e0-4002-a8b6-5f7af56c7016)
 ![screen03](https://github.com/user-attachments/assets/2d230f7b-ec21-46f8-97ce-b188c095484d)
@@ -39,7 +35,7 @@ can provide.
 ![screen06](https://github.com/user-attachments/assets/44186e6e-32dc-4f6d-a384-8fa4c569533e)
 ![screen07](https://github.com/user-attachments/assets/b3c1d164-5205-413b-89b7-856a98e2d2f5)
 
-# CREDITS
+# III. CREDITS
 - Barnaby: Animated shotgun pump (original model)
 - Bloodshot: Grenade
 - capnbubs: Player, Grunt, Rottweiler
