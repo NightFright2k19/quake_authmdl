@@ -162,7 +162,7 @@ Simon "Sock" O'Callaghan ............. "RetroJam1"/"Arcane Dimensions" models
                                        Quake runes with fixed UV mapping
 talisa ............................... Dwere's reworked classic weapons skins for HIP/ROG
 Tea Monster .......................... Shub-Niggurath, Anti-Grav Belt, Biosuit, Empathy Shield, 
-                                       Horn of Conjuring, Wetsuit, keycards
+                                       Horn of Conjuring, Wetsuit, keycards, muzzleflash fixes
 Tribal ............................... Fiend death frame fix (QuakeEX)
 
 SPECIAL THANKS
@@ -219,11 +219,11 @@ Revision #27 (XXX XX, XXXX)
      [HIP] Mjolnir: Skin seam on handle fixed in GL modes (still uses original model)
 > Updated:
      [ID1] Shotgun: Now based on QuakeEX model (animated barrel available, named v_shot_alt.mdl)
-     [ID1] Grenade Launcher: Now based on QuakeEX model
+     [ID1] Grenade Launcher: Now based on QuakeEX model (muzzleflash fix by Tea Monster)
      [ID1] Player: Fullbright pixels on headgib removed (now based on capnbubs' player model; angle changed)
      [ID1] Dog/Enforcer/Grunt: Headgibs size reduced to fit full model measures
-     [HIP] Prox Gun: Now based on QuakeEX model (alternate skin version available, named v_prox_alt.mdl)
-     [ROG] Multi-Grenade Launcher: Now based on QuakeEX model
+     [HIP] Prox Gun: Now based on QuakeEX model (muzzleflash fix by Tea Monster; alternate skin version available, named v_prox_alt.mdl)
+     [ROG] Multi-Grenade Launcher: Now based on QuakeEX model (muzzleflash fix by Tea Monster)
      [ROG] Mummy: Fullbright pixels on skin removed
 
 Revision #26 (Sep 10, 2021)
