@@ -2,9 +2,9 @@
 Advanced engine needed : Any (tested on Mark V and Quakespasm-Spiked)
 Primary purpose : Singleplayer
 ======================================================================================================================
-Title: Authentic Models for Quake (AMQ), Rev. #27
-Filename: AUTH_MDL-R27.ZIP
-Release date: XXX XX, XXXX
+Title: Authentic Models for Quake (AMQ), Rev. #27 (RC1)
+Filename: AUTH_MDL-R27-RC1.ZIP
+Release date: July 17, 2025
 Author: NightFright
 
 
@@ -211,9 +211,10 @@ CD, USB flash media etc) as long as you include this file unaltered.
 C H A N G E L O G
 ----------------------------------------------------------------------------------------------------------------------
 
-Revision #27 (XXX XX, XXXX)
----------------------------
+Revision #27 RC1 (Jul 17, 2025)
+-------------------------------
 > General: Code fixes removed since they are a different project and have nothing to do with the actual models
+> Known issue: Proximity Launcher (v_prox) projectile is clipping through the barrel while firing
 > Added:
      [ID1] Runic keys: Texture fixes (taken from Progs_dump v3)
      [HIP] Mjolnir: Skin seam on handle fixed in GL modes (still uses original model)
