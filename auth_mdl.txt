@@ -2,9 +2,9 @@
 Advanced engine needed : Any (tested on Mark V and Quakespasm-Spiked)
 Primary purpose : Singleplayer
 ======================================================================================================================
-Title: Authentic Models for Quake (AMQ), Rev. #27 (RC1)
+Title: Authentic Models for Quake (AMQ), Rev. #28
 Filename: AUTH_MDL-R27-RC1.ZIP
-Release date: July 17, 2025
+Release date: August 6, 2026
 Author: NightFright
 
 
@@ -210,6 +210,12 @@ CD, USB flash media etc) as long as you include this file unaltered.
 ----------------------------------------------------------------------------------------------------------------------
 C H A N G E L O G
 ----------------------------------------------------------------------------------------------------------------------
+
+Revision #28 (Aug 6, 2026)
+--------------------------
+> Updated:
+     [ID1] Ammo boxes: Reshape and optimized brushes for large shotgun shell/nail (b_shell1/b_nail1) 
+     [ROG] Ammo boxes: Reshape for large lava nail (b_lnail1)
 
 Revision #27 RC1 (Jul 17, 2025)
 -------------------------------
