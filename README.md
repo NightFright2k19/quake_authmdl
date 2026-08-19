@@ -15,11 +15,13 @@ can provide.
 - Original game: Axe, Shotgun, Super Shotgun, Nailgun, Perforator, Grenade Launcher, Rocket Launcher, Thunderbolt
 - Scourge of Armagon (MP1): Proximity Gun, Mjolnir
 - Dissolution of Eternity (MP2): Lava Nailgun, Lava Perforator, Multi-Grenade Launcher, Multi-Rocket Launcher, Plasma Gun
+- Dawn of the Machine (MG3): Bloody Shotgun
 
 # Items:
 - Original game: Ammo boxes, Armor, Backpack, Biosuit, Health boxes, Keys, Pentagram of Protection, Quad Damage, Ring of Shadows, Runes (fixed UV mapping)
 - Scourge of Armagon (MP1): Empathy Shield, Horn of Conjuring, Wetsuit
 - Dissolution of Eternity (MP2): Anti-Grav Belt, Lava nail boxes, Multi-rocket boxes, Plasma cells
+- Dawn of the Machine (MG3): Health Upgrade, Nightmare Defender
 
 # Props/projectiles:
 - Original game: Exploding boxes, Eyes, Flames, Gibs, Lava ball, Projectiles, Teleporter sphere, Torch/Flame, Zombie gibs
