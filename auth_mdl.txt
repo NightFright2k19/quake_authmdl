@@ -222,7 +222,8 @@ Revision #27 Final (XXX XX, 2026)
 > Added:
      [MG3] Bloody Shotgun, Health Upgrade, Nightmare Defender 
 > Updated:
-     [ID1] Ammo boxes: Reshape and optimized brushes for large shotgun shell/nail (b_shell1/b_nail1) 
+     [ID1] Super Shotgun: Skin cleaned up and resolution doubled to 256x256
+     [ID1] Ammo boxes: Reshape and optimized brushes for large shotgun shell/nail (b_shell1/b_nail1)
      [ROG] Ammo boxes: Reshape for large lava nail (b_lnail1)
 
 Revision #27 RC1 (Jul 17, 2025)
