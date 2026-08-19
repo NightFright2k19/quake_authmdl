@@ -68,7 +68,7 @@ Items:
    - Ring of Shadows ............................................ invisibl.mdl
    - Runes (fixed UV mapping) ................................... end(1/2/3/4).mdl
    - Wetsuit (HIP) .............................................. wetsuit.mdl
-   - Health Upgrade (MG3) ....................................... item_h_player.mdl
+   - Health Capacity Upgrade (MG3) .............................. item_h_player.mdl
    - Nightmare Defender (MG3) ................................... item_h_hellkn.mdl
 
 Props/projectiles:
