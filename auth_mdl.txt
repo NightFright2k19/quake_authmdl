@@ -38,6 +38,7 @@ Weapons:
    - Shotgun .................................................... v_shot.mdl
    - Bloody Shotgun (MG3) ....................................... v_bloodshot.mdl
    - Super Shotgun .............................................. g_shot.mdl, v_shot2.mdl
+   - Bloody Super Shotgun (MG3) ................................. g_bloodshot2.mdl, v_bloodshot2.mdl
    - Nailgun .................................................... (g/v)_nail.mdl
    - Perforator ................................................. (g/v)_nail2.mdl
    - Lava Nailgun + Perforator (ROG) ............................ v_lava(2).mdl
@@ -142,7 +143,7 @@ Machine Games/Nightdive Studios ...... Chthon, Death Knight, Enforcer, Fiend, Og
                                        Scrag, Vore, Zombie
 NightFright .......................... ROG plasma cells, health/ammo box edits/realignments (ijed),
                                        skin edits for backback (Sock), Lava Perforator (Dwere/osj)
-                                       and Mjolnir               
+                                       and Mjolnir, MG3 model edits              
 osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
                                        MD5 model conversions from QuakeEX
 				       Headgibs (Death Knight, Enforcer, Ogre, Vore, Zombie)
@@ -220,7 +221,7 @@ C H A N G E L O G
 Revision #27 Final (XXX XX, 2026)
 ---------------------------------
 > Added:
-     [MG3] Bloody Shotgun, Health Upgrade, Nightmare Defender 
+     [MG3] Bloody Shotgun, Bloody Super Shotgun, Health Capacity Upgrade, Nightmare Defender 
 > Updated:
      [ID1] Super Shotgun: Skin cleaned up and resolution doubled to 256x256
      [ID1] Ammo boxes: Reshape and optimized brushes for large shotgun shell/nail (b_shell1/b_nail1)

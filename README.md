@@ -15,7 +15,7 @@ can provide.
 - Original game: Axe, Shotgun, Super Shotgun, Nailgun, Perforator, Grenade Launcher, Rocket Launcher, Thunderbolt
 - Scourge of Armagon (MP1): Proximity Gun, Mjolnir
 - Dissolution of Eternity (MP2): Lava Nailgun, Lava Perforator, Multi-Grenade Launcher, Multi-Rocket Launcher, Plasma Gun
-- Dawn of the Machine (MG3): Bloody Shotgun
+- Dawn of the Machine (MG3): Bloody Shotgun, Bloody Super Shotgun
 
 # Items:
 - Original game: Ammo boxes, Armor, Backpack, Biosuit, Health boxes, Keys, Pentagram of Protection, Quad Damage, Ring of Shadows, Runes (fixed UV mapping)
@@ -47,7 +47,7 @@ can provide.
 - Louis "ijed" Manning: "Rubicon Rumble Pack" ammo/health boxes
 - Lunaran: Knight, Pentagram, Quad Damage
 - Machine Games/Nightdive Studios: Chthon, Death Knight, Enforcer, Fiend, Ogre, Rocket Launcher, Scrag, Vore, Zombie
-- NightFright: ROG plasma cells, health/ammo box edits/realignments (ijed), skin edits for backback (Sock), Lava Perforator (Dwere/osj), Mjolnir
+- NightFright: ROG plasma cells, health/ammo box edits/realignments (ijed), skin edits for backback (Sock), Lava Perforator (Dwere/osj), Mjolnir and MG3 models
 - osjclatchford: Eyes, Ring of Shadows, Lava ball/rock, MD5 model conversions from QuakeEX, Headgibs (Death Knight, Enforcer, Ogre, Vore, Zombie), various skin edits
 - Phredreeke: Upscaled skins for Anti-Grav Belt + Empathy Shield
 - Renier "Skiffy" Banninga: Shambler
