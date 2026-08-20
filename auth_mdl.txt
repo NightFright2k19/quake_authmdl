@@ -4,7 +4,7 @@ Primary purpose : Singleplayer
 ======================================================================================================================
 Title: Authentic Models for Quake (AMQ), Rev. #27
 Filename: AUTH_MDL-R27.ZIP
-Release date: XX XX, 2026
+Release date: Aug 20, 2026
 Author: NightFright
 
 
@@ -218,7 +218,7 @@ CD, USB flash media etc) as long as you include this file unaltered.
 C H A N G E L O G
 ----------------------------------------------------------------------------------------------------------------------
 
-Revision #27 Final (XXX XX, 2026)
+Revision #27 Final (Aug 20, 2026)
 ---------------------------------
 > Added:
      [MG3] Bloody Shotgun, Bloody Super Shotgun, Health Capacity Upgrade, Nightmare Defender 
