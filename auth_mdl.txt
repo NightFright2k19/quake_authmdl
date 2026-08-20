@@ -70,7 +70,7 @@ Items:
    - Runes (fixed UV mapping) ................................... end(1/2/3/4).mdl
    - Wetsuit (HIP) .............................................. wetsuit.mdl
    - Health Capacity Upgrade (MG3) .............................. item_h_player.mdl
-   - Nightmare Defender (MG3) ................................... item_h_hellkn.mdl
+   - Death Knight's Head (MG3) .................................. item_h_hellkn.mdl
 
 Props/projectiles:
    - Exploding boxes ............................................ b_explop.bsp, b_exbox2.bsp
@@ -221,7 +221,7 @@ C H A N G E L O G
 Revision #27 Final (Aug 20, 2026)
 ---------------------------------
 > Added:
-     [MG3] Bloody Shotgun, Bloody Super Shotgun, Health Capacity Upgrade, Nightmare Defender 
+     [MG3] Bloody Shotgun, Bloody Super Shotgun, Health Capacity Upgrade, Death Knight's Head
 > Updated:
      [ID1] Super Shotgun: Skin cleaned up and resolution doubled to 256x256
      [ID1] Ammo boxes: Reshape and optimized brushes for large shotgun shell/nail (b_shell1/b_nail1)

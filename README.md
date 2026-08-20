@@ -21,7 +21,7 @@ can provide.
 - Original game: Ammo boxes, Armor, Backpack, Biosuit, Health boxes, Keys, Pentagram of Protection, Quad Damage, Ring of Shadows, Runes (fixed UV mapping)
 - Scourge of Armagon (MP1): Empathy Shield, Horn of Conjuring, Wetsuit
 - Dissolution of Eternity (MP2): Anti-Grav Belt, Lava nail boxes, Multi-rocket boxes, Plasma cells
-- Dawn of the Machine (MG3): Health Capacity Upgrade, Nightmare Defender
+- Dawn of the Machine (MG3): Health Capacity Upgrade, Death Knight's Head
 
 # Props/projectiles:
 - Original game: Exploding boxes, Eyes, Flames, Gibs, Lava ball, Projectiles, Teleporter sphere, Torch/Flame, Zombie gibs
