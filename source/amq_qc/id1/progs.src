@@ -1,0 +1,108 @@
+/*
+CODE FIXES (OVERVIEW):
+
+Single files:
+=============
+[ai.qc] NOCLIP mode also includes NOTARGET
+[client.qc] Typo fix in trigger_changelevel
+[client.qc] New episode fix (keeping weapons/ammo when returning to start map without a rune)
+[client.qc] NoExit SP/Coop fix (use "noexit" console variable only in DM)
+[client.qc] Respawn velocity fix (prevents player from keeping previous velocity when respawning)
+[client.qc] Respawning where player died (prevents player from respawning where player died when all respawn spots are occupied)
+[client.qc] Fraglimit/timelimit fix (only use fraglimit/timelimit in DM)
+[client.qc] Suicide during intermission fix (should not be able to commit suicide during intermissions)
+[client.qc] Swimming up with +jump now as fast as +forward and looking up
+[client.qc] DOPA episode ending text
+[client.qc] Ghost eyes and hovering bodies fix (fixing client disconnect)
+[client.qc] Samelevel fix (recognizing "samelevel" only in DM)
+[client.qc] Incorrect frag sentence when a player disconnects fix (frag/frags)
+[client.qc] Player drops backpack on suicide (using "Killed()" function on suicide)
+[client.qc] Noexit without dying (recognizing "noexit" 3/4)
+[combat.qc] Teamplay 1 fix (players can't hurt themselves in teamplay 1 mode)
+[combat.qc] Doors no Quad power fix (recognizing doors)
+[combat.qc] CanDamage fix (checking half-sized bounding box)
+[combat.qc] God cheat preserves armor and prevents underwater gagging (Pentagram still won't)
+[demon.qc] Demon death fix (Demon corpse stops being solid after death frame #3 instead of #6)
+[doors.qc] Door unlock sound fix (unlock sound overwritten by door opening sound)
+[fish.qc] Fish death fix (dying fish block your way much longer and cannot be gibbed)
+[items.qc] Thunderbolt fix (don't switch to Thunderbolt in DM when underwater)
+[items.qc] Nailgun name fix ("nailgun" --> "Nailgun")
+[items.qc] Improved weapon switching (switch to new weapon if it is better, otherwise only if you were using your best weapon and the new one is better)
+[misc.qc] Misc_FireBall default speed typo fix (default speed of lavaball accidentally set to zero)
+[monsters.qc] Fish count bug
+[monsters.qc] Movetarget correction in monster start functions (missing brackets in "if" clauses added)
+[monsters.qc] Monsters sometimes don't move fix
+[oldone.qc] Shub kill count fix (kill counter not raised when telefragging Shub)
+[plats.qc] Smooth plat movement (make plats move smoother by increasing movement from 10 to 100 fps)
+[player.qc] Dead bodies glow/palette shift fix (avoid killed players with Quad/Pentagram from glowing and client from shifting palette till respawn)
+[player.qc] Slime hurt fix (no bubbles are spawned when hurt in slime)
+[player.qc] Bubbles fix (sometimes bubble spawner entities are not removed; not all bubbles are spawned when player dies)
+[player.qc] Walkframe leak fix (.walkframe var, being incremented in player_stand while holding the axe, goes > 6)
+[shalrath.qc] Shalrath spawn start function call fix (calling walkmonster_start directly like all other monsters)
+[shambler.qc] Fix for Shamblers being non-solid to projectiles after using their lightning attack (s_light.mdl entity conflict)
+[triggers.qc] Double/inverted telefrag fix (recognizing time on spawning tdeath)
+[triggers.qc] hurt_touch fix (now every player in the entity gets hurt every second)
+[weapons.qc] Coop cheats fix (impulse cheats should also be allowed in Coop)
+[weapons.qc] Constantly checking all impulses fix (impulse cmds checked every frame w/o any impulse cmd entered)
+[weapons.qc] Grenades bounce off skies fix (enhancing grenade touch function)
+[weapons.qc] Swinging axe w/o hitting anything won't wake up monsters
+[world.qc] Cheats sound fix (precache sounds to enable powerup sounds when cheating in maps w/o those items)
+[world.qc] Skill variable not correctly set on worldspawn and can be changed through gameplay (reading cvar "skill" only on worldspawn)
+
+Multiple files:
+===============
+[boss.qc] [client.qc] No exclusive deathmessage for being killed by Chthon (defining Chthon as monster)
+[client.qc] [defs.qc] Shooting/jumping when respawning fix
+[client.qc] [items.qc] Megahealth rot fix (when 2+ Megahealth are active, health rots 2+ points/sec; taken Megahealth respawns when player has normal health, not in a given time; remove Megahealth on level changes)
+[client.qc] [oldone.qc] Firing during intermission (clearing player's nextthink on intermission)
+[client.qc] [triggers.qc] Pentagram telefrag fix (should be protected against telefrags when Pentagram is active)
+[client.qc] [world.qc] Losing runes after saving, loading, dying and then restarting the map
+[combat.qc] [misc.qc] T_RadiusDamage workaround (avoid that other players do not get hurt by splash damage, when the attacker dies through it; avoid recursive calls by explosive boxes)
+[plats.qc] [subs.qc] Spikeball fix (uses MOVETYPE_PUSH reserved for BSP bmodel entities)
+[player.qc] [weapons.qc] Weapon projectile alignment when aiming up/down
+[ai.qc] [client.qc] [defs.qc] Monsters attack player on intermission points fix (stopping finding and hunting player targets)
+[ai.qc] [defs.qc] [world.qc] Transparent water/slime detection for monsters
+[client.qc] [defs.qc] [items.qc] Better performance in powerups handling (set corresponding model or glowing when a powerup is picked up or expires)
+[defs.qc] [demon.qc] [dog.qc] [tarbaby.qc] Dog/Fiend/Spawn leaps onto player head can kill instantly fix
+[client.qc] [combat.qc] [defs.qc] [items.qc] [weapons.qc] [world.qc] Deathmatch modes 3-5 (set CVAR "savedgamecfg" to "1" for axe-only in DM4)
+[items.qc] [misc.qc] [monsters.qc] [ogre.qc] [shambler.qc] [zombie.qc] Nextthink fix (monsters may rarely stop or not even stop walking)
+[boss.qc] [client.qc] [demon.qc] [dog.qc] [misc.qc] [monsters.qc] [oldone.qc] [tarbaby.qc] Sliding/not-jumping on monsters/boxes/players fix (using new monster touch function on players)
+[client.qc] [combat.qc] [doors.qc] [enforcer.qc] [misc.qc] [ogre.qc] [plats.qc] [shalrath.qc] [tarbaby.qc] [weapons.qc] Wrong obituary messages fix (killing player with a non-hitscan weapon and switching weapon before impact results in wrong obituary message)
+*/
+
+../progs.dat
+
+fixed/defs.qc
+fixed/subs.qc
+fight.qc
+fixed/ai.qc
+fixed/combat.qc
+fixed/items.qc
+fixed/weapons.qc
+fixed/world.qc
+fixed/client.qc
+fixed/player.qc
+fixed/monsters.qc
+fixed/doors.qc
+buttons.qc
+fixed/triggers.qc
+fixed/plats.qc
+fixed/misc.qc
+
+fixed/ogre.qc
+fixed/demon.qc
+fixed/shambler.qc
+knight.qc
+soldier.qc
+wizard.qc
+fixed/dog.qc
+fixed/zombie.qc
+fixed/boss.qc
+
+// REGISTERED
+fixed/tarbaby.qc
+hknight.qc
+fixed/fish.qc
+fixed/shalrath.qc
+fixed/enforcer.qc
+fixed/oldone.qc

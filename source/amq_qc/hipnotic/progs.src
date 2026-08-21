@@ -1,0 +1,121 @@
+/*
+CODE FIXES (OVERVIEW):
+
+Single files:
+[ai.qc] NOCLIP mode also includes NOTARGET
+[client.qc] "NoExit" SP/Coop fix
+[client.qc] "NoExit" without dying (recognizing "noexit" 3/4)
+[client.qc] Support for new DOPA episode ending text
+[client.qc] Swimming up with +jump now as fast as +forward and looking up
+[client.qc] Respawning where player died fix
+[client.qc] Respawn velocity fix (prevents player from keeping previous velocity when respawning)
+[client.qc] Ghost eyes and hovering bodies fix (fixing client disconnect)
+[client.qc] Incorrect frag sentence when a player disconnects fix (frag/frags)
+[client.qc] Fraglimit/timelimit fix
+[client.qc] Suicide during intermission fix
+[client.qc] Samelevel fix (recognizing "samelevel" only in DM)
+[client.qc] Player drops backpack on suicide (using "Killed()" function on suicide)
+[combat.qc] God cheat preserves armor and prevents underwater gagging
+[combat.qc] Teamplay 1 fix
+[combat.qc] Doors no Quad power fix (recognizing doors)
+[combat.qc] CanDamage fix (checking half-sized bounding box)
+[demon.qc] Demon already non-solid after death frame #3
+[doors.qc] Door unlock sound fix
+[fish.qc] Fish death fix + gibbable fish
+[items.qc] Improved weapon switching
+[items.qc] Thunderbolt fix
+[items.qc] Multiple Megahealth rotting down too fast
+[misc.qc] Misc_FireBall default speed typo fix
+[monsters.qc] Movetarget correction in monster start functions
+[oldone.qc] Shub kill count fix
+[plats.qc] Smooth plat movement (improves riding carts in e.g. HIP3M1/R1M4)
+[player.qc] Walkframe leak fix
+[player.qc] Dead bodies glow and palette shift fix
+[player.qc] Player gulps bubbles when hurt in slime
+[shalrath.qc] Shalrath spawn start function call fix
+[shambler.qc] Fix for Shamblers being non-solid to projectiles after using their lightning attack (s_light.mdl entity conflict)
+[triggers.qc] Double/inverted telefrag fix (recognizing time on spawning tdeath)
+[triggers.qc] hurt_touch fix (now every player in the entity gets hurt every second)
+[weapons.qc] Projectile position fixes for weapons
+[weapons.qc] Cheats Coop fix
+[weapons.qc] Constantly checking all impulses fix
+[weapons.qc] Grenades bounce off skies fix (enhancing grenade touch function)
+[weapons.qc] Swinging axe w/o hitting anything won't wake up monsters
+[world.qc] Powerup cheats sound fix
+[world.qc] Skill variable not set correctly on worldspawn (can be changed during gameplay --> read cvar "skill" only on worldspawn)
+
+Multiple files:
+[client.qc] [defs.qc] Shooting/jumping when respawning fix
+[client.qc] [triggers.qc] Pentagram telefrag fix
+[client.qc] [world.qc] Fix for losing runes under certain conditions
+[combat.qc] [misc.qc] T_RadiusDamage workaround
+[plats.qc] [subs.qc] Spikeball fix (uses MOVETYPE_PUSH reserved for BSP bmodel entities)
+[ai.qc] [defs.qc] [world.qc] Transparent water/slime detection for monsters
+[client.qc] [defs.qc] [items.qc] Better performance in powerups handling
+[items.qc] [misc.qc] [monsters.qc] Nextthink AI update
+[defs.qc] [demon.qc] [dog.qc] [tarbaby.qc] Dog/Fiend/Spawn leaps onto player head can kill instantly fix
+[client.qc] [combat.qc] [defs.qc] [hipitems.qc] [items.qc] [weapons.qc] [world.qc] Deathmatch modes 3-5 (set CVAR "savedgamecfg" to "1" for axe-only in DM4)
+[boss.qc] [client.qc] [demon.qc] [dog.qc] [misc.qc] [monsters.qc] [oldone.qc] [tarbaby.qc] Sliding/not-jumping on monsters/boxes/players fix
+*/
+
+../progs.dat
+
+defs.qc
+hipdefs.qc // HIPNOTIC
+subs.qc
+fight.qc
+ai.qc
+combat.qc
+items.qc
+weapons.qc
+world.qc
+client.qc
+player.qc
+monsters.qc
+doors.qc
+buttons.qc
+triggers.qc
+plats.qc
+misc.qc
+
+ogre.qc
+demon.qc
+shambler.qc
+knight.qc
+soldier.qc
+wizard.qc
+dog.qc
+zombie.qc
+boss.qc
+
+// REGISTERED
+tarbaby.qc
+hknight.qc
+fish.qc
+shalrath.qc
+enforcer.qc
+oldone.qc
+
+// HIPNOTIC
+hipsubs.qc
+hip_brk.qc
+hiptrain.qc
+hip_expl.qc
+hipquake.qc
+hipcount.qc
+hipitems.qc
+hiprubbl.qc
+hip_push.qc
+hip_part.qc
+hipspawn.qc
+hipgrem.qc
+hiparma.qc
+hipspike.qc
+hiprot.qc
+hipscrge.qc
+hipholes.qc
+hipclock.qc
+hiptrig.qc
+hipmisc.qc
+hipwater.qc
+hipdecoy.qc
