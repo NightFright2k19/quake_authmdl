@@ -221,7 +221,8 @@ C H A N G E L O G
 Revision #28 (XXX XX, 202X)
 ---------------------------
 > Updated:
-     [ID1] Ammo boxes: Fixed malformed brush in large shell ammo (b_shell1)
+     [ID1] Ammo boxes: Reshape for shells/nails (b_shell0, b_shell1, b_nail0, b_nail1)
+     [ROG] Ammo boxes: Reshape for lava nails (b_lnail0, b_lnail1)
 
 Revision #27 Final (Aug 20, 2026)
 ---------------------------------
@@ -229,8 +230,8 @@ Revision #27 Final (Aug 20, 2026)
      [MG3] Bloody Shotgun, Bloody Super Shotgun, Health Capacity Upgrade, Death Knight's Head
 > Updated:
      [ID1] Super Shotgun: Skin cleaned up and resolution doubled to 256x256
-     [ID1] Ammo boxes: Reshape and optimized brushes for large shotgun shell/nail (b_shell1/b_nail1)
-     [ROG] Ammo boxes: Reshape for large lava nail (b_lnail1)
+     [ID1] Ammo boxes: Reshape and optimized brushes for large shells/nails (b_shell1/b_nail1)
+     [ROG] Ammo boxes: Reshape for large lava nails (b_lnail1)
 
 Revision #27 RC1 (Jul 17, 2025)
 -------------------------------
