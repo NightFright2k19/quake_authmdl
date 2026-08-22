@@ -221,7 +221,8 @@ C H A N G E L O G
 Revision #28 (XXX XX, 202X)
 ---------------------------
 > Updated:
-     [ID1] Ammo boxes: Reshape for shells/nails (b_shell0, b_shell1, b_nail0, b_nail1)
+     [ID1] Ammo boxes: Reshape for shells/nails (b_shell0, b_shell1, b_nail0, b_nail1);
+                       optimized brushes and skin edits for batteries (b_batt0, b_batt1)
      [ROG] Ammo boxes: Reshape for lava nails (b_lnail0, b_lnail1)
 
 Revision #27 Final (Aug 20, 2026)
