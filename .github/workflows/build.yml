@@ -32,7 +32,7 @@ jobs:
 
       - name: Install build dependencies
         run: |
-          set -e
+          set -euo pipefail
 
           sudo apt-get update
           sudo apt-get install -y \
@@ -43,7 +43,7 @@ jobs:
 
       - name: Build qpakman
         run: |
-          set -e
+          set -euo pipefail
 
           git clone --depth 1 https://github.com/bunder/qpakman.git /tmp/qpakman
           cmake -S /tmp/qpakman -B /tmp/qpakman/build
@@ -58,43 +58,45 @@ jobs:
 
           echo "QPAKMAN=$QPAKMAN" >> "$GITHUB_ENV"
 
-- name: Determine Autobuild number
-  id: build_number
-  env:
-    GH_TOKEN: ${{ secrets.VARIABLES_TOKEN }}
-  run: |
-    set -e
+      - name: Determine Autobuild number
+        id: build_number
+        env:
+          GH_TOKEN: ${{ secrets.VARIABLES_TOKEN }}
+        run: |
+          set -euo pipefail
 
-    VAR_NAME="AUTOBUILD_NUMBER"
+          VAR_NAME="AUTOBUILD_NUMBER"
 
-    if gh variable get "$VAR_NAME" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-      CURRENT="$(gh variable get "$VAR_NAME" \
-        --repo "$GITHUB_REPOSITORY" \
-        --json value \
-        --jq '.value')"
+          if gh variable get "$VAR_NAME" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            CURRENT="$(gh variable get "$VAR_NAME" \
+              --repo "$GITHUB_REPOSITORY" \
+              --json value \
+              --jq '.value')"
 
-      if ! [[ "$CURRENT" =~ ^[0-9]+$ ]]; then
-        echo "ERROR: Repository variable $VAR_NAME contains an invalid value: $CURRENT"
-        exit 1
-      fi
+            if ! [[ "$CURRENT" =~ ^[0-9]+$ ]]; then
+              echo "ERROR: Repository variable $VAR_NAME contains an invalid value: $CURRENT"
+              exit 1
+            fi
 
-      BUILD_NUM=$((CURRENT + 1))
-    else
-      BUILD_NUM=1
-    fi
+            BUILD_NUM=$((CURRENT + 1))
+          else
+            BUILD_NUM=1
+          fi
 
-    echo "Next Autobuild number: $BUILD_NUM"
+          echo "Next Autobuild number: $BUILD_NUM"
 
-    gh variable set "$VAR_NAME" \
-      --repo "$GITHUB_REPOSITORY" \
-      --body "$BUILD_NUM"
+          gh variable set "$VAR_NAME" \
+            --repo "$GITHUB_REPOSITORY" \
+            --body "$BUILD_NUM"
 
-    echo "BUILD_NUM=$BUILD_NUM" >> "$GITHUB_ENV"
-    echo "build_num=$BUILD_NUM" >> "$GITHUB_OUTPUT"
+          echo "BUILD_NUM=$BUILD_NUM" >> "$GITHUB_ENV"
+          echo "build_num=$BUILD_NUM" >> "$GITHUB_OUTPUT"
 
       - name: Create Quake PAK files
+        env:
+          QPAKMAN: ${{ env.QPAKMAN }}
         run: |
-          set -e
+          set -euo pipefail
 
           TARGETS=(
             "id1"
@@ -127,8 +129,10 @@ jobs:
           done
 
       - name: Prepare release package
+        env:
+          BUILD_NUM: ${{ env.BUILD_NUM }}
         run: |
-          set -e
+          set -euo pipefail
 
           PACKAGE_DIR="$GITHUB_WORKSPACE/package"
           ZIP_NAME="quake_authmdl_autobuild_r${BUILD_NUM}.zip"
@@ -164,8 +168,10 @@ jobs:
           echo "TAG_NAME=autobuild-r${BUILD_NUM}" >> "$GITHUB_ENV"
 
       - name: Verify ZIP contents
+        env:
+          ZIP_NAME: ${{ env.ZIP_NAME }}
         run: |
-          set -e
+          set -euo pipefail
 
           echo "ZIP contents:"
           unzip -l "$ZIP_NAME"
@@ -203,9 +209,9 @@ jobs:
             Work-in-progress release. Not sufficiently tested and may contain unfinished assets. Use at your own risk!
 
       - name: Delete older Autobuild releases
-        uses: actions/github-script@v8
         env:
           CURRENT_TAG: ${{ env.TAG_NAME }}
+        uses: actions/github-script@v8
         with:
           script: |
             const owner = context.repo.owner;
@@ -230,6 +236,7 @@ jobs:
 
                 await github.rest.repos.deleteRelease({
                   owner,
+                  repo,
                   repo,
                   release_id: release.id
                 });
