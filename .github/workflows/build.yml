@@ -61,7 +61,7 @@ jobs:
       - name: Determine Autobuild number
         id: build_number
         env:
-          GH_TOKEN: ${{ secrets.VARIABLES_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
 
@@ -236,7 +236,6 @@ jobs:
 
                 await github.rest.repos.deleteRelease({
                   owner,
-                  repo,
                   repo,
                   release_id: release.id
                 });
