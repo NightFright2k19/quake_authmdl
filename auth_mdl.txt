@@ -143,6 +143,7 @@ capnbubs ............................. Player, Grunt, Rottweiler
 Chillo ............................... Death Knight (ROG), Mummy (ROG), Teleport Sphere, Torch/Flame
 dumptruck_ds ......................... Runic keys (from pd_r_key.mdl in Progs_dump v3)
 Dwere ................................ Reworked classic weapons (aka "Guns of Okayishness")
+kia100 ............................... Texture fix for Mjolnir
 Louis "ijed" Manning ................. "Rubicon Rumble Pack" ammo/health boxes
 Lunaran .............................. Knight, Pentagram, Quad Damage
 Machine Games/Nightdive Studios ...... Chthon, Death Knight, Enforcer, Fiend, Ogre, Rocket Launcher,
@@ -237,6 +238,7 @@ Revision #28 (XXX XX, 202X)
      [ID1] Projectiles: Rocket (missile) from Quake Remaster, with skin/triangle fixes
      [ID1] Items: Backpack (backpack) from Quake Remaster
      [HIP] Items: Removed needless frames for Horn of Conjuring (horn)
+	 [HIP] Weapons: Fixed texture wrapping of Mjolnir (v_hammer)
      [MG3] Weapons: Removed fullbright pixels on skins of Bloody Super Shotgun (v_bloodshot2) + darker blood (incl. g_bloodshot2)
      [ID1] [HIP] [ROG] Weapons: Removed needless frames of (Multi) Grenade Launcher and Prox Gun (v_rock, v_prox, v_multi)
      [ID1] [ROG] [MG3] Weapons: Muzzleflash skin fixes of (Bloody) Shotgun and (Multi) Rocket Launcher 
