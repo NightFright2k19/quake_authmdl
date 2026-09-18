@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout repository
@@ -38,6 +38,7 @@ jobs:
           sudo apt-get install -y \
             build-essential \
             cmake \
+            libpng-dev \
             zip
 
       - name: Build qpakman
