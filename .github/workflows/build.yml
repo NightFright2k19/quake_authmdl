@@ -8,6 +8,7 @@ on:
       - '**'
       - '!*.txt'
       - '!*.md'
+      - '!.github/**'
       - '!source/**'
   workflow_dispatch:
 
