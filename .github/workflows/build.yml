@@ -58,36 +58,39 @@ jobs:
 
           echo "QPAKMAN=$QPAKMAN" >> "$GITHUB_ENV"
 
-      - name: Determine Autobuild number
-        id: build_number
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          set -e
+- name: Determine Autobuild number
+  id: build_number
+  env:
+    GH_TOKEN: ${{ secrets.VARIABLES_TOKEN }}
+  run: |
+    set -e
 
-          VAR_NAME="AUTOBUILD_NUMBER"
+    VAR_NAME="AUTOBUILD_NUMBER"
 
-          if gh variable get "$VAR_NAME" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-            CURRENT="$(gh variable get "$VAR_NAME" --repo "$GITHUB_REPOSITORY" --json value --jq '.value')"
+    if gh variable get "$VAR_NAME" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+      CURRENT="$(gh variable get "$VAR_NAME" \
+        --repo "$GITHUB_REPOSITORY" \
+        --json value \
+        --jq '.value')"
 
-            if ! [[ "$CURRENT" =~ ^[0-9]+$ ]]; then
-              echo "ERROR: Repository variable $VAR_NAME contains an invalid value: $CURRENT"
-              exit 1
-            fi
+      if ! [[ "$CURRENT" =~ ^[0-9]+$ ]]; then
+        echo "ERROR: Repository variable $VAR_NAME contains an invalid value: $CURRENT"
+        exit 1
+      fi
 
-            BUILD_NUM=$((CURRENT + 1))
-          else
-            BUILD_NUM=1
-          fi
+      BUILD_NUM=$((CURRENT + 1))
+    else
+      BUILD_NUM=1
+    fi
 
-          echo "Next Autobuild number: $BUILD_NUM"
+    echo "Next Autobuild number: $BUILD_NUM"
 
-          gh variable set "$VAR_NAME" \
-            --repo "$GITHUB_REPOSITORY" \
-            --body "$BUILD_NUM"
+    gh variable set "$VAR_NAME" \
+      --repo "$GITHUB_REPOSITORY" \
+      --body "$BUILD_NUM"
 
-          echo "BUILD_NUM=$BUILD_NUM" >> "$GITHUB_ENV"
-          echo "build_num=$BUILD_NUM" >> "$GITHUB_OUTPUT"
+    echo "BUILD_NUM=$BUILD_NUM" >> "$GITHUB_ENV"
+    echo "build_num=$BUILD_NUM" >> "$GITHUB_OUTPUT"
 
       - name: Create Quake PAK files
         run: |
