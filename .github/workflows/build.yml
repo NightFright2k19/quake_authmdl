@@ -73,7 +73,7 @@ jobs:
             [mg3]='progs'
           )
 
-          for dir in id1 hypnotic rogue mg3; do
+          for dir in id1 hipnotic rogue mg3; do
             echo "Creating $dir/pakz.pak..."
 
             if [ ! -d "$dir" ]; then
