@@ -3,7 +3,7 @@ name: Build Authentic Models for Quake (Autobuild)
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - '**'
       - '!*.txt'
