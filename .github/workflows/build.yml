@@ -66,14 +66,14 @@ jobs:
         run: |
           set -euo pipefail
 
-          TARGETS=(
-            "id1"
-            "hipnotic"
-            "rogue"
-            "mg3"
+          declare -A INPUTS=(
+            [id1]='maps progs'
+            [hipnotic]='progs'
+            [rogue]='maps progs'
+            [mg3]='progs'
           )
 
-          for dir in "${TARGETS[@]}"; do
+          for dir in id1 hypnotic rogue mg3; do
             echo "Creating $dir/pakz.pak..."
 
             if [ ! -d "$dir" ]; then
@@ -81,11 +81,19 @@ jobs:
               exit 1
             fi
 
+            read -r -a sources <<< "${INPUTS[$dir]}"
+            for source in "${sources[@]}"; do
+              if [ ! -d "$dir/$source" ]; then
+                echo "ERROR: Required directory '$dir/$source' does not exist."
+                exit 1
+              fi
+            done
+
             rm -f "$dir/pakz.pak"
 
             (
               cd "$dir"
-              "$QPAKMAN" . -o pakz.pak
+              "$QPAKMAN" "${sources[@]}" -o pakz.pak
             )
 
             if [ ! -f "$dir/pakz.pak" ]; then
@@ -93,7 +101,13 @@ jobs:
               exit 1
             fi
 
-            echo "Created $dir/pakz.pak"
+            pak_size=$(stat -c '%s' "$dir/pakz.pak")
+            if [ "$pak_size" -le 12 ]; then
+              echo "ERROR: $dir/pakz.pak contains no files (size: $pak_size bytes)."
+              exit 1
+            fi
+
+            echo "Created $dir/pakz.pak ($pak_size bytes)"
           done
 
       - name: Prepare release package
