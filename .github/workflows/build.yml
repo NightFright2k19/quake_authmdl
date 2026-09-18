@@ -1,0 +1,246 @@
+name: Build Authentic Models for Quake (Autobuild)
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**'
+      - '!*.txt'
+      - '!*.md'
+      - '!source/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: quake-authmdl-autobuild
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Install build dependencies
+        run: |
+          set -e
+
+          sudo apt-get update
+          sudo apt-get install -y \
+            build-essential \
+            cmake \
+            zip
+
+      - name: Build qpakman
+        run: |
+          set -e
+
+          git clone --depth 1 https://github.com/bunder/qpakman.git /tmp/qpakman
+          cmake -S /tmp/qpakman -B /tmp/qpakman/build
+          cmake --build /tmp/qpakman/build --parallel
+
+          QPAKMAN="$(find /tmp/qpakman/build -type f -executable -name qpakman | head -n 1)"
+
+          if [ -z "$QPAKMAN" ]; then
+            echo "ERROR: qpakman executable not found."
+            exit 1
+          fi
+
+          echo "QPAKMAN=$QPAKMAN" >> "$GITHUB_ENV"
+
+      - name: Determine Autobuild number
+        id: build_number
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+
+          VAR_NAME="AUTOBUILD_NUMBER"
+
+          if gh variable get "$VAR_NAME" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            CURRENT="$(gh variable get "$VAR_NAME" --repo "$GITHUB_REPOSITORY" --json value --jq '.value')"
+
+            if ! [[ "$CURRENT" =~ ^[0-9]+$ ]]; then
+              echo "ERROR: Repository variable $VAR_NAME contains an invalid value: $CURRENT"
+              exit 1
+            fi
+
+            BUILD_NUM=$((CURRENT + 1))
+          else
+            BUILD_NUM=1
+          fi
+
+          echo "Next Autobuild number: $BUILD_NUM"
+
+          gh variable set "$VAR_NAME" \
+            --repo "$GITHUB_REPOSITORY" \
+            --body "$BUILD_NUM"
+
+          echo "BUILD_NUM=$BUILD_NUM" >> "$GITHUB_ENV"
+          echo "build_num=$BUILD_NUM" >> "$GITHUB_OUTPUT"
+
+      - name: Create Quake PAK files
+        run: |
+          set -e
+
+          TARGETS=(
+            "id1"
+            "hipnotic"
+            "rogue"
+            "mg3"
+          )
+
+          for dir in "${TARGETS[@]}"; do
+            echo "Creating $dir/pakz.pak..."
+
+            if [ ! -d "$dir" ]; then
+              echo "ERROR: Directory '$dir' does not exist."
+              exit 1
+            fi
+
+            rm -f "$dir/pakz.pak"
+
+            (
+              cd "$dir"
+              "$QPAKMAN" . -o pakz.pak
+            )
+
+            if [ ! -f "$dir/pakz.pak" ]; then
+              echo "ERROR: Failed to create $dir/pakz.pak"
+              exit 1
+            fi
+
+            echo "Created $dir/pakz.pak"
+          done
+
+      - name: Prepare release package
+        run: |
+          set -e
+
+          PACKAGE_DIR="$GITHUB_WORKSPACE/package"
+          ZIP_NAME="quake_authmdl_autobuild_r${BUILD_NUM}.zip"
+
+          rm -rf "$PACKAGE_DIR"
+          mkdir -p "$PACKAGE_DIR/id1"
+          mkdir -p "$PACKAGE_DIR/hipnotic"
+          mkdir -p "$PACKAGE_DIR/rogue"
+          mkdir -p "$PACKAGE_DIR/mg3"
+
+          cp id1/pakz.pak "$PACKAGE_DIR/id1/"
+          cp hipnotic/pakz.pak "$PACKAGE_DIR/hipnotic/"
+          cp rogue/pakz.pak "$PACKAGE_DIR/rogue/"
+          cp mg3/pakz.pak "$PACKAGE_DIR/mg3/"
+
+          cp NOTICE.txt "$PACKAGE_DIR/"
+          cp auth_mdl.txt "$PACKAGE_DIR/"
+          cp todo_list.txt "$PACKAGE_DIR/"
+
+          (
+            cd "$PACKAGE_DIR"
+            zip -9 -r "../$ZIP_NAME" \
+              id1/pakz.pak \
+              hipnotic/pakz.pak \
+              rogue/pakz.pak \
+              mg3/pakz.pak \
+              NOTICE.txt \
+              auth_mdl.txt \
+              todo_list.txt
+          )
+
+          echo "ZIP_NAME=$ZIP_NAME" >> "$GITHUB_ENV"
+          echo "TAG_NAME=autobuild-r${BUILD_NUM}" >> "$GITHUB_ENV"
+
+      - name: Verify ZIP contents
+        run: |
+          set -e
+
+          echo "ZIP contents:"
+          unzip -l "$ZIP_NAME"
+
+          EXPECTED=(
+            "id1/pakz.pak"
+            "hipnotic/pakz.pak"
+            "rogue/pakz.pak"
+            "mg3/pakz.pak"
+            "NOTICE.txt"
+            "auth_mdl.txt"
+            "todo_list.txt"
+          )
+
+          for file in "${EXPECTED[@]}"; do
+            if ! unzip -Z1 "$ZIP_NAME" | grep -Fxq "$file"; then
+              echo "ERROR: Missing $file from ZIP."
+              exit 1
+            fi
+          done
+
+      - name: Create GitHub pre-release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ env.TAG_NAME }}
+          name: Autobuild r${{ env.BUILD_NUM }}
+          prerelease: true
+          allowUpdates: false
+          replacesArtifacts: true
+          artifacts: ${{ env.ZIP_NAME }}
+          body: |
+            This "Authentic Models for Quake" release has been generated by an automated script.
+
+            IMPORTANT:
+            Work-in-progress release. Not sufficiently tested and may contain unfinished assets. Use at your own risk!
+
+      - name: Delete older Autobuild releases
+        uses: actions/github-script@v8
+        env:
+          CURRENT_TAG: ${{ env.TAG_NAME }}
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const currentTag = process.env.CURRENT_TAG;
+
+            const releases = await github.paginate(
+              github.rest.repos.listReleases,
+              {
+                owner,
+                repo,
+                per_page: 100
+              }
+            );
+
+            for (const release of releases) {
+              if (
+                release.tag_name.startsWith("autobuild-r") &&
+                release.tag_name !== currentTag
+              ) {
+                console.log(`Deleting release ${release.tag_name}`);
+
+                await github.rest.repos.deleteRelease({
+                  owner,
+                  repo,
+                  release_id: release.id
+                });
+
+                try {
+                  await github.rest.git.deleteRef({
+                    owner,
+                    repo,
+                    ref: `tags/${release.tag_name}`
+                  });
+
+                  console.log(`Deleted tag ${release.tag_name}`);
+                } catch (error) {
+                  console.log(
+                    `Could not delete tag ${release.tag_name}: ${error.message}`
+                  );
+                }
+              }
+            }
