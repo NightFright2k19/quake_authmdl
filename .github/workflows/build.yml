@@ -115,7 +115,7 @@ jobs:
           set -euo pipefail
 
           PACKAGE_DIR="$GITHUB_WORKSPACE/package"
-          ZIP_NAME="quake_authmdl_autobuild_r${BUILD_NUM}.zip"
+          ZIP_NAME="auth_mdl-autobuild_r${BUILD_NUM}.zip"
 
           rm -rf "$PACKAGE_DIR"
           mkdir -p "$PACKAGE_DIR/id1"
