@@ -44,6 +44,7 @@ can provide.
 - Chillo: Death Knight (ROG), Mummy (ROG), Teleport Sphere, Torch/Flame
 - dumptruck_ds: Runic keys (from pd_r_key.mdl in Progs_dump v3)
 - Dwere: Reworked classic weapons (aka "Guns of Okayishness")
+- kia100: Mjolnir skin fix
 - Louis "ijed" Manning: "Rubicon Rumble Pack" ammo/health boxes
 - Lunaran: Knight, Pentagram, Quad Damage
 - Machine Games/Nightdive Studios: Chthon, Death Knight, Enforcer, Fiend, Ogre, Rocket Launcher, Scrag, Vore, Zombie
