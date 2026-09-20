@@ -64,13 +64,17 @@ jobs:
           )
 
           if [ "${#qpakman_candidates[@]}" -ne 1 ]; then
-            printf 'ERROR: Expected exactly one qpakman executable, found %s.\n' \\
+            printf 'ERROR: Expected exactly one qpakman executable, found %s.\n' \
               "${#qpakman_candidates[@]}"
             printf '%s\n' "${qpakman_candidates[@]}"
             exit 1
           fi
 
-          echo "QPAKMAN=${qpakman_candidates[0]}" >> "$GITHUB_ENV"
+          QPAKMAN_PATH="$GITHUB_WORKSPACE/qpakman"
+          cp "${qpakman_candidates[0]}" "$QPAKMAN_PATH"
+          chmod +x "$QPAKMAN_PATH"
+
+          echo "QPAKMAN=$QPAKMAN_PATH" >> "$GITHUB_ENV"
 
       - name: Create Quake PAK files
         env:
