@@ -5,19 +5,25 @@ on:
     branches:
       - master
     paths:
-      - '**'
-      - '!*.txt'
-      - '!*.md'
-      - '!.github/**'
-      - '!source/**'
+      - 'id1/**'
+      - 'hipnotic/**'
+      - 'rogue/**'
+      - 'mg3/**'
+      - 'NOTICE.txt'
+      - 'auth_mdl.txt'
+      - 'todo_list.txt'
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: quake-authmdl-autobuild
   cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash --noprofile --norc -euo pipefail {0}
 
 jobs:
   build:
@@ -25,45 +31,51 @@ jobs:
 
     env:
       BUILD_NUM: ${{ github.run_number }}
+      QPAKMAN_COMMIT: d8a0014bacb462d21b52d3bf66d01875a30ce9ab
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
 
       - name: Install build dependencies
         run: |
-          set -euo pipefail
-
           sudo apt-get update
           sudo apt-get install -y \
             build-essential \
             cmake \
             libpng-dev \
+            unzip \
             zip
 
       - name: Build qpakman
         run: |
-          set -euo pipefail
+          QPAKMAN_DIR="$(mktemp -d)"
+          trap 'rm -rf "$QPAKMAN_DIR"' EXIT
 
-          git clone --depth 1 https://github.com/bunder/qpakman.git /tmp/qpakman
-          cmake -S /tmp/qpakman -B /tmp/qpakman/build
-          cmake --build /tmp/qpakman/build --parallel
+          git clone --depth 1 https://github.com/bunder/qpakman.git "$QPAKMAN_DIR/source"
+          git -C "$QPAKMAN_DIR/source" fetch --depth 1 origin "$QPAKMAN_COMMIT"
+          git -C "$QPAKMAN_DIR/source" checkout --detach "$QPAKMAN_COMMIT"
 
-          QPAKMAN="$(find /tmp/qpakman/build -type f -executable -name qpakman | head -n 1)"
+          cmake -S "$QPAKMAN_DIR/source" -B "$QPAKMAN_DIR/build"
+          cmake --build "$QPAKMAN_DIR/build" --parallel
 
-          if [ -z "$QPAKMAN" ]; then
-            echo "ERROR: qpakman executable not found."
+          mapfile -t qpakman_candidates < <(
+            find "$QPAKMAN_DIR/build" -type f -executable -name qpakman
+          )
+
+          if [ "${#qpakman_candidates[@]}" -ne 1 ]; then
+            printf 'ERROR: Expected exactly one qpakman executable, found %s.\n' \\
+              "${#qpakman_candidates[@]}"
+            printf '%s\n' "${qpakman_candidates[@]}"
             exit 1
           fi
 
-          echo "QPAKMAN=$QPAKMAN" >> "$GITHUB_ENV"
+          echo "QPAKMAN=${qpakman_candidates[0]}" >> "$GITHUB_ENV"
 
       - name: Create Quake PAK files
         env:
           QPAKMAN: ${{ env.QPAKMAN }}
         run: |
-          set -euo pipefail
-
           declare -A INPUTS=(
             [id1]='maps progs'
             [hipnotic]='progs'
@@ -87,6 +99,12 @@ jobs:
               fi
             done
 
+            source_count=$(find "${sources[@]/#/$dir/}" -type f | wc -l)
+            if [ "$source_count" -eq 0 ]; then
+              echo "ERROR: No source files found for $dir."
+              exit 1
+            fi
+
             rm -f "$dir/pakz.pak"
 
             (
@@ -109,28 +127,18 @@ jobs:
           done
 
       - name: Prepare release package
-        env:
-          BUILD_NUM: ${{ env.BUILD_NUM }}
         run: |
-          set -euo pipefail
-
           PACKAGE_DIR="$GITHUB_WORKSPACE/package"
           ZIP_NAME="auth_mdl-autobuild_r${BUILD_NUM}.zip"
 
-          rm -rf "$PACKAGE_DIR"
-          mkdir -p "$PACKAGE_DIR/id1"
-          mkdir -p "$PACKAGE_DIR/hipnotic"
-          mkdir -p "$PACKAGE_DIR/rogue"
-          mkdir -p "$PACKAGE_DIR/mg3"
+          rm -rf "$PACKAGE_DIR" "$ZIP_NAME"
+          mkdir -p "$PACKAGE_DIR"/id1 "$PACKAGE_DIR"/hipnotic "$PACKAGE_DIR"/rogue "$PACKAGE_DIR"/mg3
 
           cp id1/pakz.pak "$PACKAGE_DIR/id1/"
           cp hipnotic/pakz.pak "$PACKAGE_DIR/hipnotic/"
           cp rogue/pakz.pak "$PACKAGE_DIR/rogue/"
           cp mg3/pakz.pak "$PACKAGE_DIR/mg3/"
-
-          cp NOTICE.txt "$PACKAGE_DIR/"
-          cp auth_mdl.txt "$PACKAGE_DIR/"
-          cp todo_list.txt "$PACKAGE_DIR/"
+          cp NOTICE.txt auth_mdl.txt todo_list.txt "$PACKAGE_DIR/"
 
           (
             cd "$PACKAGE_DIR"
@@ -151,9 +159,7 @@ jobs:
         env:
           ZIP_NAME: ${{ env.ZIP_NAME }}
         run: |
-          set -euo pipefail
-
-          echo "ZIP contents:"
+          unzip -t "$ZIP_NAME"
           unzip -l "$ZIP_NAME"
 
           EXPECTED=(
@@ -166,15 +172,23 @@ jobs:
             "todo_list.txt"
           )
 
+          mapfile -t actual < <(unzip -Z1 "$ZIP_NAME")
+          if [ "${#actual[@]}" -ne "${#EXPECTED[@]}" ]; then
+            echo "ERROR: ZIP contains unexpected files."
+            printf 'Expected:\n%s\n' "${EXPECTED[@]}"
+            printf 'Actual:\n%s\n' "${actual[@]}"
+            exit 1
+          fi
+
           for file in "${EXPECTED[@]}"; do
-            if ! unzip -Z1 "$ZIP_NAME" | grep -Fxq "$file"; then
+            if ! printf '%s\n' "${actual[@]}" | grep -Fxq "$file"; then
               echo "ERROR: Missing $file from ZIP."
               exit 1
             fi
           done
 
       - name: Create GitHub pre-release
-        uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@339a81892b84b4eeb0f6e744e4574d79d0d9b8dd # v1
         with:
           tag: ${{ env.TAG_NAME }}
           name: Autobuild r${{ env.BUILD_NUM }}
@@ -191,7 +205,7 @@ jobs:
       - name: Delete older Autobuild releases
         env:
           CURRENT_TAG: ${{ env.TAG_NAME }}
-        uses: actions/github-script@v8
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
         with:
           script: |
             const owner = context.repo.owner;
@@ -200,19 +214,16 @@ jobs:
 
             const releases = await github.paginate(
               github.rest.repos.listReleases,
-              {
-                owner,
-                repo,
-                per_page: 100
-              }
+              { owner, repo, per_page: 100 }
             );
 
             for (const release of releases) {
               if (
+                release.prerelease &&
                 release.tag_name.startsWith("autobuild-r") &&
                 release.tag_name !== currentTag
               ) {
-                console.log(`Deleting release ${release.tag_name}`);
+                console.log(`Deleting older autobuild release ${release.tag_name}: ${release.html_url}`);
 
                 await github.rest.repos.deleteRelease({
                   owner,
@@ -226,12 +237,9 @@ jobs:
                     repo,
                     ref: `tags/${release.tag_name}`
                   });
-
                   console.log(`Deleted tag ${release.tag_name}`);
                 } catch (error) {
-                  console.log(
-                    `Could not delete tag ${release.tag_name}: ${error.message}`
-                  );
+                  console.log(`Could not delete tag ${release.tag_name}: ${error.message}`);
                 }
               }
             }
