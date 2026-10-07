@@ -9,7 +9,7 @@ can provide.
 
 # (N)PCs:
 - Original game: Chthon, Death Knight, Enforcer, Fiend, Grunt, Knight, Ogre, Ranger, Rotfish, Rottweiler, Scrag, Shambler, Shub-Niggurath, Spawn, Vore, Zombie
-- Dissolution of Eternity (MP2): Hellspawn, Knight Statue, Minotaur Statue, Multi-Grenade Ogre, Mummy, Ranger w/ CTF skin
+- Dissolution of Eternity (MP2): Hellspawn, Hephaestus, Knight Statue, Minotaur Statue, Multi-Grenade Ogre, Mummy, Ranger w/ CTF skin, Zombie w/ "cross-descending" anim
 
 # Weapons:
 - Original game: Axe, Shotgun, Super Shotgun, Nailgun, Perforator, Grenade Launcher, Rocket Launcher, Thunderbolt
