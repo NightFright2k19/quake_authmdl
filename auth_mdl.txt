@@ -21,6 +21,7 @@ I. MODELS:
    - Enforcer ................................................... enforcer.mdl, h_mega.mdl
    - Fiend ...................................................... demon.mdl, h_demon.mdl
    - Grunt ...................................................... soldier.mdl, h_guard.mdl
+   - Hephaestus ................................................. lavaman.mdl
    - Knight (ID1) / Knight Statue (ROG) ......................... knight.mdl, h_knight.mdl
    - Mummy (ROG) ................................................ mummy.mdl
    - Ogre (ID1) / Multi-Grenade Ogre (ROG) ...................... ogre.mdl, h_ogre.mdl
@@ -230,7 +231,7 @@ Revision #28 (XXX XX, 202X)
 ---------------------------
 > Added:
      [ID1] Health packs: Alternate versions with green cross (b_bh10, b_bh25, b_bh100)
-     [ROG] Enemies: Zombie with additional frames in _cruc animation (zombie)
+     [ROG] Enemies: Hephaestus (lavaman), Zombie with additional frames in _cruc animation (zombie)
      [MG3] Removed fullbright pixels on skins of various models:
            Armor Shard (armorshard), Bloody Angel Statue (angel_statue_blood), Blood Shambler (shambler_blood), 
            Ranged Death Knight (rknight), Rocket Ogre (ogre_rocket), Super Axe (g_hammer, v_hammer, v_hammer_glow)

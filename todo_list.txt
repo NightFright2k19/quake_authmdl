@@ -20,7 +20,6 @@ Dissolution of Eternity (ROG)
            Wrath ........................................................ wrath.mdl / wrthgib1-3.mdl
            
 - Bosses: Guardians ..................................................... morph_az.mdl / morph_eg.mdl / morph_gr.mdl **
-          Hephaestus .................................................... lavaman.mdl *
           Overlord ...................................................... s_wrath.mdl / s_wrtgb1-3.mdl
 
 
@@ -30,6 +29,5 @@ Notes:
 *   Should be based on existing remakes
        - Player (HIP): with Mjolnir instead of axe
        - Death Knight/Minotaur Statue (ROG): should be based on new ID1 model from Quake Enhanced
-       - Hephaestus (ROG): Chthon (boss.mdl) with new skin and removed animations "shockb" and "shockc"
        
 **  One model for all three guardians, using different skins (Aztec/Egyptian/Greek)
