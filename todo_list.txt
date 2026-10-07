@@ -1,6 +1,6 @@
 
 TO-DO LIST: QUAKE AUTHENTIC MODEL PACK
-Last update: Sep 23, 2021
+Last update: Oct 7, 2026
 
 
 ==========================================================================================================
@@ -18,7 +18,6 @@ Dissolution of Eternity (ROG)
 ==========================================================================================================
 - Enemies: Death Knight/Minotaur Statue ................................. h_hellkn.mdl *
            Wrath ........................................................ wrath.mdl / wrthgib1-3.mdl
-           Zombie ....................................................... zombie.mdl *
            
 - Bosses: Guardians ..................................................... morph_az.mdl / morph_eg.mdl / morph_gr.mdl **
           Hephaestus .................................................... lavaman.mdl *
@@ -32,6 +31,5 @@ Notes:
        - Player (HIP): with Mjolnir instead of axe
        - Death Knight/Minotaur Statue (ROG): should be based on new ID1 model from Quake Enhanced
        - Hephaestus (ROG): Chthon (boss.mdl) with new skin and removed animations "shockb" and "shockc"
-       - Zombie (ROG): with additional frames #198-207 in animation "cruc_"
        
 **  One model for all three guardians, using different skins (Aztec/Egyptian/Greek)

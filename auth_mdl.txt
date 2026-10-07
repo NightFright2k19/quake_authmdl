@@ -35,6 +35,7 @@ I. MODELS:
    - Spawn (ID1) / Hellspawn (ROG) .............................. tarbaby.mdl
    - Vore ....................................................... shalrath.mdl, h_shal.mdl
    - Zombie ..................................................... zombie.mdl, h_zombie.mdl
+   - Zombie (ROG) with additional animation ..................... zombie.mdl
 
 Weapons:
    - Axe ........................................................ v_axe.mdl
@@ -150,7 +151,7 @@ Machine Games/Nightdive Studios ...... Chthon, Death Knight, Enforcer, Fiend, Og
                                        Scrag, Vore, Zombie
 NightFright .......................... ROG plasma cells, health/ammo box edits/realignments (ijed),
                                        skin edits for backback (Sock), Lava Perforator (Dwere/osj)
-                                       and Mjolnir, MG3 model/skin edits              
+                                       and Mjolnir, MG3 model/skin edits, Zombie (ROG)              
 osjclatchford ........................ Eyes, Ring of Shadows, Lava ball/rock
                                        MD5 model conversions from QuakeEX
 				       Headgibs (Death Knight, Enforcer, Ogre, Vore, Zombie)
@@ -228,7 +229,8 @@ C H A N G E L O G
 Revision #28 (XXX XX, 202X)
 ---------------------------
 > Added:
-     [ID1] Health packs: Added alternate versions with green cross (b_bh10, b_bh25, b_bh100)
+     [ID1] Health packs: Alternate versions with green cross (b_bh10, b_bh25, b_bh100)
+     [ROG] Enemies: Zombie with additional frames in _cruc animation (zombie)
      [MG3] Removed fullbright pixels on skins of various models:
            Armor Shard (armorshard), Bloody Angel Statue (angel_statue_blood), Blood Shambler (shambler_blood), 
            Ranged Death Knight (rknight), Rocket Ogre (ogre_rocket), Super Axe (g_hammer, v_hammer, v_hammer_glow)
